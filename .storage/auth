@@ -1,0 +1,27 @@
+{
+    "data": {
+        "credentials": [],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_id": null,
+                "created_at": "2018-08-19T19:15:59.917755+00:00",
+                "id": "9a92911ff06c456a8c502d4fc22572f7",
+                "jwt_key": "9b5afc3496a2c13e59d0d40d0f88417f02d53e48c56f67767b0915548ecdd4cf07ff04f46cb8233144a26803f7489e3b66372167986722404b03528aa46717bb",
+                "token": "0860fb0708acf0912b383bcf0b5ca17e4dab53649d3f5167ce1b788254bec411e5c2a115da71aaab11170143e398f665c36585204339cae88c527c8ab5a48f96",
+                "user_id": "94cddddf2cda4b5faf872fe6e977d137"
+            }
+        ],
+        "users": [
+            {
+                "id": "94cddddf2cda4b5faf872fe6e977d137",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}
