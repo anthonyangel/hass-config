@@ -4,7 +4,7 @@ homeassistant:
   longitude: !secret home_long
   elevation: 0
   unit_system: metric
-  time_zone: UTC
+  time_zone: Europe/London
   customize: !include customize.yaml
 
 frontend:
