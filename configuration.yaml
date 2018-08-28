@@ -25,3 +25,6 @@ script: !include scripts.yaml
 
 mqtt:
   broker: core-mosquitto
+
+recorder:
+  db_url: !secret db_url
