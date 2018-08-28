@@ -1,0 +1,35 @@
+binary_sensor:
+  - platform: template
+    sensors:
+      shabbat:
+        value_template: "{{ states.calendar.shabbat_times.state == 'on' }}"
+        friendly_name: Shabbat
+      chol:
+        value_template: "{{ states.calendar.shabbat_times.state == 'off' }}"
+        friendly_name: Chol
+
+sensor:
+  - platform: template
+    sensors:
+      upcoming_parsha:
+        value_template: '{{ states.calendar.shabbat_times.attributes.message }}'
+        friendly_name: Parsha
+      start_time:
+        value_template: '{{ states.calendar.shabbat_times.attributes.start_time }}'
+        friendly_name: Start Time
+      end_time:
+        value_template: '{{ states.calendar.shabbat_times.attributes.end_time }}'
+        friendly_name: End Time
+
+
+group:
+  shabbat_sensors:
+    name: Shabbat Sensors
+    view: no
+    control: hidden
+    entities:
+      - binary_sensor.chol
+      - binary_sensor.shabbat
+      - sensor.start_time
+      - sensor.end_time
+      - sensor.upcoming_parsha
