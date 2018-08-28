@@ -19,6 +19,11 @@ history:
 logbook:
 map:
 cloud:
+cast:
+sonos:
+
+media_player:
+  - platform: plex
 
 mqtt:
   broker: core-mosquitto
