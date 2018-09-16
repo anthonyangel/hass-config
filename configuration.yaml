@@ -29,9 +29,4 @@ mqtt: !include includes/mqtt.yaml
 recorder: !include includes/recorder.yaml
 influxdb: !include includes/influxdb.yaml
 google: !include includes/google.yaml
-
-panel_iframe:
-  tasmoadmin:
-    title: TasmoAdmin
-    icon: mdi:lightbulb-on
-    url: http://192.168.1.222:9541
+panel_iframe: !include includes/iframe.yaml
