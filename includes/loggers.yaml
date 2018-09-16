@@ -1,0 +1,12 @@
+#default: error
+default: info
+#logs:
+#  homeassistant.components.automation: debug
+#  homeassistant.components.group: debug
+#  homeassistant.components.thermostat: debug
+#  homeassistant.components.climate: debug
+#  homeassistant.components.switch: debug
+#  homeassistant.components.light: debug
+#  homeassistant.components.media_player: debug
+#  homeassistant.components.binary_sensor: debug
+#  homeassistant.components.sensor: debug
