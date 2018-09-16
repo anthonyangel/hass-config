@@ -26,8 +26,8 @@ media_player:
   - platform: plex
 
 mqtt: !include includes/mqtt.yaml
-
 recorder: !include includes/recorder.yaml
+influxdb: !include includes/influxdb.yaml
 
 google:
   client_id: !secret google_client_id
