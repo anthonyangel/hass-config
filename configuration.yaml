@@ -30,3 +30,4 @@ recorder: !include includes/recorder.yaml
 influxdb: !include includes/influxdb.yaml
 google: !include includes/google.yaml
 panel_iframe: !include includes/iframe.yaml
+nest: !include includes/nest.yaml
