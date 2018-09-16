@@ -31,4 +31,5 @@ influxdb: !include includes/influxdb.yaml
 google: !include includes/google.yaml
 panel_iframe: !include includes/iframe.yaml
 nest: !include includes/nest.yaml
+tado: !include includes/tado.yaml
 binary_sensor: !include_dir_merge_list includes/binary_sensor
