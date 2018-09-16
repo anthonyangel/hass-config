@@ -2,3 +2,7 @@ tasmoadmin:
   title: TasmoAdmin
   icon: mdi:lightbulb-on
   url: http://192.168.1.222:9541
+portainer:
+  title: Portainer
+  icon: mdi:docker
+  url: http://192.168.1.222:9000
