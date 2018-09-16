@@ -28,10 +28,7 @@ media_player:
 mqtt: !include includes/mqtt.yaml
 recorder: !include includes/recorder.yaml
 influxdb: !include includes/influxdb.yaml
-
-google:
-  client_id: !secret google_client_id
-  client_secret: !secret google_client_secret
+google: !include includes/google.yaml
 
 panel_iframe:
   tasmoadmin:
