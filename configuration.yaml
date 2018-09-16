@@ -19,11 +19,6 @@ history:
 logbook:
 map:
 cloud:
-cast:
-sonos:
-
-media_player:
-  - platform: plex
 
 mqtt: !include includes/mqtt.yaml
 recorder: !include includes/recorder.yaml
