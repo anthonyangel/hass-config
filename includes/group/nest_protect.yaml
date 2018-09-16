@@ -1,0 +1,39 @@
+smoke:
+  name: Smoke
+  entities:
+    - sensor.hallway_nest_protect_smoke_status
+    - sensor.kitchen_nest_protect_smoke_status
+    - sensor.loft_nest_protect_smoke_status
+    - sensor.upstairs_nest_protect_smoke_status
+
+co:
+  name: CO
+  entities:
+    - sensor.hallway_nest_protect_co_status
+    - sensor.kitchen_nest_protect_co_status
+    - sensor.loft_nest_protect_co_status
+    - sensor.upstairs_nest_protect_co_status
+
+nest_protect_online:
+  name: Nest Protect Online
+  entities:
+    - sensor.hallway_nest_protect_online
+    - sensor.kitchen_nest_protect_online
+    - sensor.loft_nest_protect_online
+    - sensor.upstairs_nest_protect_online
+
+nest_protect_battery:
+  name: Nest Protect Battery
+  entities:
+    - sensor.hallway_nest_protect_battery_health
+    - sensor.kitchen_nest_protect_battery_health
+    - sensor.loft_nest_protect_battery_health
+    - sensor.upstairs_nest_protect_battery_health
+
+nest_protect_colour:
+  name: Nest Protect Colour
+  entities:
+    - sensor.hallway_nest_protect_color_status
+    - sensor.kitchen_nest_protect_color_status
+    - sensor.loft_nest_protect_color_status
+    - sensor.upstairs_nest_protect_color_status

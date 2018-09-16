@@ -28,3 +28,4 @@ nest: !include includes/nest.yaml
 tado: !include includes/tado.yaml
 duckdns: !include includes/duckdns.yaml
 logger: !include includes/loggers.yaml
+group: !include_dir_merge_named includes/group/
