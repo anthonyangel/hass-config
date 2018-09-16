@@ -17,10 +17,10 @@ co:
 nest_protect_online:
   name: Nest Protect Online
   entities:
-    - sensor.hallway_nest_protect_online
-    - sensor.kitchen_nest_protect_online
-    - sensor.loft_nest_protect_online
-    - sensor.upstairs_nest_protect_online
+    - binary_sensor.hallway_nest_protect_online
+    - binary_sensor.kitchen_nest_protect_online
+    - binary_sensor.loft_nest_protect_online
+    - binary_sensor.upstairs_nest_protect_online
 
 nest_protect_battery:
   name: Nest Protect Battery
