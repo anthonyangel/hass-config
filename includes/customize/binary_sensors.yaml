@@ -1,8 +1,0 @@
-binary_sensor.flic_80e4da72b83e:
-  friendly_name: Flic Green
-binary_sensor.flic_80e4da7291ec:
-  friendly_name: Flic Black
-binary_sensor.flic_80e4da72aafa:
-  friendly_name: Flic White
-binary_sensor.flic_80e4da72aba3:
-  friendly_name: Flic Turquoise
