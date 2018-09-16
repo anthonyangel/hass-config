@@ -15,3 +15,8 @@ google_calendars.yaml
 .HA_VERSION
 .google.token
 home-assistant.log
+OZW_Log.txt
+options.xml
+pyozw.sqlite
+zwcfg_0xd210b3fe.xml
+zwscene.xml
