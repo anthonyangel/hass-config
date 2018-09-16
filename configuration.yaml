@@ -25,8 +25,7 @@ sonos:
 media_player:
   - platform: plex
 
-mqtt:
-  broker: core-mosquitto
+mqtt: !include includes/mqtt.yaml
 
 recorder:
   db_url: !secret db_url
