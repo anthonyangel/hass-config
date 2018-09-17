@@ -6,3 +6,11 @@ portainer:
   title: Portainer
   icon: mdi:docker
   url: http://192.168.1.222:9000
+influxdb:
+  title: InfluxDB
+  icon: mdi:chart-areaspline
+  url: http://192.168.1.222:8888
+esphomeyaml:
+  title: esphomeyaml
+  icon: mdi:chip
+  url: http://192.168.1.222:6052
