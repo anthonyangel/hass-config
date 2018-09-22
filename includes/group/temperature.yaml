@@ -5,3 +5,5 @@ temperature:
     - sensor.master_bedroom_temperature
     - sensor.matans_room_temperature
     - sensor.upstairs_hall_temperature
+    - sensor.3rd_bedroom_temperature
+    - sensor.4th_bedroom_temperature
