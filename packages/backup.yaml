@@ -1,0 +1,20 @@
+homeassistant:
+
+automation:
+- alias: Daily snapshot at 3 AM 
+  trigger:
+    platform: time  
+    at: '3:00:00'
+  action:  
+  - service: hassio.snapshot_full  
+    data_template:  
+      name: Automated Backup {{ now().strftime('%Y-%m-%d') }} 
+- alias: Daily upload to dropbox at 5 AM 
+  trigger: 
+    platform: time  
+    at: '5:00:00'
+  action:  
+  - service: hassio.addon_stdin 
+    data:  
+      addon: "7be23ff5_dropbox_sync"  
+      input: {"command":"upload"}
