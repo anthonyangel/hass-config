@@ -1,16 +1,6 @@
 homeassistant:
   customize:
-    binary_sensor.hallway_nest_protect_online:
-      friendly_name: Hallway Protect
-      icon: mdi:smoke-detector
-    binary_sensor.kitchen_nest_protect_online:
-      friendly_name: Kitchen Protect
-      icon: mdi:smoke-detector
-    binary_sensor.loft_nest_protect_online:
-      friendly_name: Loft Protect
-      icon: mdi:smoke-detector
-    binary_sensor.upstairs_nest_protect_online:
-      friendly_name: Upstairs Protect
+    binary_sensor.*_nest_protect_online:
       icon: mdi:smoke-detector
 
 group:
