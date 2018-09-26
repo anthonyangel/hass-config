@@ -1,5 +1,5 @@
 homeassistant:
-  customize:
+  customize_glob:
     binary_sensor.*_nest_protect_online:
       icon: mdi:smoke-detector
 
