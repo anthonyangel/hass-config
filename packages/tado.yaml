@@ -1,0 +1,41 @@
+homeassistant:
+  customize_glob:
+    sensor.*_overlay:
+      hidden: true
+    sensor.*_power:
+      hidden: true
+    sensor.*_link:
+      hidden: true
+    sensor.*_mode:
+      hidden: true
+      
+group:
+  humidity:
+    name: Humidity
+    icon: mdi:water-percent
+    entities:
+      - sensor.master_bedroom_humidity
+      - sensor.matans_room_humidity
+      - sensor.upstairs_hall_humidity
+      - sensor.3rd_bedroom_humidity
+      - sensor.4th_bedroom_humidity
+
+  temperature:
+    name: Temperature
+    icon: mdi:thermometer
+    entities:
+      - sensor.master_bedroom_temperature
+      - sensor.matans_room_temperature
+      - sensor.upstairs_hall_temperature
+      - sensor.3rd_bedroom_temperature
+      - sensor.4th_bedroom_temperature
+
+  heating:
+    name: Heating
+    icon: mdi:radiator
+    entities:
+      - sensor.master_bedroom_heating
+      - sensor.matans_room_heating
+      - sensor.upstairs_hall_heating
+      - sensor.3rd_bedroom_heating
+      - sensor.4th_bedroom_heating
