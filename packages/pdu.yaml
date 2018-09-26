@@ -1,22 +1,6 @@
 homeassistant:
-  customize:
-    switch.pdu_port_1:
-      icon: mdi:power-socket
-    switch.pdu_port_2:
-      icon: mdi:power-socket
-    switch.pdu_port_3:
-      icon: mdi:power-socket
-    switch.pdu_port_4:
-      icon: mdi:power-socket
-    switch.pdu_port_5:
-      icon: mdi:power-socket
-    switch.pdu_port_6:
-      icon: mdi:power-socket
-    switch.pdu_port_7:
-      icon: mdi:power-socket
-    switch.pdu_port_8:
-      icon: mdi:power-socket
-    switch.pdu_port_9:
+  customize_glob:
+    switch.pdu_port_*:
       icon: mdi:power-socket
 
 switch:
@@ -51,21 +35,9 @@ switch:
     payload_on: 1
     payload_off: 2
   - platform: snmp
-    name: PDU Port 7
-    host: 192.168.1.118
-    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7
-    payload_on: 1
-    payload_off: 2
-  - platform: snmp
     name: PDU Port 6
     host: 192.168.1.118
     baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.6
-    payload_on: 1
-    payload_off: 2
-  - platform: snmp
-    name: PDU Port 7
-    host: 192.168.1.118
-    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.7
     payload_on: 1
     payload_off: 2
   - platform: snmp
@@ -86,10 +58,101 @@ switch:
     baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.9
     payload_on: 1
     payload_off: 2
+  - platform: snmp
+    name: PDU Port 10
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.10
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 11
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.11
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 12
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.12
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 13
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.13
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 14
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.14
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 15
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.15
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 16
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.16
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 17
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.17
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 18
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.18
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 19
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.19
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 20
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.20
+    payload_on: 1
+    payload_off: 2
+  - platform: snmp
+    name: PDU Port 21
+    host: 192.168.1.118
+    baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.21
+    payload_on: 1
+    payload_off: 2
+  # - platform: snmp
+  #   name: PDU Port 22
+  #   host: 192.168.1.118
+  #   baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.22
+  #   payload_on: 1
+  #   payload_off: 2
+  # - platform: snmp
+  #   name: PDU Port 23
+  #   host: 192.168.1.118
+  #   baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.23
+  #   payload_on: 1
+  #   payload_off: 2
+  # - platform: snmp
+  #   name: PDU Port 24
+  #   host: 192.168.1.118
+  #   baseoid: 1.3.6.1.4.1.318.1.1.12.3.3.1.1.4.24
+  #   payload_on: 1
+  #   payload_off: 2
 
 group:
   pdu:
     name: PDU
+    control: hidden
     entities:
       - switch.pdu_port_1
       - switch.pdu_port_2
@@ -100,4 +163,18 @@ group:
       - switch.pdu_port_7
       - switch.pdu_port_8
       - switch.pdu_port_9
-      
+      - switch.pdu_port_10
+      - switch.pdu_port_11
+      - switch.pdu_port_12
+      - switch.pdu_port_13
+      - switch.pdu_port_14
+      - switch.pdu_port_15
+      - switch.pdu_port_16
+      - switch.pdu_port_17
+      - switch.pdu_port_18
+      - switch.pdu_port_19
+      - switch.pdu_port_20
+      - switch.pdu_port_21
+#      - switch.pdu_port_22
+#      - switch.pdu_port_23
+#      - switch.pdu_port_24
