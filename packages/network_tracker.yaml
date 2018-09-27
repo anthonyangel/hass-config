@@ -1,10 +1,6 @@
 homeassistant:
   customize_glob:
-    device_tracker.cctv*:
-      hidden: true
-    device_tracker.nest*:
-      hidden: true
-    device_tracker.sonoff*:
+    device_tracker.*:
       hidden: true
 
 device_tracker:
@@ -19,33 +15,47 @@ binary_sensor:
 - platform: template
   sensors:
     cctv_front_left:
+      friendly_name: CCTV Front Left
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvfrontleft', 'home') }}"
     cctv_front_right:
+      friendly_name: CCTV Front Right
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvfrontright', 'home') }}"
+    cctv_front_door:
+      friendly_name: CCTV Front Door
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.cctvfrontrdoor', 'home') }}"
     hassio:
+      friendly_name: Hassio    
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.hassio', 'home') }}"
     nest_hallway:
+      friendly_name: Nest Hallway
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.nest_hallway', 'home') }}"
     nest_kitchen:
+      friendly_name: Nest Kitchen
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.nest_kitchen', 'home') }}"
     nest_loft:
+      friendly_name: Nest Loft
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.nest_loft', 'home') }}"
     nest_upstairs:
+      friendly_name: Nest Upstairs
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.nest_upstairs', 'home') }}"
     pdu:
+      friendly_name: PDU
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
     sonoff_4ch_utility:
+      friendly_name: Sonoff 4ch Utility
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.sonoff4chutility', 'home') }}"
     tado_bridge:
+      friendly_name: Tado Bridge
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.tado', 'home') }}"
 
