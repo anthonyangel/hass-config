@@ -1,9 +1,48 @@
 homeassistant:
 
-  device_tracker:
-    - platform: unifi
-      host: !secret unifi_host
-      username: !secret unifi_username
-      password: !secret unifi_password
-      verify_ssl: false
-      site_id: !secret unifi_site_id
+device_tracker:
+  - platform: unifi
+    host: !secret unifi_host
+    username: !secret unifi_username
+    password: !secret unifi_password
+    verify_ssl: false
+    site_id: !secret unifi_site_id
+
+sensor:
+- platform: template
+  sensors:
+    cctv_front_left:
+      value_template: '{% if is_state("device_tracker.cctvfrontleft", "home") %}Connected{% else %}Disconnected{% endif %}'
+    cctv_front_right:
+      value_template: '{% if is_state("device_tracker.cctvfrontright", "home") %}Connected{% else %}Disconnected{% endif %}'
+    hassio:
+      value_template: '{% if is_state("device_tracker.hassio", "home") %}Connected{% else %}Disconnected{% endif %}'
+    nest_hallway:
+      value_template: '{% if is_state("device_tracker.nest_hallway", "home") %}Connected{% else %}Disconnected{% endif %}'
+    nest_kitchen:
+      value_template: '{% if is_state("device_tracker.nest_kitchen", "home") %}Connected{% else %}Disconnected{% endif %}'
+    nest_loft:
+      value_template: '{% if is_state("device_tracker.nest_loft", "home") %}Connected{% else %}Disconnected{% endif %}'
+    nest_upstairs:
+      value_template: '{% if is_state("device_tracker.nest_upstairs", "home") %}Connected{% else %}Disconnected{% endif %}'
+    pdu:
+      value_template: '{% if is_state("device_tracker.pdu", "home") %}Connected{% else %}Disconnected{% endif %}'
+    sonoff_4ch_utility:
+      value_template: '{% if is_state("device_tracker.sonoff4chutility", "home") %}Connected{% else %}Disconnected{% endif %}'
+    tado_bridge:
+      value_template: '{% if is_state("device_tracker.tado", "home") %}Connected{% else %}Disconnected{% endif %}'
+
+group:
+ network_devices:
+   name: network_devices
+   entities:
+     - sensor.cctv_front_left
+     - sensor.cctv_front_right
+     - sensor.hassio
+     - sensor.nest_hallway
+     - sensor.nest_kitchen
+     - sensor.nest_loft
+     - sensor.nest_upstairs
+     - sensor.pdu
+     - sensor.sonoff_4ch_utility
+     - sensor.tado_bridge
