@@ -1,4 +1,11 @@
 homeassistant:
+  customize_glob:
+    device_tracker.cctv*:
+      hidden: true
+    device_tracker.nest*:
+      hidden: true
+    device_tracker.sonoff*:
+      hidden: true
 
 device_tracker:
   - platform: unifi
@@ -8,41 +15,52 @@ device_tracker:
     verify_ssl: false
     site_id: !secret unifi_site_id
 
-sensor:
+binary_sensor:
 - platform: template
   sensors:
     cctv_front_left:
-      value_template: '{% if is_state("device_tracker.cctvfrontleft", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.cctvfrontleft', 'home') }}"
     cctv_front_right:
-      value_template: '{% if is_state("device_tracker.cctvfrontright", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.cctvfrontright', 'home') }}"
     hassio:
-      value_template: '{% if is_state("device_tracker.hassio", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.hassio', 'home') }}"
     nest_hallway:
-      value_template: '{% if is_state("device_tracker.nest_hallway", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.nest_hallway', 'home') }}"
     nest_kitchen:
-      value_template: '{% if is_state("device_tracker.nest_kitchen", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.nest_kitchen', 'home') }}"
     nest_loft:
-      value_template: '{% if is_state("device_tracker.nest_loft", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.nest_loft', 'home') }}"
     nest_upstairs:
-      value_template: '{% if is_state("device_tracker.nest_upstairs", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.nest_upstairs', 'home') }}"
     pdu:
-      value_template: '{% if is_state("device_tracker.pdu", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
     sonoff_4ch_utility:
-      value_template: '{% if is_state("device_tracker.sonoff4chutility", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonoff4chutility', 'home') }}"
     tado_bridge:
-      value_template: '{% if is_state("device_tracker.tado", "home") %}Connected{% else %}Disconnected{% endif %}'
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.tado', 'home') }}"
 
 group:
  network_devices:
-   name: network_devices
+   name: Network Devices
    entities:
-     - sensor.cctv_front_left
-     - sensor.cctv_front_right
-     - sensor.hassio
-     - sensor.nest_hallway
-     - sensor.nest_kitchen
-     - sensor.nest_loft
-     - sensor.nest_upstairs
-     - sensor.pdu
-     - sensor.sonoff_4ch_utility
-     - sensor.tado_bridge
+     - binary_sensor.cctv_front_left
+     - binary_sensor.cctv_front_right
+     - binary_sensor.hassio
+     - binary_sensor.nest_hallway
+     - binary_sensor.nest_kitchen
+     - binary_sensor.nest_loft
+     - binary_sensor.nest_upstairs
+     - binary_sensor.pdu
+     - binary_sensor.sonoff_4ch_utility
+     - binary_sensor.tado_bridge
+
