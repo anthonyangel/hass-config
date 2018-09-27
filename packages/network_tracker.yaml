@@ -25,7 +25,7 @@ binary_sensor:
     cctv_front_door:
       friendly_name: CCTV Front Door
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctvfrontrdoor', 'home') }}"
+      value_template: "{{ is_state('device_tracker.cctvfrontdoor', 'home') }}"
     hassio:
       friendly_name: Hassio    
       device_class: connectivity
