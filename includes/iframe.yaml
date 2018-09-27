@@ -14,3 +14,8 @@ esphomeyaml:
   title: esphomeyaml
   icon: mdi:chip
   url: http://192.168.1.222:6052
+mqtt:
+  title: MQTT
+  icon: mdi:code-brackets
+  url: http://192.168.1.222:5713
+
