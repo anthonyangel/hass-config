@@ -65,6 +65,7 @@ group:
    entities:
      - binary_sensor.cctv_front_left
      - binary_sensor.cctv_front_right
+     - binary_sensor.cctv_front_door
      - binary_sensor.hassio
      - binary_sensor.nest_hallway
      - binary_sensor.nest_kitchen
