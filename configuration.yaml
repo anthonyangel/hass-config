@@ -19,7 +19,7 @@ logbook:
 map:
 cloud:
 
-mqtt: !include includes/mqtt.yaml
+# mqtt: !include includes/mqtt.yaml
 recorder: !include includes/recorder.yaml
 influxdb: !include includes/influxdb.yaml
 google: !include includes/google.yaml
