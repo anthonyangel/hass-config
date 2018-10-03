@@ -15,7 +15,7 @@ group:
     icon: mdi:water-percent
     entities:
       - sensor.master_bedroom_humidity
-      - sensor.matans_room_humidity
+      - sensor.matans_bedroom_humidity
       - sensor.3rd_bedroom_humidity
       - sensor.4th_bedroom_humidity
       - sensor.ensuite_humidity
@@ -32,7 +32,7 @@ group:
     icon: mdi:thermometer
     entities:
       - sensor.master_bedroom_temperature
-      - sensor.matans_room_temperature
+      - sensor.matans_bedroom_temperature
       - sensor.3rd_bedroom_temperature
       - sensor.4th_bedroom_temperature
       - sensor.ensuite_temperature
@@ -49,7 +49,7 @@ group:
     icon: mdi:radiator
     entities:
       - sensor.master_bedroom_heating
-      - sensor.matans_room_heating
+      - sensor.matans_bedroom_heating
       - sensor.3rd_bedroom_heating
       - sensor.4th_bedroom_heating
       - sensor.ensuite_heating
