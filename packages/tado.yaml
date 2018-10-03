@@ -16,9 +16,16 @@ group:
     entities:
       - sensor.master_bedroom_humidity
       - sensor.matans_room_humidity
-      - sensor.upstairs_hall_humidity
       - sensor.3rd_bedroom_humidity
       - sensor.4th_bedroom_humidity
+      - sensor.ensuite_humidity
+      - sensor.hall_humidity
+      - sensor.kitchen_humidity
+      - sensor.lounge_humidity
+      - sensor.office_humidity
+      - sensor.playroom_humidity
+      - sensor.toilet_humidity
+      - sensor.utility_humidity
 
   temperature:
     name: Temperature
@@ -26,9 +33,16 @@ group:
     entities:
       - sensor.master_bedroom_temperature
       - sensor.matans_room_temperature
-      - sensor.upstairs_hall_temperature
       - sensor.3rd_bedroom_temperature
       - sensor.4th_bedroom_temperature
+      - sensor.ensuite_temperature
+      - sensor.hall_temperature
+      - sensor.kitchen_temperature
+      - sensor.lounge_temperature
+      - sensor.office_temperature
+      - sensor.playroom_temperature
+      - sensor.toilet_temperature
+      - sensor.utility_temperature
 
   heating:
     name: Heating
@@ -36,6 +50,13 @@ group:
     entities:
       - sensor.master_bedroom_heating
       - sensor.matans_room_heating
-      - sensor.upstairs_hall_heating
       - sensor.3rd_bedroom_heating
       - sensor.4th_bedroom_heating
+      - sensor.ensuite_heating
+      - sensor.hall_heating
+      - sensor.kitchen_heating
+      - sensor.lounge_heating
+      - sensor.office_heating
+      - sensor.playroom_heating
+      - sensor.toilet_heating
+      - sensor.utility_heating
