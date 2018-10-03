@@ -1,0 +1,21 @@
+homeassistant:
+
+fan:
+  - platform: mqtt
+    name: En-Suite Extractor
+    state_topic: "stat/sonoff_4ch_loft/POWER1"
+    command_topic: "cmnd/sonoff_4ch_loft/POWER1"
+    payload_on: "ON"
+    payload_off: "OFF"
+  - platform: mqtt
+    name: Bathroom Extractor
+    state_topic: "stat/sonoff_4ch_loft/POWER2"
+    command_topic: "cmnd/sonoff_4ch_loft/POWER2"
+    payload_on: "ON"
+    payload_off: "OFF"
+  - platform: mqtt
+    name: Utility Extractor
+    state_topic: "stat/sonoff_4ch_utility/POWER3"
+    command_topic: "cmnd/sonoff_4ch_utility/POWER3"
+    payload_on: "ON"
+    payload_off: "OFF"
