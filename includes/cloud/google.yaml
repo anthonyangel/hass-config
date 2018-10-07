@@ -1,0 +1,5 @@
+google_actions:
+  filter:
+    exclude_domains:
+      - group
+      - climate

@@ -17,8 +17,8 @@ conversation:
 history:
 logbook:
 map:
-cloud:
 
+cloud: !include_dir_merge_named includes/cloud/
 # mqtt: !include includes/mqtt.yaml
 recorder: !include includes/recorder.yaml
 influxdb: !include includes/influxdb.yaml
