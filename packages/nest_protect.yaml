@@ -2,6 +2,8 @@ homeassistant:
   customize_glob:
     binary_sensor.*_nest_protect_online:
       icon: mdi:smoke-detector
+    binary_sensor.*_nest_protect_battery_health:
+      icon: mdi:battery
 
 group:
   smoke:
