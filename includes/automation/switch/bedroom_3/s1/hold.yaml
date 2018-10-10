@@ -1,0 +1,12 @@
+alias: bedroom_3 Button 1 Hold
+trigger:
+  platform: event
+  event_type: zwave.scene_activated
+  event_data:
+    entity_id: zwave.bedroom_3_switch
+    scene_id: 12
+action:
+  service: notify.notify
+  data:
+    message: "bedroom_3 Button 1 Hold"
+    title: "Button!"

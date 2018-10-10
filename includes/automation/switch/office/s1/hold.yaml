@@ -1,0 +1,12 @@
+alias: office Button 1 Hold
+trigger:
+  platform: event
+  event_type: zwave.scene_activated
+  event_data:
+    entity_id: zwave.office_switch
+    scene_id: 12
+action:
+  service: notify.notify
+  data:
+    message: "office Button 1 Hold"
+    title: "Button!"
