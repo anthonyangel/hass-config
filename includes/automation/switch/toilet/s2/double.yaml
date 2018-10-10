@@ -1,0 +1,12 @@
+alias: toilet Button 2 Double
+trigger:
+  platform: event
+  event_type: zwave.scene_activated
+  event_data:
+    entity_id: zwave.toilet_switch
+    scene_id: 24
+action:
+  service: notify.notify
+  data:
+    message: "toilet Button 2 Double"
+    title: "Button!"

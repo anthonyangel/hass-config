@@ -1,0 +1,12 @@
+alias: matans_bedroom Button 2 Double
+trigger:
+  platform: event
+  event_type: zwave.scene_activated
+  event_data:
+    entity_id: zwave.matans_bedroom_switch
+    scene_id: 24
+action:
+  service: notify.notify
+  data:
+    message: "matans_bedroom Button 2 Double"
+    title: "Button!"

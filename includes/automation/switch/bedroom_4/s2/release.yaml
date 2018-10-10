@@ -1,0 +1,12 @@
+alias: bedroom_4 Button 2 Release
+trigger:
+  platform: event
+  event_type: zwave.scene_activated
+  event_data:
+    entity_id: zwave.bedroom_4_switch
+    scene_id: 23
+action:
+  service: notify.notify
+  data:
+    message: "bedroom_4 Button 2 Release"
+    title: "Button!"
