@@ -19,3 +19,72 @@ fan:
     command_topic: "cmnd/sonoff_4ch_utility/POWER3"
     payload_on: "ON"
     payload_off: "OFF"
+
+automation:
+  - alias: Utility Extractor Humidity On
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.utility_humidity
+      above: 75
+    action:
+      service: fan.turn_on
+      entity_id: fan.utility_extractor
+  - alias: Utility Extractor Humidity Off
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.utility_humidity
+      below: 75
+    action:
+      service: fan.turn_off
+      entity_id: fan.utility_extractor
+
+  - alias: Toilet Extractor Humidity On
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.toilet_humidity
+      above: 75
+    action:
+      service: fan.turn_on
+      entity_id: fan.toilet_extractor
+  - alias: Toilet Extractor Humidity Off
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.toilet_humidity
+      below: 75
+    action:
+      service: fan.turn_off
+      entity_id: fan.toilet_extractor
+
+  - alias: En Suite Extractor Humidity On
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.ensuite_humidity
+      above: 75
+    action:
+      service: fan.turn_on
+      entity_id: fan.ensuite_extractor
+  - alias: En Suite Extractor Humidity Off
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.ensuite_humidity
+      below: 75
+    action:
+      service: fan.turn_off
+      entity_id: fan.ensuite_extractor
+
+  - alias: Bathroom Extractor Humidity On
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.bathroom_humidity
+      above: 75
+    action:
+      service: fan.turn_on
+      entity_id: fan.bathroom_extractor
+  - alias: Bathroom Extractor Humidity Off
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.bathroom_humidity
+      below: 75
+    action:
+      service: fan.turn_off
+      entity_id: fan.bathroom_extractor
