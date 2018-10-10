@@ -2,8 +2,8 @@ homeassistant:
   customize_glob:
     binary_sensor.*_nest_protect_online:
       icon: mdi:smoke-detector
-    sensor.*_nest_protect_battery_health:
-      icon: mdi:battery
+#    sensor.*_nest_protect_battery_health:
+#      icon: mdi:battery
 
 group:
   smoke:
@@ -30,13 +30,13 @@ group:
       - binary_sensor.loft_nest_protect_online
       - binary_sensor.upstairs_nest_protect_online
 
-  nest_protect_battery:
-    name: Nest Protect Battery
-    entities:
-      - sensor.hallway_nest_protect_battery_health
-      - sensor.kitchen_nest_protect_battery_health
-      - sensor.loft_nest_protect_battery_health
-      - sensor.upstairs_nest_protect_battery_health
+  # nest_protect_battery:
+  #   name: Nest Protect Battery
+  #   entities:
+  #     - sensor.hallway_nest_protect_battery_health
+  #     - sensor.kitchen_nest_protect_battery_health
+  #     - sensor.loft_nest_protect_battery_health
+  #     - sensor.upstairs_nest_protect_battery_health
 
   nest_protect_colour:
     name: Nest Protect Colour
