@@ -1,0 +1,14 @@
+homeassistant:
+
+binary_sensor:
+  - platform: mqtt
+    name: Doorbell
+    state_topic: "stat/sonoff_doorbell/POWER"
+
+switch:
+  - platform: mqtt
+    name: "Doorbell Chime"
+    icon: mdi:alarm-bell
+    command_topic: "cmnd/sonoff_doorbell/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
