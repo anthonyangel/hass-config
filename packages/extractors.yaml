@@ -19,6 +19,12 @@ fan:
     command_topic: "cmnd/sonoff_4ch_utility/POWER3"
     payload_on: "ON"
     payload_off: "OFF"
+  - platform: mqtt
+    name: Toilet Extractor
+    state_topic: "stat/sonoff_basic_toilet/POWER"
+    command_topic: "cmnd/sonoff_basic_toilet/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
 
 automation:
   - alias: Utility Extractor Humidity On
