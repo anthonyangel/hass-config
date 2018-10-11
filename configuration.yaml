@@ -18,6 +18,7 @@ history:
 logbook:
 map:
 sun:
+wake_on_lan:
 
 history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
@@ -38,3 +39,4 @@ ifttt: !include includes/ifttt.yaml
 notify: !include_dir_list includes/notify/
 light: !include_dir_merge_list includes/light/
 automation: !include_dir_list includes/automation/
+media_player: !include_dir_list includes/media_player/
