@@ -1,3 +1,4 @@
+# Implicitly attached to toggle kitchen front ceiling
 alias: kitchen Button 1 Single
 trigger:
   platform: event

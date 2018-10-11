@@ -6,7 +6,9 @@ trigger:
     entity_id: zwave.hall_switch
     scene_id: 26
 action:
-  service: notify.notify
-  data:
-    message: "hall Button 2 Single"
-    title: "Button!"
+  - service: notify.notify
+    data:
+      message: "hall Button 2 Single"
+      title: "Button!"
+  -  service: light.toggle
+     entity_id: light.landing

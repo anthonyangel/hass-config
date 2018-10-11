@@ -6,7 +6,8 @@ trigger:
     entity_id: zwave.hall_switch
     scene_id: 12
 action:
-  service: notify.notify
-  data:
-    message: "hall Button 1 Hold"
-    title: "Button!"
+  - service: notify.notify
+    data:
+      message: "hall Button 1 Hold"
+      title: "Button!"
+#  - service: # turn off all lights & fans

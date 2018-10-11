@@ -1,3 +1,4 @@
+# Implicitly attached to toggle hall ceiling
 alias: hall Button 1 Single
 trigger:
   platform: event

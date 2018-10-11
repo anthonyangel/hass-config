@@ -6,7 +6,9 @@ trigger:
     entity_id: zwave.ensuite_switch
     scene_id: 26
 action:
-  service: notify.notify
-  data:
-    message: "ensuite Button 2 Single"
-    title: "Button!"
+  - service: notify.notify
+    data:
+      message: "ensuite Button 2 Single"
+      title: "Button!"
+  - service: light.toggle
+    entity_id: light.master_bedroom
