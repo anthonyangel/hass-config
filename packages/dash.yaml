@@ -1,0 +1,18 @@
+homeassistant:
+  customize_glob:
+    binary_sensor.dash*:
+      icon: amazon
+
+group:
+ dash:
+   name: Dash Buttons
+   entities:
+     - binary_sensor.dash_dettol
+     - binary_sensor.dash_duracell
+     - binary_sensor.dash_fairy
+     - binary_sensor.dash_finish
+     - binary_sensor.dash_johnsons
+     - binary_sensor.dash_nerf
+     - binary_sensor.dash_tea
+     - binary_sensor.dash_water_wipes
+     - binary_sensor.dash_wilkinson_sword

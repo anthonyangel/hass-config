@@ -1,0 +1,10 @@
+alias: "Dash Tea"
+trigger:
+  platform: state
+  entity_id: binary_sensor.dash_tea
+  to: 'on'
+action:
+  - service: notify.notify
+    data:
+      message: "Dash Tea"
+      title: "Button!"

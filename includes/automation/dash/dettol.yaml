@@ -1,0 +1,10 @@
+alias: "Dash Dettol"
+trigger:
+  platform: state
+  entity_id: binary_sensor.dash_dettol
+  to: 'on'
+action:
+  - service: notify.notify
+    data:
+      message: "Dash Dettol"
+      title: "Button!"

@@ -1,0 +1,10 @@
+alias: "Dash Finish"
+trigger:
+  platform: state
+  entity_id: binary_sensor.dash_finish
+  to: 'on'
+action:
+  - service: notify.notify
+    data:
+      message: "Dash Finish"
+      title: "Button!"
