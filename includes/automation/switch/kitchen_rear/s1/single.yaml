@@ -1,3 +1,4 @@
+# Implicitly attached to toggle kitchen rear ceiling
 alias: kitchen_rear Button 1 Single
 trigger:
   platform: event

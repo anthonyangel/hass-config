@@ -1,3 +1,5 @@
+# Implicitly attached to toggle master bedroom ceiling
+
 alias: master_bedroom Button 1 Single
 trigger:
   platform: event

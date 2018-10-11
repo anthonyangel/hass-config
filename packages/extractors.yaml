@@ -61,7 +61,7 @@ automation:
       service: fan.turn_off
       entity_id: fan.toilet_extractor
 
-  - alias: En Suite Extractor Humidity On
+  - alias: Ensuite Extractor Humidity On
     trigger:
       platform: numeric_state
       entity_id: sensor.ensuite_humidity
@@ -69,7 +69,7 @@ automation:
     action:
       service: fan.turn_on
       entity_id: fan.ensuite_extractor
-  - alias: En Suite Extractor Humidity Off
+  - alias: Ensuite Extractor Humidity Off
     trigger:
       platform: numeric_state
       entity_id: sensor.ensuite_humidity

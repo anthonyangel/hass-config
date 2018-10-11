@@ -1,3 +1,4 @@
+# Implicitly attached to toggle office ceiling
 alias: office Button 1 Single
 trigger:
   platform: event
