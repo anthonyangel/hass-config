@@ -1,0 +1,20 @@
+homeassistant:
+
+automation:
+  - alias: Outside front lights on at sunset
+    trigger:
+      platform: sun
+      event: sunset
+      offset: "-00:05:00"
+    action:
+      service: light.turn_on
+      entity_id: light.front_door_lights
+
+  - alias: Outside front lights off between 23 - 00
+    trigger:
+      platform: time
+      at: '23:00:00'
+    action:
+      - delay: '00:{{ (range(0, 59)|random|int) }}:00'
+      - service: light.turn_off
+        entity_id: light.front_door_lights
