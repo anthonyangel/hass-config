@@ -12,3 +12,15 @@ switch:
     command_topic: "cmnd/sonoff_doorbell/POWER"
     payload_on: "ON"
     payload_off: "OFF"
+
+automation:
+- alias: Doorbell notify phone 
+  trigger:
+    platform: state
+    entity_id: binary_sensor.doorbell
+    to: 'on'
+action:
+  - service: notify.notify
+    data:
+      message: "Doorbell has been pushed"
+      title: "Ding Dong!"
