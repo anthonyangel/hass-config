@@ -1,0 +1,10 @@
+alias: "Dash Nerf"
+trigger:
+  platform: state
+  entity_id: binary_sensor.dash_nerf
+  to: 'on'
+action:
+  - service: notify.notify
+    data:
+      message: "Dash Nerf"
+      title: "Button!"

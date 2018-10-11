@@ -1,0 +1,12 @@
+alias: "Flic white Hold"
+trigger:
+  platform: event
+  event_type: flic_click
+  event_data:
+    button_name: flic_80e4da72aafa
+    click_type: hold
+action:
+  service: notify.notify
+  data:
+    message: "Flic white Hold"
+    title: "Button!"
