@@ -19,8 +19,8 @@ automation:
     platform: state
     entity_id: binary_sensor.doorbell
     to: 'on'
-action:
-  - service: notify.notify
-    data:
-      message: "Doorbell has been pushed"
-      title: "Ding Dong!"
+  action:
+    - service: notify.notify
+      data:
+        message: "Doorbell has been pushed"
+        title: "Ding Dong!"
