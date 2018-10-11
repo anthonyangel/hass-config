@@ -17,17 +17,21 @@ conversation:
 history:
 logbook:
 map:
+sun:
+
+history: !include includes/history.yaml
+recorder: !include includes/recorder.yaml
+logger: !include includes/loggers.yaml
+influxdb: !include includes/influxdb.yaml
 
 cloud: !include_dir_merge_named includes/cloud/
 # mqtt: !include includes/mqtt.yaml
-recorder: !include includes/recorder.yaml
-influxdb: !include includes/influxdb.yaml
+
 google: !include includes/google.yaml
 panel_iframe: !include includes/iframe.yaml
 nest: !include includes/nest.yaml
 tado: !include includes/tado.yaml
 duckdns: !include includes/duckdns.yaml
-logger: !include includes/loggers.yaml
 group: !include_dir_merge_named includes/group/
 zwave: !include includes/zwave.yaml
 ifttt: !include includes/ifttt.yaml
