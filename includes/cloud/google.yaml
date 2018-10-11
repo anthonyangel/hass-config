@@ -3,3 +3,26 @@ google_actions:
     exclude_domains:
       - group
       - climate
+    exclude_entities:
+      - switch.pdu_port_1
+      - switch.pdu_port_2
+      - switch.pdu_port_3
+      - switch.pdu_port_4
+      - switch.pdu_port_5
+      - switch.pdu_port_6
+      - switch.pdu_port_7
+      - switch.pdu_port_8
+      - switch.pdu_port_9
+      - switch.pdu_port_10
+      - switch.pdu_port_10
+      - switch.pdu_port_11
+      - switch.pdu_port_12
+      - switch.pdu_port_13
+      - switch.pdu_port_14
+      - switch.pdu_port_15
+      - switch.pdu_port_16
+      - switch.pdu_port_17
+      - switch.pdu_port_18
+      - switch.pdu_port_19
+      - switch.pdu_port_20
+      - switch.pdu_port_21
