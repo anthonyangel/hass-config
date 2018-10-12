@@ -3,6 +3,7 @@ google_actions:
     exclude_domains:
       - group
       - climate
+      - media_player
     exclude_entities:
       - switch.pdu_port_1
       - switch.pdu_port_2
@@ -26,3 +27,4 @@ google_actions:
       - switch.pdu_port_19
       - switch.pdu_port_20
       - switch.pdu_port_21
+      - switch.doorbell_chime
