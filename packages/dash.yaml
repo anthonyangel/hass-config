@@ -4,15 +4,27 @@ homeassistant:
       icon: amazon
 
 group:
- dash:
-   name: Dash Buttons
-   entities:
-     - binary_sensor.dash_dettol
-     - binary_sensor.dash_duracell
-     - binary_sensor.dash_fairy
-     - binary_sensor.dash_finish
-     - binary_sensor.dash_johnsons
-     - binary_sensor.dash_nerf
-     - binary_sensor.dash_tea
-     - binary_sensor.dash_water_wipes
-     - binary_sensor.dash_wilkinson_sword
+  dash:
+    name: Dash Buttons
+    entities:
+      - binary_sensor.dash_dettol
+      - binary_sensor.dash_duracell
+      - binary_sensor.dash_fairy
+      - binary_sensor.dash_finish
+      - binary_sensor.dash_johnsons
+      - binary_sensor.dash_nerf
+      - binary_sensor.dash_tea
+      - binary_sensor.dash_water_wipes
+      - binary_sensor.dash_wilkinson_sword
+  dash_automations:
+    name: Dash Automations
+    entities:
+      - automation.dash_dettol
+      - automation.dash_duracell
+      - automation.dash_fairy
+      - automation.dash_finish
+      - automation.dash_johnsons
+      - automation.dash_nerf
+      - automation.dash_tea
+      - automation.dash_water_wipes
+      - automation.dash_wilkinson_sword
