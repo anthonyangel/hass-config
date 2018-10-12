@@ -16,3 +16,14 @@
   command_topic: "cmnd/sonoff_4ch_utility/POWER4"
   payload_on: "ON"
   payload_off: "OFF"
+- platform: mqtt
+  name: Kitchen Worktop Lights
+  state_topic: kitchen-worktop-lights/relay/0
+  command_topic: kitchen-worktop-lights/relay/0/set
+  payload_on: 1
+  payload_off: 0
+  availability_topic: kitchen-worktop-lights/status
+  payload_available: 1
+  payload_not_available: 0
+  brightness_state_topic: kitchen-worktop-lights/channel/4
+  brightness_command_topic: kitchen-worktop-lights/channel/4/set
