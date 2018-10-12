@@ -13,10 +13,26 @@ binary_sensor:
   - platform: flic
 
 group:
- flic:
-   name: Flic Buttons
-   entities:
-     - binary_sensor.flic_80e4da72b83e
-     - binary_sensor.flic_80e4da7291ec
-     - binary_sensor.flic_80e4da72aafa
-     - binary_sensor.flic_80e4da72aba3
+  flic:
+    name: Flic Buttons
+    entities:
+      - binary_sensor.flic_80e4da72b83e
+      - binary_sensor.flic_80e4da7291ec
+      - binary_sensor.flic_80e4da72aafa
+      - binary_sensor.flic_80e4da72aba3
+  
+  flic_automations:
+    name: Flic Automations
+    entities:
+      - automation.flic_black_single
+      - automation.flic_black_double
+      - automation.flic_black_hold
+      - automation.flic_white_single
+      - automation.flic_white_double
+      - automation.flic_white_hold
+      - automation.flic_green_single
+      - automation.flic_green_double
+      - automation.flic_green_hold
+      - automation.flic_turquoise_single
+      - automation.flic_turquoise_double
+      - automation.flic_turquoise_hold
