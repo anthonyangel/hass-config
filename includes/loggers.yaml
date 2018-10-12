@@ -1,5 +1,5 @@
 #default: error
-default: info
+default: warn
 #logs:
 #  homeassistant.components.automation: debug
 #  homeassistant.components.group: debug
