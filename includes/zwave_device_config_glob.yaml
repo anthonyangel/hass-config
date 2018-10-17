@@ -1,0 +1,12 @@
+sensor.fibaro_system_fgd212_dimmer_2_system*:
+  ignored: true
+  polling_intensity: 0
+sensor.*sourcenodeid*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level*:
+  ignored: true
+  polling_intensity: 0
