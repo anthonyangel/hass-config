@@ -5,3 +5,16 @@ username: homeassistant
 password: !secret influxdb_password
 max_retries: 3
 default_measurement: state
+exclude:
+  entities:
+    - sensor.start_time
+    - sensor.end_time
+    - sensor.upcoming_parsha
+  domains:
+    - sun
+    - calendar
+    - group
+    - automation
+    - input_number
+    - zone
+    - device_tracker

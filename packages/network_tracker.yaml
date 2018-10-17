@@ -78,6 +78,34 @@ binary_sensor:
       friendly_name: Tado Bridge
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.tado', 'home') }}"
+    texe_hub:
+      friendly_name: Texecom Hub
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.texe_hub', 'home') }}"
+    dishwasher_left:
+      friendly_name: Dishwasher Left
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.dishwasher_left', 'home') }}"
+    dishwasher_right:
+      friendly_name: Dishwasher Right
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.dishwasher_right', 'home') }}"
+    oven_left:
+      friendly_name: Oven Left
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.oven_left', 'home') }}"
+    oven_right:
+      friendly_name: Oven Right
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.oven_right', 'home') }}"
+    hob:
+      friendly_name: Hob
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.hob', 'home') }}"
+    extractor:
+      friendly_name: Extractor
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
 
 group:
  network_devices:
@@ -99,4 +127,11 @@ group:
      - binary_sensor.kitchen_island_lights
      - binary_sensor.kitchen_worktop_lights
      - binary_sensor.tado_bridge
+     - binary_sensor.text_hub
+     - binary_sensor.dishwasher_left
+     - binary_sensor.dishwasher_right
+     - binary_sensor.oven_left
+     - binary_sensor.oven_right
+     - binary_sensor.hob
+     - binary_sensor.extractor
 

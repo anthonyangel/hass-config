@@ -9,32 +9,25 @@ exclude:
     - automation
     - input_number
     - zone
-  # entities:
-  #   - sensor.new_commits
-  #   - sensor.dark_sky_cloud_coverage
-  #   - sensor.dark_sky_summary
-  #   - sensor.dark_sky_temperature
-  #   - sensor.end_time
-  #   - sensor.moon
-  #   - sensor.start_time
-  #   - sensor.upcoming_parsha
-  #   - switch.gigabyte_wol
-  #   - script.stop_watering
-  #   - script.water_now
-  #   - sensor.ring_front_door_last_ding
-  #   - sensor.ring_front_door_last_activity
-  #   - script.sonos_stop_all
-  #   - script.sonos_unjoin_all
-  #   - binary_sensor.sprinkler_child_lock_enabled
-  #   - binary_sensor.sprinkler_is_panel_removed
-  #   - binary_sensor.sprinkler_is_paused
-  #   - binary_sensor.sprinkler_is_watering
-  #   - binary_sensor.sprinkler_water_now_event
-  #   - sensor.sprinkler_battery_status
-  #   - sensor.sprinkler_duration
-  #   - sensor.sprinkler_hub_mode
-  #   - sensor.sprinkler_last_controller_contact
-  #   - sensor.sprinkler_last_server_contact
-  #   - sensor.sprinkler_next_controller_contact
-  #   - sensor.sprinkler_signal_strength
-  #   - binary_sensor.ring_front_door_motion
+    - device_tracker
+    - binary_sensor
+  entities:
+    - sensor.start_time
+    - sensor.end_time
+    - sensor.upcoming_parsha
+    - switch.doorbell_chime
+    - sensor.hallway_nest_protect_co_status
+    - sensor.hallway_nest_protect_color_status
+    - sensor.hallway_nest_protect_smoke_status
+    - sensor.kitchen_nest_protect_co_status
+    - sensor.kitchen_nest_protect_color_status
+    - sensor.kitchen_nest_protect_smoke_status
+    - sensor.loft_nest_protect_co_status
+    - sensor.loft_nest_protect_color_status
+    - sensor.loft_nest_protect_smoke_status
+    - sensor.upstairs_nest_protect_co_status
+    - sensor.upstairs_nest_protect_color_status
+    - sensor.upstairs_nest_protect_smoke_status
+include:
+  entities:
+    - binary_sensor.doorbell
