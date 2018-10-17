@@ -3,7 +3,7 @@ trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.kitchen_rear_switch
+    entity_id: zwave.kitchen_rear
     scene_id: 24
 action:
   - service: notify.notify
