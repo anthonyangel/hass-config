@@ -127,7 +127,7 @@ group:
      - binary_sensor.kitchen_island_lights
      - binary_sensor.kitchen_worktop_lights
      - binary_sensor.tado_bridge
-     - binary_sensor.text_hub
+     - binary_sensor.texe_hub
      - binary_sensor.dishwasher_left
      - binary_sensor.dishwasher_right
      - binary_sensor.oven_left
