@@ -4,7 +4,7 @@ trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.toilet_switch
+    entity_id: zwave.toilet
     scene_id: 16
 action:
   service: notify.notify
