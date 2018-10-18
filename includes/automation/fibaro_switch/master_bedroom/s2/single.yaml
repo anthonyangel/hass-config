@@ -6,9 +6,9 @@ trigger:
     entity_id: zwave.master_bedroom
     scene_id: 26
 action:
+  - service: light.toggle
+    entity_id: light.ensuite
   - service: notify.notify
     data:
       message: "master_bedroom Button 2 Single"
       title: "Button!"
-  - service: light.toggle
-    entity_id: light.ensuite
