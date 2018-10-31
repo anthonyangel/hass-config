@@ -1,9 +1,0 @@
-alias: Bedroom Lights Off
-sequence:
-  - service: light.turn_off
-    data:
-      entity_id:
-        - light.master_bedroom
-        - light.matans_bedroom
-        - light.bedroom_3
-        - light.bedroom_4

@@ -12,4 +12,8 @@ action:
   service: light.turn_on
   entity_id:
     - light.kitchen_rear
+    - light.kitchen_front
     - light.lamp
+    - light.lounge
+#    - light.playroom
+    - light.toilet

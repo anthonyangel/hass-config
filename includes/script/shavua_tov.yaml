@@ -4,6 +4,9 @@ sequence:
     data:
       entity_id:
         - light.lamp
-        - light.matans_kitchen
+#        - light.matans_kitchen
       brightness: 255
       color_name: blue
+  - service: light.turn_on
+    entity_id:
+      - light.stair_lights

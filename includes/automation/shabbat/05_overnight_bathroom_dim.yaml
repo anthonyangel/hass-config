@@ -1,7 +1,7 @@
-alias: Shabbat Morning Playroom Lights on
+alias: Overnight Bathroom Dim
 trigger:
   - platform: time
-    at: "06:30:00"
+    at: "00:00:01"
 condition:
   condition: and
   conditions:
@@ -11,7 +11,7 @@ condition:
 action:
   service: light.turn_on
   entity_id:
-    - light.lamp
+#    - light.bathroom
+    - light.ensuite
   data:
-    brightness: 150
-    color: white
+    brightness: 64

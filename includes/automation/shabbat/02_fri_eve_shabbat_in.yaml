@@ -8,4 +8,3 @@ action:
   - service: script.turn_on
     entity_id:
       - script.friday_night_shabbat_in
-      - script.bedroom_light_off

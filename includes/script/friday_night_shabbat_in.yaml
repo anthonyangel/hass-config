@@ -8,13 +8,19 @@ sequence:
 #        - light.kitchen_front
         - light.lounge
 #        - light.playroom
-        - light.matans_bedroom
-        - light.master_bedroom
         - light.ensuite
 #        - light.bathroom
 #        - light.toilet
-#        - light.landing
 #        - light.hall
       brightness: 255
   - service: light.turn_on
     entity_id: light.stair_lights
+  - service: light.turn_off
+    data:
+      entity_id:
+        - light.matans_bedroom
+        - light.master_bedroom
+        - light.bedroom_3
+        - light.bedroom_4
+#        - light.landing
+

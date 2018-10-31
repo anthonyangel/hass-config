@@ -1,0 +1,22 @@
+alias: Shabbat Morning Lights on
+trigger:
+  - platform: time
+    at: "06:30:00"
+condition:
+  condition: and
+  conditions:
+    - condition: time
+      weekday:
+        - sat
+action:
+  - service: light.turn_on
+    entity_id:
+#      - light.playroom
+      - light.kitchen_rear
+#      - light.toilet
+  - service: light.turn_on
+    entity_id:
+      - light.lamp
+    data:
+      brightness: 150
+      color: white
