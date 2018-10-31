@@ -1,3 +1,4 @@
+# Linked to a zwave group to toggle master bedroom ceiling
 alias: ensuite Button 2 Single
 trigger:
   platform: event
@@ -6,8 +7,6 @@ trigger:
     entity_id: zwave.ensuite
     scene_id: 26
 action:
-  - service: light.toggle
-    entity_id: light.master_bedroom
   - service: notify.notify
     data:
       message: "ensuite Button 2 Single"

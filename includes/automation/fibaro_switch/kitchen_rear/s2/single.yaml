@@ -1,3 +1,4 @@
+# Linked to a zwave group to toggle lounge ceiling
 alias: kitchen_rear Button 2 Single
 trigger:
   platform: event
@@ -10,5 +11,3 @@ action:
     data:
       message: "kitchen_rear Button 2 Single"
       title: "Button!"
-  - service: light.toggle
-    entity_id: light.lounge
