@@ -1,0 +1,14 @@
+alias: Friday Night Lamp Off
+trigger:
+  platform: time
+  at: "23:30:00"
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: 'binary_sensor.shabbat'
+      state: 'on'
+action:
+  - service: light.turn_off
+    entity_id:
+      - light.lamp

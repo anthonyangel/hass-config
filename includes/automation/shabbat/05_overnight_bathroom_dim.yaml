@@ -1,0 +1,17 @@
+alias: Overnight Bathroom Dim
+trigger:
+  - platform: time
+    at: "00:00:01"
+condition:
+  condition: and
+  conditions:
+    - condition: time
+      weekday:
+        - sat
+action:
+  service: light.turn_on
+  entity_id:
+#    - light.bathroom
+    - light.ensuite
+  data:
+    brightness: 64
