@@ -1,0 +1,15 @@
+alias: Shabbat Afternoon Lights On
+trigger:
+  platform: time
+  at: "12:00:00"
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: 'binary_sensor.shabbat'
+      state: 'on'
+action:
+  service: light.turn_on
+  entity_id:
+    - light.kitchen_rear
+    - light.lamp

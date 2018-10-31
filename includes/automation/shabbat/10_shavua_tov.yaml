@@ -1,0 +1,9 @@
+alias: Shavua Tov
+trigger:
+  - platform: state
+    entity_id: binary_sensor.shabbat
+    from: 'on'
+    to: 'off'
+action:
+  service: script.turn_on
+  entity_id: script.shavua_tov

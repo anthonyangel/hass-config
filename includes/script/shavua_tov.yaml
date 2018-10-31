@@ -1,0 +1,9 @@
+alias: Shavua Tov
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.lamp
+        - light.matans_kitchen
+      brightness: 255
+      color_name: blue

@@ -1,0 +1,11 @@
+alias: Friday Night Prep
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.kitchen_worktop_lights
+        - light.kitchen_rear
+        - light.lounge
+      brightness: 255
+  - service: light.turn_on
+    entity_id: light.stair_lights
