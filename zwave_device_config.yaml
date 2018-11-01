@@ -1,0 +1,196 @@
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_2:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_3:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_4:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_5:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_6:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_7:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_8:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_9:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_10:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_11:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_12:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_13:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level_14:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_2:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_3:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_4:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_5:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_6:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_7:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_8:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_9:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_10:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_11:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_12:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_13:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type_14:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_2:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_3:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_4:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_5:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_6:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_7:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_8:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_9:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_10:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_11:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_12:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_13:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat_14:
+  ignored: true
+  polling_intensity: 0
+  sensor.fibaro_system_fgd212_dimmer_2_exporting:
+sensor.fibaro_system_fgd212_dimmer_2_exporting_2:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_3:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_4:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_5:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_6:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_7:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_8:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_9:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_10:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_11:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_12:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_13:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting_14:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_12:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_3:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_5:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level:
+  ignored: true
+  polling_intensity: 0
+light.landing_2:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_8:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_10:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_11:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_9:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212_dimmer_2_level_13:
+  ignored: true
+  polling_intensity: 0
