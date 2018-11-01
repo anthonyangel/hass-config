@@ -1,23 +1,23 @@
 - platform: mqtt
-  name: External Rear Lights
+  name: External Rear
   state_topic: "stat/sonoff_4ch_utility/POWER1"
   command_topic: "cmnd/sonoff_4ch_utility/POWER1"
   payload_on: "ON"
   payload_off: "OFF"
 - platform: mqtt
-  name: Front Door Lights
+  name: Front Door
   state_topic: "stat/sonoff_4ch_utility/POWER2"
   command_topic: "cmnd/sonoff_4ch_utility/POWER2"
   payload_on: "ON"
   payload_off: "OFF"
 - platform: mqtt
-  name: Stair Lights
+  name: Stairs
   state_topic: "stat/sonoff_4ch_utility/POWER4"
   command_topic: "cmnd/sonoff_4ch_utility/POWER4"
   payload_on: "ON"
   payload_off: "OFF"
 - platform: mqtt
-  name: Kitchen Worktop Lights
+  name: Kitchen Worktop
   state_topic: kitchen-worktop-lights/relay/0
   command_topic: kitchen-worktop-lights/relay/0/set
   payload_on: 1
