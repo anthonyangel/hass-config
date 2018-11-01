@@ -15,5 +15,5 @@ action:
     - light.kitchen_front
     - light.lamp
     - light.lounge
-#    - light.playroom
+    - light.playroom
     - light.toilet

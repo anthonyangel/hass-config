@@ -11,7 +11,7 @@ condition:
 action:
   service: light.turn_on
   entity_id:
-#    - light.bathroom
+    - light.bathroom
     - light.ensuite
   data:
     brightness: 64
