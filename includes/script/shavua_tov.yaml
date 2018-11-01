@@ -9,4 +9,4 @@ sequence:
       color_name: blue
   - service: light.turn_on
     entity_id:
-      - light.stair_lights
+      - light.stairs
