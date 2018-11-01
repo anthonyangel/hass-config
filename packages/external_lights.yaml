@@ -8,7 +8,7 @@ automation:
       offset: "-00:05:00"
     action:
       service: light.turn_on
-      entity_id: light.front_door_lights
+      entity_id: light.front_door
 
   - alias: Outside front lights off between 23 - 00
     trigger:
@@ -17,4 +17,4 @@ automation:
     action:
       - delay: '00:{{ (range(0, 59)|random|int) }}:00'
       - service: light.turn_off
-        entity_id: light.front_door_lights
+        entity_id: light.front_door
