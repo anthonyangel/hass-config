@@ -1,13 +1,13 @@
-# Implicitly attached to toggle office ceiling
-alias: office Button 1 Single
-trigger:
-  platform: event
-  event_type: zwave.scene_activated
-  event_data:
-    entity_id: zwave.office
-    scene_id: 16
-action:
-  service: notify.notify
-  data:
-    message: "office Button 1 Single"
-    title: "Button!"
+# # Implicitly attached to toggle office ceiling
+# alias: office Button 1 Single
+# trigger:
+#   platform: event
+#   event_type: zwave.scene_activated
+#   event_data:
+#     entity_id: zwave.office
+#     scene_id: 16
+# action:
+#   service: notify.notify
+#   data:
+#     message: "office Button 1 Single"
+#     title: "Button!"

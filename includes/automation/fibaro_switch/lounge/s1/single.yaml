@@ -1,13 +1,13 @@
-# Implicitly attached to toggle lounge ceiling
-alias: lounge Button 1 Single
-trigger:
-  platform: event
-  event_type: zwave.scene_activated
-  event_data:
-    entity_id: zwave.lounge
-    scene_id: 16
-action:
-  service: notify.notify
-  data:
-    message: "lounge Button 1 Single"
-    title: "Button!"
+# # Implicitly attached to toggle lounge ceiling
+# alias: lounge Button 1 Single
+# trigger:
+#   platform: event
+#   event_type: zwave.scene_activated
+#   event_data:
+#     entity_id: zwave.lounge
+#     scene_id: 16
+# action:
+#   service: notify.notify
+#   data:
+#     message: "lounge Button 1 Single"
+#     title: "Button!"
