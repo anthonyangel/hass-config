@@ -7,7 +7,9 @@ trigger:
     entity_id: zwave.kitchen_rear
     scene_id: 26
 action:
-  - service: notify.notify
-    data:
-      message: "kitchen_rear Button 2 Single"
-      title: "Button!"
+  # - service: notify.notify
+  #   data:
+  #     message: "kitchen_rear Button 2 Single"
+  #     title: "Button!"
+  - service: light.toggle
+    entity_id: light.lounge
