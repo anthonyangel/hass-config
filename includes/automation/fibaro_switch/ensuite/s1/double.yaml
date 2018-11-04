@@ -6,7 +6,5 @@ trigger:
     entity_id: zwave.ensuite
     scene_id: 14
 action:
-  service: notify.notify
-  data:
-    message: "ensuite Button 1 Double"
-    title: "Button!"
+  - service: fan.toggle
+    entity_id: fan.ensuite

@@ -6,9 +6,5 @@ trigger:
     entity_id: zwave.bathroom
     scene_id: 14
 action:
-  # - service: notify.notify
-  #   data:
-  #     message: "bathroom Button 1 Double"
-  #     title: "Button!"
   - service: fan.toggle
-    entity_id: fan.bathroom_extractor
+    entity_id: fan.bathroom

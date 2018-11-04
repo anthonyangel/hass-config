@@ -2,25 +2,25 @@ homeassistant:
 
 fan:
   - platform: mqtt
-    name: En-Suite Extractor
+    name: En-Suite
     state_topic: "stat/sonoff_4ch_loft/POWER1"
     command_topic: "cmnd/sonoff_4ch_loft/POWER1"
     payload_on: "ON"
     payload_off: "OFF"
   - platform: mqtt
-    name: Bathroom Extractor
+    name: Bathroom
     state_topic: "stat/sonoff_4ch_loft/POWER2"
     command_topic: "cmnd/sonoff_4ch_loft/POWER2"
     payload_on: "ON"
     payload_off: "OFF"
   - platform: mqtt
-    name: Utility Extractor
+    name: Utility
     state_topic: "stat/sonoff_4ch_utility/POWER3"
     command_topic: "cmnd/sonoff_4ch_utility/POWER3"
     payload_on: "ON"
     payload_off: "OFF"
   - platform: mqtt
-    name: Toilet Extractor
+    name: Toilet
     state_topic: "stat/sonoff_basic_toilet/POWER"
     command_topic: "cmnd/sonoff_basic_toilet/POWER"
     payload_on: "ON"
@@ -34,7 +34,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.utility_extractor
+      entity_id: fan.utility
   - alias: Utility Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -42,7 +42,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.utility_extractor
+      entity_id: fan.utility
 
   - alias: Toilet Extractor Humidity On
     trigger:
@@ -51,7 +51,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.toilet_extractor
+      entity_id: fan.toilet
   - alias: Toilet Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -59,7 +59,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.toilet_extractor
+      entity_id: fan.toilet
 
   - alias: Ensuite Extractor Humidity On
     trigger:
@@ -68,7 +68,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.ensuite_extractor
+      entity_id: fan.ensuite
   - alias: Ensuite Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -76,7 +76,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.ensuite_extractor
+      entity_id: fan.ensuite
 
   - alias: Bathroom Extractor Humidity On
     trigger:
@@ -85,7 +85,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.bathroom_extractor
+      entity_id: fan.bathroom
   - alias: Bathroom Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -93,7 +93,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.bathroom_extractor
+      entity_id: fan.bathroom
 
 group:
   extractor_humidity_automations:
