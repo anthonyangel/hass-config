@@ -13,6 +13,7 @@ action:
   entity_id:
     - light.kitchen_rear
     - light.kitchen_front
+    - light.utility
     - light.lamp
     - light.lounge
     - light.playroom

@@ -13,6 +13,8 @@ action:
     entity_id:
       - light.playroom
       - light.kitchen_rear
+      - light.kitchen_front
+      - light.utility
       - light.toilet
   - service: light.turn_on
     entity_id:

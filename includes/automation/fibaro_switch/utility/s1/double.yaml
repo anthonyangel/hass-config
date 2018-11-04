@@ -6,7 +6,5 @@ trigger:
     entity_id: zwave.utility
     scene_id: 14
 action:
-  service: notify.notify
-  data:
-    message: "Utility Button 1 Double"
-    title: "Button!"
+  - service: fan.toggle
+    entity_id: fan.utility
