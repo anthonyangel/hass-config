@@ -6,9 +6,5 @@ trigger:
     entity_id: zwave.landing
     scene_id: 26
 action:
-  # - service: notify.notify
-  #   data:
-  #     message: "landing Button 2 Single"
-  #     title: "Button!"
   - service: light.toggle
     entity_id: light.hall

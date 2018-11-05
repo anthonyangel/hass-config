@@ -6,9 +6,5 @@ trigger:
     entity_id: zwave.hall
     scene_id: 14
 action:
-  - service: notify.notify
-    data:
-      message: "hall Button 1 Double"
-      title: "Button!"
   - service: switch.toggle
-    entity_id: light.front_door_lights
+    entity_id: light.front_door
