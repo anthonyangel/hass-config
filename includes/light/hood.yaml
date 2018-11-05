@@ -4,7 +4,7 @@
       friendly_name: "Extractor"
       turn_on:
         service: ifttt.trigger
-        data_template: {"event": "hood_worktop_light_on"}
+        data: {"event": "hood_worktop_light_on"}
       turn_off:
         service: ifttt.trigger
-        data_template: {"event": "hood_worktop_light_off"}
+        data: {"event": "hood_worktop_light_off"}
