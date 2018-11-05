@@ -1,0 +1,10 @@
+- platform: template
+  lights:
+    extractor:
+      friendly_name: "Extractor"
+      turn_on:
+        service: ifttt.trigger
+        data: {"event": "hood_worktop_light_on"}
+      turn_off:
+        service: ifttt.trigger
+        data: {"event": "hood_worktop_light_off"}
