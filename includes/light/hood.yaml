@@ -5,6 +5,6 @@
       turn_on:
         service: ifttt.trigger
         data_template: {"event": "hood_worktop_light_on"}
-      turn_on:
+      turn_off:
         service: ifttt.trigger
         data_template: {"event": "hood_worktop_light_off"}
