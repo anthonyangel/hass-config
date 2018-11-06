@@ -4,7 +4,7 @@ trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.kitchen
+    entity_id: zwave.kitchen_front
     scene_id: 16
 action:
   service: notify.notify
