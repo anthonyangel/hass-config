@@ -26,12 +26,15 @@ fan:
     payload_on: "ON"
     payload_off: "OFF"
   - platform: template
-      turn_on:
-        service: ifttt.trigger
-        data: {"event": "hood_fan_on"}
-      turn_off:
-        service: ifttt.trigger
-        data: {"event": "hood_fan_off"}
+    fans:
+      extractor:
+        friendly_name: Extractor
+        turn_on:
+          service: ifttt.trigger
+          data: {"event": "hood_fan_on"}
+        turn_off:
+          service: ifttt.trigger
+          data: {"event": "hood_fan_off"}
 
 automation:
   - alias: Utility Extractor Humidity On
