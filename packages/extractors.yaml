@@ -31,10 +31,12 @@ fan:
         friendly_name: Extractor
         turn_on:
           service: ifttt.trigger
-          data: {"event": "hood_fan_on"}
+          data_template:
+            event: "hood_fan_on"
         turn_off:
           service: ifttt.trigger
-          data: {"event": "hood_fan_off"}
+          data_template:
+            event: "hood_fan_off"
 
 automation:
   - alias: Utility Extractor Humidity On
