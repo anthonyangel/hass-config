@@ -151,11 +151,6 @@ binary_sensor:
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.toykitchenworktop', 'home') }}"
 
-
-
-
-
-
 group:
  network_devices:
    name: Network Devices
