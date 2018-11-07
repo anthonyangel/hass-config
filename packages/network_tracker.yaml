@@ -178,6 +178,9 @@ group:
      - binary_sensor.oven_right
      - binary_sensor.hob
      - binary_sensor.extractor
+     - binary_sensor.google_home_mini
+     - binary_sensor.lounge_tv
+     - binary_sensor.playroom_lamp
      - binary_sensor.nas
      - binary_sensor.chromecast
      - binary_sensor.gigabyte
