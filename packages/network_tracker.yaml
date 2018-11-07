@@ -106,6 +106,50 @@ binary_sensor:
       friendly_name: Extractor
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
+    google_home_mini:
+      friendly_name: Google Home Mini
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.googlehomemini', 'home') }}"
+    lounge_tv:
+      friendly_name: Lounge TV
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.lgwebostv', 'home') }}"
+    playroom_lamp:
+      friendly_name: Playroom Lamp
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.device_tracker.lifx_color_1000', 'home') }}"      
+    nas:
+      friendly_name: NAS
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
+    chromecast:
+      friendly_name: Chromecast
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.chromecast', 'home') }}"
+    gigabyte:
+      friendly_name: Gigabyte
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
+    sonos_kitchen:
+      friendly_name: Sonos Kitchen
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonos_kitchen', 'home') }}"
+    sonos_bedroom:
+      friendly_name: Sonos Bedroom
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonos_bedroom', 'home') }}"
+    sonos_lounge:
+      friendly_name: Sonos Lounge
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonos_lounge', 'home') }}"
+    sonos_matan:
+      friendly_name: Sonos Matan
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonos_matan', 'home') }}"
+    toy_kitchen_worktop_lights:
+      friendly_name: Toy Kitchen Worktop
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.toykitchenworktop', 'home') }}"
 
 group:
  network_devices:
@@ -134,4 +178,15 @@ group:
      - binary_sensor.oven_right
      - binary_sensor.hob
      - binary_sensor.extractor
+     - binary_sensor.google_home_mini
+     - binary_sensor.lounge_tv
+     - binary_sensor.playroom_lamp
+     - binary_sensor.nas
+     - binary_sensor.chromecast
+     - binary_sensor.gigabyte
+     - binary_sensor.sonos_kitchen
+     - binary_sensor.sonos_bedroom
+     - binary_sensor.sonos_lounge
+     - binary_sensor.sonos_matan
+     - binary_sensor.toy_kitchen_worktop_lights
 
