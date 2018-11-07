@@ -107,21 +107,17 @@ binary_sensor:
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
     google_home_mini:
-      friendly_name: Extractor
+      friendly_name: Google Home Mini
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.googlehomemini', 'home') }}"
     lounge_tv:
-      friendly_name: Extractor
+      friendly_name: Lounge TV
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.lgwebostv', 'home') }}"
     playroom_lamp:
-      friendly_name: Extractor
+      friendly_name: Playroom Lamp
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.device_tracker.lifx_color_1000', 'home') }}"      
-    playroom_lamp:
-      friendly_name: Extractor
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.device_tracker.lifx_color_1000', 'home') }}"
     nas:
       friendly_name: NAS
       device_class: connectivity
