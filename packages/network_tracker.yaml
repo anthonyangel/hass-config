@@ -117,7 +117,7 @@ binary_sensor:
     playroom_lamp:
       friendly_name: Playroom Lamp
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.device_tracker.lifx_color_1000', 'home') }}"      
+      value_template: "{{ is_state('device_tracker.lifx_color_1000', 'home') }}"      
     nas:
       friendly_name: NAS
       device_class: connectivity
