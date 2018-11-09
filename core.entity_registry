@@ -1,0 +1,3500 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": "be3e03048c7e4a5b86c393531d715cde",
+                "device_id": "3a92277fcf7343e38c04b0cc1a3114ff",
+                "disabled_by": null,
+                "entity_id": "media_player.playroom_chromecast",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "389c7ed4-a713-ded7-66af-fa64538cec5b"
+            },
+            {
+                "config_entry_id": "3aadae38ad6a4ad68ca75c0641fae9ab",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.office",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD2EE95A01400"
+            },
+            {
+                "config_entry_id": "3aadae38ad6a4ad68ca75c0641fae9ab",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.kitchen",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_B8E937D3986C01400"
+            },
+            {
+                "config_entry_id": "2466c0199d024e648d3f3e6d8d7ad6b3",
+                "device_id": "c68ad72b753f44d9858cd5920f8dd74b",
+                "disabled_by": null,
+                "entity_id": "media_player.danni__anthony",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD2EEA8E01400"
+            },
+            {
+                "config_entry_id": "3aadae38ad6a4ad68ca75c0641fae9ab",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.bedroom",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD2EEAEE01400"
+            },
+            {
+                "config_entry_id": "3aadae38ad6a4ad68ca75c0641fae9ab",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.lounge",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFDA754D701400"
+            },
+            {
+                "config_entry_id": "2466c0199d024e648d3f3e6d8d7ad6b3",
+                "device_id": "3378d82a8aad4361b8eabadfb7133e5f",
+                "disabled_by": null,
+                "entity_id": "media_player.playroom",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_949F3E09906E01400"
+            },
+            {
+                "config_entry_id": "2466c0199d024e648d3f3e6d8d7ad6b3",
+                "device_id": "f75849430d9b4965b09ea82d8ea648e8",
+                "disabled_by": null,
+                "entity_id": "media_player.matans_room",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD2EEA8801400"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hillersdon_tado_bridge_status",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado bridge status 185937"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.galaxy_s8",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "a167bea6dc59056a-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.espurna8d34cf",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221703K08D34CF"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.chrome",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "acxckadbbrfqtk6fyfj8ye4j"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw090_zstick_gen5_eu",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "d2de7424c25f4f1d896ff279d51d81ea",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.upstairs_nest_protect_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUB_6K9B__AoD1x2BbNwwwp-online"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "71b7e122938b442f964f35a7c4197ebe",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_nest_protect_battery_health",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUZuVy_a0FdXT1x2BbNwwwp-battery_health"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "630a22f2b74e41d7bdb464844e70e515",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.hallway_nest_protect_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUQRwtTzvOiMj1x2BbNwwwp-online"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "d2de7424c25f4f1d896ff279d51d81ea",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_co_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUB_6K9B__AoD1x2BbNwwwp-co_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "71b7e122938b442f964f35a7c4197ebe",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.kitchen_nest_protect_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUZuVy_a0FdXT1x2BbNwwwp-online"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "71b7e122938b442f964f35a7c4197ebe",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_nest_protect_color_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUZuVy_a0FdXT1x2BbNwwwp-color_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "2c98f26036604c7e8d02bc7916e18dde",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.loft_nest_protect_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqXx4jjyaO_s1D1x2BbNwwwp-online"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "d2de7424c25f4f1d896ff279d51d81ea",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_smoke_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUB_6K9B__AoD1x2BbNwwwp-smoke_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "6ec4dac4f69c475485a588823f033ab6",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.hillersdon_away",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "np9s8I3uvb_laxbRhltQbizugz44Uu-pjRr6X2KUoAg6Yx4a7b0vOw-away"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "2c98f26036604c7e8d02bc7916e18dde",
+                "disabled_by": null,
+                "entity_id": "sensor.loft_nest_protect_co_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqXx4jjyaO_s1D1x2BbNwwwp-co_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "6ec4dac4f69c475485a588823f033ab6",
+                "disabled_by": null,
+                "entity_id": "sensor.hillersdon_eta",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "np9s8I3uvb_laxbRhltQbizugz44Uu-pjRr6X2KUoAg6Yx4a7b0vOw-eta"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "d2de7424c25f4f1d896ff279d51d81ea",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_battery_health",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUB_6K9B__AoD1x2BbNwwwp-battery_health"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "2c98f26036604c7e8d02bc7916e18dde",
+                "disabled_by": null,
+                "entity_id": "sensor.loft_nest_protect_smoke_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqXx4jjyaO_s1D1x2BbNwwwp-smoke_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "d2de7424c25f4f1d896ff279d51d81ea",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_color_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUB_6K9B__AoD1x2BbNwwwp-color_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "2c98f26036604c7e8d02bc7916e18dde",
+                "disabled_by": null,
+                "entity_id": "sensor.loft_nest_protect_battery_health",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqXx4jjyaO_s1D1x2BbNwwwp-battery_health"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "630a22f2b74e41d7bdb464844e70e515",
+                "disabled_by": null,
+                "entity_id": "sensor.hallway_nest_protect_co_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUQRwtTzvOiMj1x2BbNwwwp-co_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "2c98f26036604c7e8d02bc7916e18dde",
+                "disabled_by": null,
+                "entity_id": "sensor.loft_nest_protect_color_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqXx4jjyaO_s1D1x2BbNwwwp-color_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "630a22f2b74e41d7bdb464844e70e515",
+                "disabled_by": null,
+                "entity_id": "sensor.hallway_nest_protect_smoke_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUQRwtTzvOiMj1x2BbNwwwp-smoke_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "630a22f2b74e41d7bdb464844e70e515",
+                "disabled_by": null,
+                "entity_id": "sensor.hallway_nest_protect_battery_health",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUQRwtTzvOiMj1x2BbNwwwp-battery_health"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "630a22f2b74e41d7bdb464844e70e515",
+                "disabled_by": null,
+                "entity_id": "sensor.hallway_nest_protect_color_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUQRwtTzvOiMj1x2BbNwwwp-color_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "71b7e122938b442f964f35a7c4197ebe",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_nest_protect_co_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUZuVy_a0FdXT1x2BbNwwwp-co_status"
+            },
+            {
+                "config_entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "device_id": "71b7e122938b442f964f35a7c4197ebe",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_nest_protect_smoke_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "UVnzu6MuHqUZuVy_a0FdXT1x2BbNwwwp-smoke_status"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.pir_rear_left",
+                "name": "PIR Rear Left",
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.office_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.landing_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hall_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.4th_bedroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.3rd_bedroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.playroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hot_water_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hot_water_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hot_water_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hot_water_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.utility_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.toilet_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.lounge_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.pir_driveway",
+                "name": "PIR Driveway",
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_alarm_level",
+                "name": "utility alarm level",
+                "platform": "zwave",
+                "unique_id": "2-72057594077528081"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_alarm_type",
+                "name": "utility alarm type",
+                "platform": "zwave",
+                "unique_id": "2-72057594077528065"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_energy",
+                "name": "utility energy",
+                "platform": "zwave",
+                "unique_id": "2-72057594076495874"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_heat",
+                "name": "utility heat",
+                "platform": "zwave",
+                "unique_id": "2-72057594077528177"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_power_2",
+                "name": "utility power 2",
+                "platform": "zwave",
+                "unique_id": "2-72057594076479554"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_power_management",
+                "name": "utility power management",
+                "platform": "zwave",
+                "unique_id": "2-72057594077528241"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.utility_system",
+                "name": "utility system",
+                "platform": "zwave",
+                "unique_id": "2-72057594077528257"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_alarm_level_3",
+                "name": "pir driveway alarm level 3",
+                "platform": "zwave",
+                "unique_id": "6-72057594144636945"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_system",
+                "name": "PIR Driveway System",
+                "platform": "zwave",
+                "unique_id": "6-72057594144637121"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.pir_driveway_sensor",
+                "name": "Driveway Sensor",
+                "platform": "zwave",
+                "unique_id": "6-72057594143571968"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_burglar",
+                "name": "pir driveway burglar",
+                "platform": "zwave",
+                "unique_id": "6-72057594144637089"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_burglar_2",
+                "name": "pir driveway burglar 2",
+                "platform": "zwave",
+                "unique_id": "6-144115188182565025"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_alarm_type",
+                "name": "pir driveway alarm type",
+                "platform": "zwave",
+                "unique_id": "6-144115188182564865"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_alarm_type_3",
+                "name": "pir driveway alarm type 3",
+                "platform": "zwave",
+                "unique_id": "6-72057594144636929"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_alarm_level",
+                "name": "pir driveway alarm level",
+                "platform": "zwave",
+                "unique_id": "6-144115188182564881"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_alarm_level_2",
+                "name": "pir rear left alarm level 2",
+                "platform": "zwave",
+                "unique_id": "4-144115188149010449"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_alarm_type_2",
+                "name": "pir rear left alarm type 2",
+                "platform": "zwave",
+                "unique_id": "4-144115188149010433"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_burglar_3",
+                "name": "pir rear left burglar 3",
+                "platform": "zwave",
+                "unique_id": "4-72057594111082657"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_burglar_4",
+                "name": "pir rear left burglar 4",
+                "platform": "zwave",
+                "unique_id": "4-144115188149010593"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_luminance",
+                "name": "PIR Rear Left Luminance",
+                "platform": "zwave",
+                "unique_id": "4-72057594110033970"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_system_2",
+                "name": "PIR Rear Left System 2",
+                "platform": "zwave",
+                "unique_id": "4-72057594111082689"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_left_general",
+                "name": "pir rear left general",
+                "platform": "zwave",
+                "unique_id": "4-72057594110033954"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_driveway_luminance",
+                "name": "PIR Driveway Luminance",
+                "platform": "zwave",
+                "unique_id": "6-72057594143588402"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "030a874adf514b74b5edead2627092c3",
+                "disabled_by": null,
+                "entity_id": "sensor.pir_rear_kitchen_luminance",
+                "name": "PIR Rear Kitchen Luminance",
+                "platform": "zwave",
+                "unique_id": "7-72057594160365618"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "light.master_bedroom",
+                "name": "Master Bedroom",
+                "platform": "zwave",
+                "unique_id": "10-72057594210516993"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ensuite",
+                "name": "Ensuite",
+                "platform": "zwave",
+                "unique_id": "node-11"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "light.ensuite",
+                "name": "Ensuite",
+                "platform": "zwave",
+                "unique_id": "11-72057594227294209"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.bedroom_3",
+                "name": "Bedroom 3",
+                "platform": "zwave",
+                "unique_id": "node-12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.bedroom_4",
+                "name": "Bedroom 4",
+                "platform": "zwave",
+                "unique_id": "node-13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.matans_bedroom",
+                "name": "Matan's bedroom",
+                "platform": "zwave",
+                "unique_id": "node-14"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "light.bedroom_3",
+                "name": "Bedroom 3",
+                "platform": "zwave",
+                "unique_id": "12-72057594244071425"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "light.bedroom_4",
+                "name": "Bedroom 4",
+                "platform": "zwave",
+                "unique_id": "13-72057594260848641"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "light.matans_bedroom",
+                "name": "Matan's Bedroom",
+                "platform": "zwave",
+                "unique_id": "14-72057594277625857"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_3_energy",
+                "name": "Bedroom 3 Energy",
+                "platform": "zwave",
+                "unique_id": "12-72057594244268034"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_4_energy",
+                "name": "Bedroom 4 Energy",
+                "platform": "zwave",
+                "unique_id": "13-72057594261045250"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_rear_energy",
+                "name": "Kitchen Rear energy",
+                "platform": "zwave",
+                "unique_id": "8-72057594177159170"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.ensuite_energy",
+                "name": "Ensuite Energy",
+                "platform": "zwave",
+                "unique_id": "11-72057594227490818"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.master_bedroom_energy",
+                "name": "Master Bedroom energy",
+                "platform": "zwave",
+                "unique_id": "10-72057594210713602"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.matans_bedroom_energy",
+                "name": "Matan's Bedroom Energy",
+                "platform": "zwave",
+                "unique_id": "14-72057594277822466"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_3_power",
+                "name": "Bedroom 3 Power",
+                "platform": "zwave",
+                "unique_id": "12-72057594244251714"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_4_power",
+                "name": "Bedroom 4 Power",
+                "platform": "zwave",
+                "unique_id": "13-72057594261028930"
+            },
+            {
+                "config_entry_id": "be3e03048c7e4a5b86c393531d715cde",
+                "device_id": "679dadea383244fbb36075c8b4f528db",
+                "disabled_by": null,
+                "entity_id": "media_player.kitchen_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "5b682110-dfc1-66d1-3f91-b6aec927f35a"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "switch.pir_driveway_switch",
+                "name": "Driveway External Light",
+                "platform": "zwave",
+                "unique_id": "6-72057594143391744"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "switch.pir_driveway_switch_2",
+                "name": "Driveway External Light 2",
+                "platform": "zwave",
+                "unique_id": "6-144115188181319680"
+            },
+            {
+                "config_entry_id": "d651781da29845428e193f7b8c047429",
+                "device_id": "8f043571ddc049f5876f71abd08aa6ba",
+                "disabled_by": null,
+                "entity_id": "light.lamp",
+                "name": null,
+                "platform": "lifx",
+                "unique_id": "d0:73:d5:12:8a:fa"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.bathroom_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 20"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "light.hall",
+                "name": "Hall",
+                "platform": "zwave",
+                "unique_id": "17-72057594327957505"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.hall",
+                "name": "Hall",
+                "platform": "zwave",
+                "unique_id": "node-17"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "light.toilet",
+                "name": "Toilet",
+                "platform": "zwave",
+                "unique_id": "18-72057594344734721"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.toilet",
+                "name": "Toilet",
+                "platform": "zwave",
+                "unique_id": "node-18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.office",
+                "name": "Office",
+                "platform": "zwave",
+                "unique_id": "node-19"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "light.office",
+                "name": "Office",
+                "platform": "zwave",
+                "unique_id": "19-72057594361511937"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.playroom",
+                "name": "Playroom",
+                "platform": "zwave",
+                "unique_id": "node-20"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "light.playroom",
+                "name": "Playroom",
+                "platform": "zwave",
+                "unique_id": "20-72057594378289153"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "light.landing",
+                "name": "Landing",
+                "platform": "zwave",
+                "unique_id": "2-72057594076299265"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "light.landing_2",
+                "name": "Landing 2",
+                "platform": "zwave",
+                "unique_id": "2-144115188114227201"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.landing",
+                "name": "Landing",
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.bathroom",
+                "name": "Bathroom",
+                "platform": "zwave",
+                "unique_id": "node-21"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "light.bathroom",
+                "name": "Bathroom",
+                "platform": "zwave",
+                "unique_id": "21-72057594395066369"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.utility",
+                "name": "Utility",
+                "platform": "zwave",
+                "unique_id": "node-22"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "light.utility",
+                "name": "Utility",
+                "platform": "zwave",
+                "unique_id": "22-72057594411843585"
+            },
+            {
+                "config_entry_id": "2466c0199d024e648d3f3e6d8d7ad6b3",
+                "device_id": "19e4f10fefa9479e86787cabe326b6f8",
+                "disabled_by": null,
+                "entity_id": "media_player.lounge_2",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD19068101400"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.chrome_2",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "ielx01nfjdwy5ouqsmrzozx7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.lg_49uh610vzb",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "assqci46g3wvobt9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.kfdowi",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "b934dfd5a58089f5-com-plexapp-android"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076496002"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076496384"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "d04a4750c6f946db97167f27ff8e7b61",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528097"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082529"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188149010465"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_sourcenodeid_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636961"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "dc9d4ac3438849829e1c94c7db1d16b2",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_sourcenodeid_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-144115188182564897"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-144115188214890497"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159298"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177159680"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191361"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191377"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191393"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191473"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191537"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4147346df54f4ae1b12630ead718d75e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191553"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210697282"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210713730"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210714112"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745793"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745809"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745825"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745905"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745969"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "135705e57e3949c091035896cc162adf",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594211745985"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-144115188265222145"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227474498"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227490946"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227491328"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523009"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523025"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523041"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523121"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523185"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "17e2aaee5de94863840038a6a6adcca2",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228523201"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-144115188281999361"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244268162"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244268544"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300225"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300241"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300257"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300337"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300401"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "ed5c6f0d32b1417f98637aed24449e9c",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594245300417"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-144115188298776577"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594261045378"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594261045760"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077441"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077457"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077473"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077553"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077617"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d8e8c38f73e4d218861cd14107f3538",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594262077633"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-144115188315553793"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277806146"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277822594"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277822976"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854657"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854673"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854689"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854769"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854833"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "301e4f70f96041039d1390d647d9d7d1",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278854849"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-144115188332331009"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294583362"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294599682"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294599810"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294600192"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295631873"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295631889"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295631905"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295631985"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295632049"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "9c266507364f447fb2531f2e917ddc5a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594295632065"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-144115188365885441"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594328137794"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594328154114"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594328154242"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594328154624"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186305"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186321"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186337"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186417"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186481"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4fae4fa6341c4c88a01408aacd7f5c88",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594329186497"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-144115188382662657"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594344915010"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594344931330"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594344931458"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594344931840"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963521"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963537"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963553"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963633"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963697"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "64e7d85bc0b74189a7ab0bc1e21b1d37",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594345963713"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-144115188399439873"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_18",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361692226"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361708546"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_19",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361708674"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361709056"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740737"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740753"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740769"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740849"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740913"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4c20660cc68e44a1b8116e595db0369e",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594362740929"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-144115188416217089"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_20",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378469442"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378485762"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_21",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378485890"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378486272"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379517953"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379517969"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379517985"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379518065"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379518129"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "69cc0b6452a34b74aeb4ffb42215560a",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594379518145"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-144115188432994305"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_22",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395246658"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395262978"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_23",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395263106"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395263488"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295169"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295185"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295201"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295281"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295345"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "13c862a9fbbf43bc82558a8255045299",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295361"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-144115188449771521"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_24",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412023874"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412040194"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_25",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412040322"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412040704"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072385"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072401"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072417"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072497"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072561"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "be6f2d21698748b795e88a372f05e497",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072577"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.master_bedroom",
+                "name": "Master Bedroom",
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_14",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-144115188466548737"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428817410"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849601"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849617"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_26",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428817538"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428817920"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849633"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849713"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849777"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849793"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_27",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428801090"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "switch.steinel_is1402_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594109837312"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "switch.steinel_is1402_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188147765248"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082497"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "sensor.steinel_is1402_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082513"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.kitchen_rear",
+                "name": "Kitchen Rear",
+                "platform": "zwave",
+                "unique_id": "node-23"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "5a2c9c58c82540c9ba84e91bd8e60f81",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.steinel_is1402_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110017536"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-144115188483325953"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594445594626"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626817"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626833"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_28",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594445594754"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594445595136"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626849"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626929"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626993"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446627009"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_29",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594445578306"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.kitchen_front",
+                "name": "Kitchen Front",
+                "platform": "zwave",
+                "unique_id": "node-24"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "4d4fea1eace8426189d6b0722740afd0",
+                "disabled_by": null,
+                "entity_id": "light.kitchen_front",
+                "name": "Kitchen Front",
+                "platform": "zwave",
+                "unique_id": "24-72057594445398017"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "96a6978903cb4d8d8d3117a805f4a9cd",
+                "disabled_by": null,
+                "entity_id": "light.kitchen_rear",
+                "name": "Kitchen Rear",
+                "platform": "zwave",
+                "unique_id": "23-72057594428620801"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_system_fgd212_dimmer_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-25"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-144115188500103169"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_30",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462371970"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_exporting_18",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462372352"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_energy_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462371842"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "light.fibaro_system_fgd212_dimmer_2_level_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462175233"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid_18",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404065"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_type_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404033"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_heat_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404145"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_management_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404209"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_alarm_level_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404049"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_system_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594463404225"
+            },
+            {
+                "config_entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "device_id": "400e61203e27481782306f70c06a070f",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgd212_dimmer_2_power_31",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "25-72057594462355522"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

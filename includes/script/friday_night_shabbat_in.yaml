@@ -4,8 +4,7 @@ sequence:
     data:
       entity_id:
         - light.kitchen_worktop
-        - light.kitchen_rear
-        - light.kitchen_front
+        - light.kitchen_ceiling
         - light.lounge
         - light.playroom
         - light.ensuite
