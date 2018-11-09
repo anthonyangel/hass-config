@@ -4,5 +4,8 @@ google_actions:
       - group
       - climate
       - media_player
+    exclude_entities:
+      - light.kitchen_front
+      - light.kitchen_rear 
     include_entities:
       - media_player.lounge_tv
