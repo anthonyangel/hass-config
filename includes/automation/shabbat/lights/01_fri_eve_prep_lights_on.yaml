@@ -8,7 +8,7 @@ condition:
   conditions:
     - condition: time
       weekday:
-       - fri
+        - fri
 action:
   service: script.turn_on
   entity_id: script.friday_night_prep
