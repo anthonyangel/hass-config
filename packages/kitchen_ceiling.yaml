@@ -1,0 +1,50 @@
+homeassistant:
+  customize:
+    light.kitchen_front:
+      hidden: true
+    light.kitchen_rear:
+      hidden: true
+
+light:
+  - platform: group
+    name: Kitchen Ceiling
+    entities:
+      - light.kitchen_front
+      - light.kitchen_rear
+
+automation:
+  - alias: Kitchen Front to follow Kitchen Rear Off
+    trigger:
+      platform: state
+      entity_id: light.kitchen_rear
+      to: 'off'
+    action:
+      service: light.turn_off
+      entity_id: light.kitchen_ceiling
+
+  - alias: Kitchen Front to follow Kitchen Rear On
+    trigger:
+      platform: state
+      entity_id: light.kitchen_rear
+      to: 'on'
+    action:
+      service: light.turn_on
+      entity_id: light.kitchen_ceiling
+
+  - alias: Kitchen Rear to follow Kitchen Front Off
+    trigger:
+      platform: state
+      entity_id: light.kitchen_front
+      to: 'off'
+    action:
+      service: light.turn_off
+      entity_id: light.kitchen_ceiling
+
+  - alias: Kitchen Rear to follow Kitchen Front On
+    trigger:
+      platform: state
+      entity_id: light.kitchen_front
+      to: 'on'
+    action:
+      service: light.turn_on
+      entity_id: light.kitchen_ceiling
