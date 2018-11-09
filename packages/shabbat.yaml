@@ -40,7 +40,6 @@ group:
       - sensor.upcoming_parsha
   shabbat_automations:
     name: Shabbat Automations
-    view: no
     entities:
       - automation.friday_shabbat_prep_lights_on
       - automation.friday_shabbat_in_lights_on
