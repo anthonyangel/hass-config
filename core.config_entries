@@ -1,0 +1,89 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "impl_domain": "nest",
+                    "tokens": {
+                        "access_token": "c.nzlYjeqPbvnlox9WU5GcmYHaKyI7ijh5kQVgDr3s3BPSROZRz54S1SqHtUHSTf91T8OpPY85LmzSuxBW0gSkLazKEaajqMMIpCjjFD0B8Rr3S3ZjXwCpmhFE7fOpGVpN6XJfrNIpc0m7aP9G",
+                        "expires_in": 315360000
+                    }
+                },
+                "domain": "nest",
+                "entry_id": "f7a68003e11b4040ab99f5b9c98f8049",
+                "source": "import",
+                "title": "Nest (via local)",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "be3e03048c7e4a5b86c393531d715cde",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "webhook_id": "18649eed3e7388849c2d9f40e46cd339500f66886c133f43c4f6fb89e53115a4"
+                },
+                "domain": "ifttt",
+                "entry_id": "4e88bc56ef2b4ff992a289bacf3e6163",
+                "source": "user",
+                "title": "IFTTT Webhook",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "sonos",
+                "entry_id": "2466c0199d024e648d3f3e6d8d7ad6b3",
+                "source": "discovery",
+                "title": "Sonos",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {},
+                "domain": "lifx",
+                "entry_id": "d651781da29845428e193f7b8c047429",
+                "source": "user",
+                "title": "LIFX",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": "\"0x34, 0x3B, 0x9E, 0x12, 0x0B, 0x8E, 0x17, 0x4A, 0x6D, 0x31, 0x27, 0x89, 0xF8, 0x02, 0xF1, 0x0B\"",
+                    "usb_path": "/dev/ttyACM0"
+                },
+                "domain": "zwave",
+                "entry_id": "05ce7fc1f7154de1a49a03c9d1bb66e1",
+                "source": "user",
+                "title": "Z-Wave",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "broker": "core-mosquitto",
+                    "discovery": true,
+                    "password": "X6V8qBee6dKP3aCEQYR5_93VkAI3kTKc",
+                    "port": 1883,
+                    "protocol": "3.1.1",
+                    "username": "homeassistant"
+                },
+                "domain": "mqtt",
+                "entry_id": "5597b2b991b14c628345867e4eddcff3",
+                "source": "hassio",
+                "title": "Mosquitto broker",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}
