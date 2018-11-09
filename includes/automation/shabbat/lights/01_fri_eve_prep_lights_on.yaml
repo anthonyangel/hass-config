@@ -1,13 +1,14 @@
 alias: Friday Shabbat Prep Lights on
 trigger:
-  platform: time
-  at: "22:00:00"
+  platform: sun	
+  event: sunset
+  offset: '-00:45:00'
 condition:
   condition: and
   conditions:
-    - condition: state
-      entity_id: 'binary_sensor.shabbat'
-      state: 'on'
+    - condition: time
+      weekday: 
+       - fri
 action:
   service: script.turn_on
   entity_id: script.friday_night_prep
