@@ -1,13 +1,13 @@
 alias: Friday Shabbat Prep Lights on
 trigger:
-  platform: sun	
+  platform: sun
   event: sunset
   offset: '-00:45:00'
 condition:
   condition: and
   conditions:
     - condition: time
-      weekday: 
+      weekday:
        - fri
 action:
   service: script.turn_on
