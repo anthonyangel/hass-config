@@ -29,7 +29,6 @@ script: !include_dir_named includes/script
 # mqtt: !include includes/mqtt.yaml
 
 google: !include includes/google.yaml
-panel_iframe: !include includes/iframe.yaml
 nest: !include includes/nest.yaml
 tado: !include includes/tado.yaml
 duckdns: !include includes/duckdns.yaml
