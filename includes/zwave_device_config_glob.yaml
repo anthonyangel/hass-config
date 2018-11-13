@@ -1,0 +1,6 @@
+sensor.fibaro_system_fgd212*:
+  ignored: true
+  polling_intensity: 0
+light.fibaro_system_fgd212*:
+  ignored: true
+  polling_intensity: 0
