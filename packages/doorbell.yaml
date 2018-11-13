@@ -1,20 +1,39 @@
 homeassistant:
+#  customize:
+#    binary_sensor.unmuted_doorbell:
+#      hidden: true
+#    binary_sensor.muted_doorbell:
+#      hidden: true
 
 binary_sensor:
   - platform: mqtt
-    name: Doorbell
+    name: Unmuted Doorbell
     state_topic: "stat/sonoff_doorbell/POWER"
-
-switch:
   - platform: mqtt
-    name: "Doorbell Chime"
-    icon: mdi:alarm-bell
-    command_topic: "cmnd/sonoff_doorbell/POWER"
-    payload_on: "ON"
-    payload_off: "OFF"
+    name: Muted Doorbell
+    state_topic: "stat/sonoff_doorbell/POWER3"
+  - platform: template
+    sensors:
+      doorbell:
+        friendly_name: "Doorbell"
+        device_class: sound
+        value_template: >-
+          {{ is_state('binary_sensor.unmuted_doorbell', 'on')
+             or is_state('binary_sensor.muted_doorbell', 'on') }}
+
+#switch:
+#  - platform: mqtt
+#    name: "Doorbell Mute"
+#    icon: mdi:volume-off
+#    state_topic: "stat/sonoff_doorbell/SwitchTopic"
+#    state_on: "sonoff_doorbell_muted"
+#    state_off: "sonoff_doorbell"
+#    command_topic: "cmnd/sonoff_doorbell/SwitchTopic"
+#    payload_on: "1"
+#    payload_off: "0"
 
 automation:
-- alias: Doorbell notify phone 
+- alias: Doorbell notify phone
   trigger:
     platform: state
     entity_id: binary_sensor.doorbell
