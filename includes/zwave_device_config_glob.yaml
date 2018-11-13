@@ -1,6 +1,36 @@
-sensor.fibaro_system_fgd212*:
+#sensor.fibaro_system_fgd212*:
+#  ignored: true
+#  polling_intensity: 0
+light.fibaro_system_fgd212*:
   ignored: true
   polling_intensity: 0
-light.fibaro_system_fgd212*:
+sensor.fibaro_system_fgd212_dimmer_2_alarm_level*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_alarm_type*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_exporting*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_heat*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_power_management*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_sourcenodeid*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_system*:
+  ignored: true
+  polling_intensity: 0
+sensor.fibaro_system_fgd212_dimmer_2_power*:
+  ignored: true
+  polling_intensity: 0
+sensor.energy*:
+  ignored: true
+  polling_intensity: 0
+sensor.power*:
   ignored: true
   polling_intensity: 0

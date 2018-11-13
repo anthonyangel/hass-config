@@ -7,22 +7,8 @@ google_actions:
     exclude_entities:
       - light.kitchen_front
       - light.kitchen_rear
-      - light.fibaro_system_fgd212_dimmer_2_level_3
-      - light.fibaro_system_fgd212_dimmer_2_level_4
-      - light.fibaro_system_fgd212_dimmer_2_level_5
-      - light.fibaro_system_fgd212_dimmer_2_level_6
-      - light.fibaro_system_fgd212_dimmer_2_level_8
-      - light.fibaro_system_fgd212_dimmer_2_level_9
-      - light.fibaro_system_fgd212_dimmer_2_level_10
-      - light.fibaro_system_fgd212_dimmer_2_level_11
-      - light.fibaro_system_fgd212_dimmer_2_level_12
-      - light.fibaro_system_fgd212_dimmer_2_level_13
-      - light.fibaro_system_fgd212_dimmer_2_level_14
-      - light.fibaro_system_fgd212_dimmer_2_level_15
-      - light.fibaro_system_fgd212_dimmer_2_level_16
       - light.kitchen_island_lights
-      - light.landing_2
-      - switch.doorbell_chime
+      - switch.doorbell
       - switch.steinel_is1402_switch
       - switch.steinel_is1402_switch_2
     include_entities:
