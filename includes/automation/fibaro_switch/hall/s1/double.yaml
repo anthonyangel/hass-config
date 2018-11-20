@@ -6,5 +6,5 @@ trigger:
     entity_id: zwave.hall
     scene_id: 14
 action:
-  - service: switch.toggle
+  - service: light.toggle
     entity_id: light.front_door
