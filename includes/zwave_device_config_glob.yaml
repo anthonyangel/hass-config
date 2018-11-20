@@ -34,3 +34,6 @@ sensor.energy*:
 sensor.power*:
   ignored: true
   polling_intensity: 0
+sensor.steinel_is1402_sourcenodeid*:
+  ignored: true
+  polling_intensity: 0
