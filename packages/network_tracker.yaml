@@ -113,7 +113,11 @@ binary_sensor:
     lounge_tv:
       friendly_name: Lounge TV
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.lgwebostv', 'home') }}"
+      value_template: "{{ is_state('device_tracker.lounge_tv', 'home') }}"
+    kitchen_tv:
+      friendly_name: Lounge TV
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.kitchen_tv', 'home') }}"
     playroom_lamp:
       friendly_name: Playroom Lamp
       device_class: connectivity
@@ -180,6 +184,7 @@ group:
      - binary_sensor.extractor
      - binary_sensor.google_home_mini
      - binary_sensor.lounge_tv
+     - binary_sensor.kitchen_tv
      - binary_sensor.playroom_lamp
      - binary_sensor.nas
      - binary_sensor.chromecast
