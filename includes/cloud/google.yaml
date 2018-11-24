@@ -13,3 +13,4 @@ google_actions:
       - switch.steinel_is1402_switch_2
     include_entities:
       - media_player.lounge_tv
+      - media_player.kitchen_tv
