@@ -26,10 +26,6 @@ binary_sensor:
       friendly_name: CCTV Front Door
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvfrontdoor', 'home') }}"
-    hassio:
-      friendly_name: Hassio    
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.hassio', 'home') }}"
     nest_hallway:
       friendly_name: Nest Hallway
       device_class: connectivity
@@ -115,7 +111,7 @@ binary_sensor:
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.lounge_tv', 'home') }}"
     kitchen_tv:
-      friendly_name: Lounge TV
+      friendly_name: Kitchen TV
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.kitchen_tv', 'home') }}"
     playroom_lamp:
