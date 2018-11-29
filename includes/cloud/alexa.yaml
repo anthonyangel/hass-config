@@ -1,9 +1,11 @@
 alexa:
   filter:
-    exclude_domains:
-      - group
-      - climate
-      - media_player
+    include_entities:
+      - media_player.lounge_tv
+      - media_player.kitchen_tv
+    include_domains:
+      - light
+      - switch
     exclude_entities:
       - light.kitchen_front
       - light.kitchen_rear
@@ -11,8 +13,8 @@ alexa:
       - switch.doorbell
       - switch.steinel_is1402_switch
       - switch.steinel_is1402_switch_2
-      - switch.extractor
       - switch.pir_driveway_1
-    include_entities:
-      - media_player.lounge_tv
-      - media_player.kitchen_tv
+    exclude_domains:
+      - group
+      - climate
+      - media_player
