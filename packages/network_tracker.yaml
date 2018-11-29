@@ -26,22 +26,14 @@ binary_sensor:
       friendly_name: CCTV Front Door
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvfrontdoor', 'home') }}"
-    nest_hallway:
-      friendly_name: Nest Hallway
+    cctv_rear_1:
+      friendly_name: CCTV Rear 1
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.nest_hallway', 'home') }}"
-    nest_kitchen:
-      friendly_name: Nest Kitchen
+      value_template: "{{ is_state('device_tracker.cctvrear1', 'home') }}"
+    cctv_rear_2:
+      friendly_name: CCTV Rear 2
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.nest_kitchen', 'home') }}"
-    nest_loft:
-      friendly_name: Nest Loft
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.nest_loft', 'home') }}"
-    nest_upstairs:
-      friendly_name: Nest Upstairs
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.nest_upstairs', 'home') }}"
+      value_template: "{{ is_state('device_tracker.cctvrear2', 'home') }}"
     pdu:
       friendly_name: PDU
       device_class: connectivity
@@ -122,10 +114,14 @@ binary_sensor:
       friendly_name: NAS
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
-    chromecast:
-      friendly_name: Chromecast
+    lounge_chromecast:
+      friendly_name: Lounge Chromecast
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.chromecast', 'home') }}"
+      value_template: "{{ is_state('device_tracker.lounge_chromecast', 'home') }}"
+    kitchen_chromecast:
+      friendly_name: Kitchen Chromecast
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.kitchen_chromecast', 'home') }}"
     gigabyte:
       friendly_name: Gigabyte
       device_class: connectivity
@@ -146,6 +142,10 @@ binary_sensor:
       friendly_name: Sonos Matan
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.sonos_matan', 'home') }}"
+    sonos_playroom:
+      friendly_name: Sonos Playroom
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonos_playroom', 'home') }}"
     toy_kitchen_worktop_lights:
       friendly_name: Toy Kitchen Worktop
       device_class: connectivity
@@ -158,6 +158,8 @@ group:
      - binary_sensor.cctv_front_left
      - binary_sensor.cctv_front_right
      - binary_sensor.cctv_front_door
+     - binary_sensor.cctv_rear_1
+     - binary_sensor.cctv_rear_2
      - binary_sensor.hassio
      - binary_sensor.nest_hallway
      - binary_sensor.nest_kitchen
@@ -183,11 +185,13 @@ group:
      - binary_sensor.kitchen_tv
      - binary_sensor.playroom_lamp
      - binary_sensor.nas
-     - binary_sensor.chromecast
+     - binary_sensor.lounge_chromecast
+     - binary_sensor.kitchen_chromecast
      - binary_sensor.gigabyte
      - binary_sensor.sonos_kitchen
      - binary_sensor.sonos_bedroom
      - binary_sensor.sonos_lounge
      - binary_sensor.sonos_matan
+     - binary_sensor.sonos_playroom
      - binary_sensor.toy_kitchen_worktop_lights
 
