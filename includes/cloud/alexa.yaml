@@ -1,4 +1,4 @@
-google_actions:
+alexa:
   filter:
     exclude_domains:
       - group
