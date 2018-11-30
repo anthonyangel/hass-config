@@ -5,6 +5,7 @@ sequence:
       entity_id:
         - light.kitchen_worktop
         - light.kitchen_ceiling
+        - light.kitchen_island
         - light.lounge
         - light.playroom
         - light.matans_bedroom
