@@ -17,6 +17,7 @@ sequence:
     data:
       entity_id:
         - light.kitchen_worktop
+        - light.kitchen_island
         - light.matans_bedroom
         - light.master_bedroom
         - light.bedroom_3
