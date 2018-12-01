@@ -1,0 +1,3 @@
+- platform: switch
+  name: Driveway
+  entity_id: switch.driveway
