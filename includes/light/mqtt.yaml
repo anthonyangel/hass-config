@@ -1,10 +1,4 @@
 - platform: mqtt
-  name: Stairs
-  state_topic: "stat/sonoff_4ch_utility/POWER4"
-  command_topic: "cmnd/sonoff_4ch_utility/POWER4"
-  payload_on: "ON"
-  payload_off: "OFF"
-- platform: mqtt
   name: Kitchen Worktop
   state_topic: kitchen-worktop-lights/relay/0
   command_topic: kitchen-worktop-lights/relay/0/set
