@@ -1,4 +1,4 @@
 homeassistant:
   customize:
     light.lamp*:
-    icon: mdi:desk-lamp
+      icon: mdi:desk-lamp
