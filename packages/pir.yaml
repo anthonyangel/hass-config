@@ -6,9 +6,6 @@ homeassistant:
       hidden: true
 
 light:
-  # - platform: 
-  #   name: Driveway
-  #   entity_id: switch.floodlight_driveway
   - platform: 
     name: Rear Kitchen Floodlight
     entity_id: switch.floodlight_rear_kitchen
