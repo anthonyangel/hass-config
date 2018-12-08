@@ -1,16 +1,4 @@
 - platform: mqtt
-  name: External Rear
-  state_topic: "stat/sonoff_4ch_utility/POWER1"
-  command_topic: "cmnd/sonoff_4ch_utility/POWER1"
-  payload_on: "ON"
-  payload_off: "OFF"
-- platform: mqtt
-  name: Front Door
-  state_topic: "stat/sonoff_4ch_utility/POWER2"
-  command_topic: "cmnd/sonoff_4ch_utility/POWER2"
-  payload_on: "ON"
-  payload_off: "OFF"
-- platform: mqtt
   name: Kitchen Worktop
   state_topic: kitchen-worktop-lights/relay/0
   command_topic: kitchen-worktop-lights/relay/0/set
@@ -21,14 +9,3 @@
   payload_not_available: 0
   brightness_state_topic: kitchen-worktop-lights/channel/4
   brightness_command_topic: kitchen-worktop-lights/channel/4/set
-- platform: mqtt
-  name: Toy Kitchen Worktop
-  state_topic: toy-kitchen-worktop/relay/0
-  command_topic: toy-kitchen-worktop/relay/0/set
-  payload_on: 1
-  payload_off: 0
-  availability_topic: toy-kitchen-worktop/status
-  payload_available: 1
-  payload_not_available: 0
-  brightness_state_topic: toy-kitchen-worktop/channel/2
-  brightness_command_topic: toy-kitchen-worktop/channel/2/set  
