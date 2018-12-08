@@ -46,3 +46,6 @@ sensor.steinel_is1402_alarm_type*:
 sensor.steinel_is1402_system*:
   ignored: true
   polling_intensity: 0
+switch.steinel_is1402_switch*:
+  ignored: true
+  polling_intensity: 0

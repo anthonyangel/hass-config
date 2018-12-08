@@ -2,6 +2,8 @@ homeassistant:
   customize_glob:
     light.floodlight_*:
       icon: track-light
+    switch.floodlight_*:
+      hidden: true
 
 light:
   # - platform: 
