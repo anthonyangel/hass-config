@@ -1,0 +1,12 @@
+homeassistant:
+  customise:
+    light.stairs:
+      icon: mdi:stairs
+
+light:
+  - platform: mqtt
+    name: Stairs
+    state_topic: "stat/sonoff_4ch_utility/POWER4"
+    command_topic: "cmnd/sonoff_4ch_utility/POWER4"
+    payload_on: "ON"
+    payload_off: "OFF"
