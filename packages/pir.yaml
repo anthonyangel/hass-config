@@ -10,8 +10,8 @@ light:
   #   name: Driveway
   #   entity_id: switch.floodlight_driveway
   - platform: switch
-    name: Rear Kitchen Floodlight
+    name: Floodlight Rear Kitchen
     entity_id: switch.floodlight_rear_kitchen
   - platform: switch
-    name: Rear Lounge Floodlight
+    name: Floodlight Rear Lounge 
     entity_id: switch.floodlight_rear_lounge
