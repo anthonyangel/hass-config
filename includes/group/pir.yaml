@@ -1,7 +1,0 @@
-luminance:
-  name: Luminance
-  view: no
-  entities:
-    - sensor.pir_driveway_luminance
-    - sensor.pir_rear_kitchen_luminance
-    - sensor.pir_rear_left_luminance
