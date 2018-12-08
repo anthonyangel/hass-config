@@ -1,7 +1,7 @@
 homeassistant:
   customize_glob:
     light.floodlight_*:
-      icon: track-light
+      icon: mdi:track-light
     switch.floodlight_*:
       hidden: true
 
