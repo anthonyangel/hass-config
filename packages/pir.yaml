@@ -1,0 +1,15 @@
+homeassistant:
+  customize_glob:
+    light.floodlight_*:
+      icon: track-light
+
+light:
+  # - platform: 
+  #   name: Driveway
+  #   entity_id: switch.floodlight_driveway
+  - platform: 
+    name: Rear Kitchen Floodlight
+    entity_id: switch.floodlight_rear_kitchen
+  - platform: 
+    name: Rear Lounge Floodlight
+    entity_id: switch.floodlight_rear_lounge
