@@ -1,7 +1,7 @@
 homeassistant:
   customize_glob:
     binary_sensor.dash*:
-      icon: amazon
+      icon: mdi:amazon
 
 group:
   dash:
