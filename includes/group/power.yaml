@@ -1,0 +1,19 @@
+power:
+  name: Power
+  view: no
+  entities:
+    - sensor.power_bathroom
+    - sensor.power_bedroom_3
+    - sensor.power_bedroom_4
+    - sensor.power_ensuite
+    - sensor.power_hall
+    - sensor.power_kitchen_front
+    - sensor.power_kitchen_rear
+    - sensor.power_landing
+    - sensor.power_lounge
+    - sensor.power_master_bedroom
+    - sensor.power_matans_bedroom
+    - sensor.power_office
+    - sensor.power_playroom
+    - sensor.power_toilet
+    - sensor.power_utility
