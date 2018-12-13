@@ -30,7 +30,6 @@ script: !include_dir_named includes/script
 
 google: !include includes/google.yaml
 nest: !include includes/nest.yaml
-tado: !include includes/tado.yaml
 duckdns: !include includes/duckdns.yaml
 group: !include_dir_merge_named includes/group/
 zwave: !include includes/zwave.yaml

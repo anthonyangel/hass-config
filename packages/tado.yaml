@@ -8,7 +8,21 @@ homeassistant:
       hidden: true
     sensor.*_mode:
       hidden: true
-      
+    sensor.hillersdon_tado_bridge_status:
+      hidden: true
+
+tado:
+  username: !secret tado_username
+  password: !secret tado_password
+
+binary_sensor:
+- platform: template
+  sensors:
+    tado_bridge_status:
+      friendly_name: Tado Bridge Status
+      device_class: connectivity
+      value_template: "{{ is_state('sensor.hillersdon_tado_bridge_status', 'True') }}"
+
 group:
   humidity:
     name: Humidity
