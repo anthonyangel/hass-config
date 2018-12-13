@@ -10,10 +10,8 @@ alexa:
       - light.kitchen_front
       - light.kitchen_rear
       - light.kitchen_island_lights
-      - switch.doorbell
-      - switch.steinel_is1402_switch
-      - switch.steinel_is1402_switch_2
-      - switch.pir_driveway_1
+      - switch.floodlight_rear_kitchen
+      - switch.floodlight_rear_lounge
     exclude_domains:
       - group
       - climate
