@@ -16,8 +16,7 @@ action:
       - light.utility
       - light.toilet
   - service: light.turn_on
-    entity_id:
-      - light.lamp
     data:
+      entity_id: light.lamp
       brightness: 150
       color: white

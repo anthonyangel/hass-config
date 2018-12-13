@@ -2,7 +2,7 @@ alias: Shabbat sunrise lights off
 trigger:
   platform: sun
   event: sunrise
-  offset: '+00:30:00'
+  offset: '+00:59:00'
 condition:
   condition: and
   conditions:

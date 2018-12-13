@@ -23,4 +23,5 @@ sequence:
         - light.bedroom_3
         - light.bedroom_4
         - light.landing
+        - light.lamp
 

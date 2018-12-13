@@ -17,3 +17,4 @@ action:
     - light.lounge
     - light.playroom
     - light.toilet
+    - light.ensuite

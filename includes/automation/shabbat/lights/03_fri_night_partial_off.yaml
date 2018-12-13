@@ -1,7 +1,7 @@
 alias: Friday Night Lamp Off
 trigger:
   platform: time
-  at: "23:30:00"
+  at: "19:30:00"
 condition:
   condition: and
   conditions:
@@ -11,4 +11,4 @@ condition:
 action:
   - service: light.turn_off
     entity_id:
-      - light.lamp
+      - light.stairs

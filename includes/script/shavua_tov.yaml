@@ -6,7 +6,7 @@ sequence:
         - light.lamp
 #        - light.matans_kitchen
       brightness: 255
-      color_name: blue
+      color_name: purple
   - service: light.turn_on
     entity_id:
       - light.stairs
