@@ -42,7 +42,7 @@ group:
       - sensor.power_toilet
       - sensor.power_utility
 
-switch:
+sensor:
   - platform: template
     sensors:
       total_energy:
