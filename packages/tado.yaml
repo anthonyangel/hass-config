@@ -8,6 +8,8 @@ homeassistant:
       hidden: true
     sensor.*_mode:
       hidden: true
+    sensor.hillersdon_tado_bridge_status:
+      hidden: true
 
 binary_sensor:
 - platform: template
