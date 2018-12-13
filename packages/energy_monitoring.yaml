@@ -1,0 +1,83 @@
+homeassistant:
+
+group:
+  energy:
+    name: Energy
+    view: no
+    entities:
+      - sensor.total_energy
+      - sensor.energy_bathroom
+      - sensor.energy_bedroom_3
+      - sensor.energy_bedroom_4
+      - sensor.energy_ensuite
+      - sensor.energy_hall
+      - sensor.energy_kitchen_front
+      - sensor.energy_kitchen_rear
+      - sensor.energy_landing
+      - sensor.energy_lounge
+      - sensor.energy_master_bedroom
+      - sensor.energy_matans_bedroom
+      - sensor.energy_office
+      - sensor.energy_playroom
+      - sensor.energy_toilet
+      - sensor.energy_utility
+  power:
+    name: Power
+    view: no
+    entities:
+      - sensor.total_power
+      - sensor.power_bathroom
+      - sensor.power_bedroom_3
+      - sensor.power_bedroom_4
+      - sensor.power_ensuite
+      - sensor.power_hall
+      - sensor.power_kitchen_front
+      - sensor.power_kitchen_rear
+      - sensor.power_landing
+      - sensor.power_lounge
+      - sensor.power_master_bedroom
+      - sensor.power_matans_bedroom
+      - sensor.power_office
+      - sensor.power_playroom
+      - sensor.power_toilet
+      - sensor.power_utility
+
+switch:
+  - platform: template
+    sensors:
+      total_energy:
+        value_template: '{{ ((states.sensor.energy_bathroom.state | float) +
+                              (states.sensor.energy_bedroom_3.state | float) +
+                              (states.sensor.energy_bedroom_4.state | float) +
+                              (states.sensor.energy_ensuite.state | float) +
+                              (states.sensor.energy_hall.state | float) +
+                              (states.sensor.energy_kitchen_front.state | float) +
+                              (states.sensor.energy_kitchen_rear.state | float) +
+                              (states.sensor.energy_landing.state | float) +
+                              (states.sensor.energy_lounge.state | float) +
+                              (states.sensor.energy_master_bedroom.state | float) +
+                              (states.sensor.energy_matans_bedroom.state | float) +
+                              (states.sensor.energy_office.state | float) +
+                              (states.sensor.energy_playroom.state | float) +
+                              (states.sensor.energy_toilet.state | float) +
+                              (states.sensor.energy_utility.state | float))  | round(0) }}'
+        friendly_name: 'Total Energy'
+        unit_of_measurement: 'kWh'
+      total_power:
+        value_template: '{{ ((states.sensor.power_bathroom.state | float) +
+                              (states.sensor.power_bedroom_3.state | float) +
+                              (states.sensor.power_bedroom_4.state | float) +
+                              (states.sensor.power_ensuite.state | float) +
+                              (states.sensor.power_hall.state | float) +
+                              (states.sensor.power_kitchen_front.state | float) +
+                              (states.sensor.power_kitchen_rear.state | float) +
+                              (states.sensor.power_landing.state | float) +
+                              (states.sensor.power_lounge.state | float) +
+                              (states.sensor.power_master_bedroom.state | float) +
+                              (states.sensor.power_matans_bedroom.state | float) +
+                              (states.sensor.power_office.state | float) +
+                              (states.sensor.power_playroom.state | float) +
+                              (states.sensor.power_toilet.state | float) +
+                              (states.sensor.power_utility.state | float))  | round(0) }}'
+        friendly_name: 'Total Power'
+        unit_of_measurement: 'W'
