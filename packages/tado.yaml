@@ -11,6 +11,10 @@ homeassistant:
     sensor.hillersdon_tado_bridge_status:
       hidden: true
 
+tado:
+  username: !secret tado_username
+  password: !secret tado_password
+
 binary_sensor:
 - platform: template
   sensors:
