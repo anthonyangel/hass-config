@@ -29,7 +29,6 @@ script: !include_dir_named includes/script
 # mqtt: !include includes/mqtt.yaml
 
 google: !include includes/google.yaml
-nest: !include includes/nest.yaml
 duckdns: !include includes/duckdns.yaml
 group: !include_dir_merge_named includes/group/
 zwave: !include includes/zwave.yaml
