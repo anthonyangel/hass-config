@@ -5,5 +5,11 @@ trigger:
     from: 'on'
     to: 'off'
 action:
-  service: script.turn_on
-  entity_id: script.shavua_tov
+  - service: light.turn_on
+    data:
+      entity_id: light.lamp
+      brightness: 150
+      color_name: purple
+  - service: light.turn_on
+    entity_id:
+      - light.stairs

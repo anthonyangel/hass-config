@@ -5,6 +5,28 @@ trigger:
     from: 'off'
     to: 'on'
 action:
-  - service: script.turn_on
-    entity_id:
-      - script.friday_night_shabbat_in
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.kitchen_ceiling
+        - light.lounge
+        - light.playroom
+        - light.ensuite
+        - light.bathroom
+        - light.toilet
+        - light.hall
+      brightness: 255
+  - service: light.turn_on
+    entity_id: light.stairs
+  - service: light.turn_off
+    data:
+      entity_id:
+        - light.kitchen_worktop
+        - light.kitchen_island
+        - light.matans_bedroom
+        - light.master_bedroom
+        - light.bedroom_3
+        - light.bedroom_4
+        - light.landing
+        - light.lamp
+

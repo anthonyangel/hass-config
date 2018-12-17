@@ -9,12 +9,17 @@ condition:
       entity_id: 'binary_sensor.shabbat'
       state: 'on'
 action:
-  service: light.turn_on
-  entity_id:
-    - light.kitchen_ceiling
-    - light.utility
-    - light.lamp
-    - light.lounge
-    - light.playroom
-    - light.toilet
-    - light.ensuite
+  - service: light.turn_on
+    entity_id:
+      - light.kitchen_ceiling
+      - light.kitchen_island
+      - light.utility
+      - light.lounge
+      - light.playroom
+      - light.toilet
+      - light.ensuite
+  - service: light.turn_on  
+    data:
+      entity_id: light.lamp
+      brightness: 150
+      color_name: white

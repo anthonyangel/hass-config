@@ -15,8 +15,3 @@ action:
       - light.kitchen_ceiling
       - light.utility
       - light.toilet
-  - service: light.turn_on
-    data:
-      entity_id: light.lamp
-      brightness: 150
-      color: white

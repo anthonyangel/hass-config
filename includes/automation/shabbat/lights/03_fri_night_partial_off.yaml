@@ -1,4 +1,4 @@
-alias: Friday Night Lamp Off
+alias: Friday Night Partial Off
 trigger:
   platform: time
   at: "19:30:00"
