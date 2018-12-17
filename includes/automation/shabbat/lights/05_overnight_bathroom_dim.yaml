@@ -9,9 +9,9 @@ condition:
       weekday:
         - sat
 action:
-  service: light.turn_on
-  entity_id:
-    - light.bathroom
-    - light.ensuite
-  data:
-    brightness: 64
+  - service: light.turn_on
+    entity_id:
+      - light.bathroom
+      - light.ensuite
+    data:
+      brightness: 64
