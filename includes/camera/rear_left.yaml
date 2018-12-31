@@ -1,0 +1,6 @@
+platform: mjpeg
+mjpeg_url: http://192.168.1.207/Streaming/channels/101/httppreview
+still_image_url: http://192.168.1.207/Streaming/channels/101/picture
+name: Rear Left
+username: !secret cctv_username
+password: !secret cctv_password
