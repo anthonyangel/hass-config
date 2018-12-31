@@ -2,8 +2,6 @@ homeassistant:
   customize_glob:
     binary_sensor.*_nest_protect_online:
       icon: mdi:smoke-detector
-#    sensor.*_nest_protect_battery_health:
-#      icon: mdi:battery
 
 nest:
   client_id: !secret nest_client_id
@@ -13,46 +11,16 @@ nest:
     monitored_conditions:
       - 'co_status'
       - 'smoke_status'
-  #    - 'battery_health'
       - 'color_status'
 
-group:
-  smoke:
-    name: Smoke
-    entities:
-      - sensor.hallway_nest_protect_smoke_status
-      - sensor.kitchen_nest_protect_smoke_status
-      - sensor.loft_nest_protect_smoke_status
-      - sensor.upstairs_nest_protect_smoke_status
-
-  co:
-    name: CO
-    entities:
-      - sensor.hallway_nest_protect_co_status
-      - sensor.kitchen_nest_protect_co_status
-      - sensor.loft_nest_protect_co_status
-      - sensor.upstairs_nest_protect_co_status
-
-  nest_protect_online:
-    name: Nest Protect Online
-    entities:
-      - binary_sensor.hallway_nest_protect_online
-      - binary_sensor.kitchen_nest_protect_online
-      - binary_sensor.loft_nest_protect_online
-      - binary_sensor.upstairs_nest_protect_online
-
-  # nest_protect_battery:
-  #   name: Nest Protect Battery
-  #   entities:
-  #     - sensor.hallway_nest_protect_battery_health
-  #     - sensor.kitchen_nest_protect_battery_health
-  #     - sensor.loft_nest_protect_battery_health
-  #     - sensor.upstairs_nest_protect_battery_health
-
-  nest_protect_colour:
-    name: Nest Protect Colour
-    entities:
-      - sensor.hallway_nest_protect_color_status
-      - sensor.kitchen_nest_protect_color_status
-      - sensor.loft_nest_protect_color_status
-      - sensor.upstairs_nest_protect_color_status
+binary_sensor:
+  - platform: template
+    sensors:
+      nest_emergency:
+        friendly_name: Nest Emergency
+        device_class: safety
+        value_template: >-
+          {{not is_state('sensor.hallway_nest_protect_color_status', 'green')
+             or not is_state('sensor.kitchen_nest_protect_color_status', 'green')
+             or not is_state('sensor.loft_nest_protect_color_status', 'green')
+             or not is_state('sensor.upstairs_nest_protect_color_status', 'green') }}
