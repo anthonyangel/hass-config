@@ -1,3 +1,6 @@
 platform: mjpeg
-mjpeg_url: http://192.168.1.220:4002/
+mjpeg_url: http://192.168.1.205/Streaming/channels/101/httppreview
+still_image_url: http://192.168.1.205/Streaming/channels/101/picture
 name: Front Right
+username: !secret cctv_username
+password: !secret cctv_password
