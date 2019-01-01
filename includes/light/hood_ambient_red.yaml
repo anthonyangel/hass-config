@@ -1,0 +1,10 @@
+- platform: template
+  lights:
+    extractor:
+      friendly_name: "Hood Ambient Red"
+      turn_on:
+        service: ifttt.trigger
+        data: {"event": "hood_ambient_red"}
+      turn_off:
+        service: ifttt.trigger
+        data: {"event": "hood_ambient_off"}
