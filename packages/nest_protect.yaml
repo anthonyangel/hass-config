@@ -24,3 +24,39 @@ binary_sensor:
              or not is_state('sensor.kitchen_nest_protect_color_status', 'green')
              or not is_state('sensor.loft_nest_protect_color_status', 'green')
              or not is_state('sensor.upstairs_nest_protect_color_status', 'green') }}
+
+automation:
+  - alias: Nest Protect Emergency
+    trigger:
+      platform: state
+      entity_id: binary_sensor.nest_emergency
+      from: 'safe'
+    action:
+      - service: media_player.volume_mute
+        entity_id:
+          - media_player.kitchen_2
+          - media_player.lounge_2
+          - media_player.master_bedroom
+          - media_player.matan
+          - media_player.playroom
+        is_volume_muted: true
+      - service: light.turn_on
+        entity_id: light.hood_ambient_red
+        
+  - alias: Nest Protect Safe
+    trigger:
+      platform: state
+      entity_id: binary_sensor.nest_emergency
+      from: 'unsafe'
+      to: 'safe'
+    action:
+      - service: media_player.volume_mute
+        entity_id:
+          - media_player.kitchen_2
+          - media_player.lounge_2
+          - media_player.master_bedroom
+          - media_player.matan
+          - media_player.playroom
+        is_volume_muted: false
+      - service: light.turn_off
+        entity_id: light.hood_ambient_red
