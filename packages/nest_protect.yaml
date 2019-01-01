@@ -34,13 +34,14 @@ automation:
       to: 'unsafe'
     action:
       - service: media_player.volume_mute
-        entity_id:
-          - media_player.kitchen_2
-          - media_player.lounge_2
-          - media_player.master_bedroom
-          - media_player.matan
-          - media_player.playroom
-        is_volume_muted: true
+        data:
+          entity_id:
+            - media_player.kitchen_2
+            - media_player.lounge_2
+            - media_player.master_bedroom
+            - media_player.matan
+            - media_player.playroom
+          is_volume_muted: true
       - service: light.turn_on
         entity_id: light.hood_ambient_red
         
@@ -52,12 +53,13 @@ automation:
       to: 'safe'
     action:
       - service: media_player.volume_mute
-        entity_id:
-          - media_player.kitchen_2
-          - media_player.lounge_2
-          - media_player.master_bedroom
-          - media_player.matan
-          - media_player.playroom
-        is_volume_muted: false
+        data:
+          entity_id:
+            - media_player.kitchen_2
+            - media_player.lounge_2
+            - media_player.master_bedroom
+            - media_player.matan
+            - media_player.playroom
+          is_volume_muted: false
       - service: light.turn_off
         entity_id: light.hood_ambient_red
