@@ -1,6 +1,6 @@
 - platform: template
   lights:
-    extractor:
+    hood_ambient_red:
       friendly_name: "Hood Ambient Red"
       turn_on:
         service: ifttt.trigger
