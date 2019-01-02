@@ -31,7 +31,7 @@ automation:
       platform: state
       entity_id: binary_sensor.nest_emergency
       from: 'safe'
-      to: 'unsafe'
+      to: 'Unsafe'
     action:
       - service: media_player.volume_mute
         data:
@@ -49,7 +49,7 @@ automation:
     trigger:
       platform: state
       entity_id: binary_sensor.nest_emergency
-      from: 'unsafe'
+      from: 'Unsafe'
       to: 'safe'
     action:
       - service: media_player.volume_mute
