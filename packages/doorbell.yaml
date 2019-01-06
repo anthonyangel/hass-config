@@ -1,9 +1,9 @@
 homeassistant:
-#  customize:
-#    binary_sensor.unmuted_doorbell:
-#      hidden: true
-#    binary_sensor.muted_doorbell:
-#      hidden: true
+ customize:
+   binary_sensor.unmuted_doorbell:
+     hidden: true
+   binary_sensor.muted_doorbell:
+     hidden: true
 
 binary_sensor:
   - platform: mqtt
@@ -15,7 +15,7 @@ binary_sensor:
   - platform: template
     sensors:
       doorbell:
-        friendly_name: "Doorbell"
+        friendly_name: moving
         device_class: sound
         value_template: >-
           {{ is_state('binary_sensor.unmuted_doorbell', 'on')
