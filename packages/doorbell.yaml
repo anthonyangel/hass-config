@@ -39,7 +39,23 @@ automation:
     entity_id: binary_sensor.doorbell
     to: 'on'
   action:
-    - service: notify.notify
+    - service: camera.snapshot
       data:
-        message: "Doorbell has been pushed"
+        entity_id: camera.front_left
+        filename: '/share/tmp/snapshot_{{ entity_id.entity_id }}.jpg'
+    - service: camera.snapshot
+      data:
+        entity_id: camera.front_right
+        filename: '/share/tmp/snapshot_{{ entity_id.entity_id }}.jpg'
+    - service: notify.pushbullet
+      data:
         title: "Ding Dong!"
+        message: "Front Right"
+        data:
+          file: /share/tmp/snapshot_camera.front_right.jpg
+    - service: notify.pushbullet
+      data:
+        title: "Ding Dong!"
+        message: "Front Left"
+        data:
+          file: /share/tmp/snapshot_camera.front_left.jpg
