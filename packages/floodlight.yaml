@@ -13,5 +13,24 @@ light:
     name: Floodlight Rear Kitchen
     entity_id: switch.floodlight_rear_kitchen
   - platform: switch
-    name: Floodlight Rear Lounge 
+    name: Floodlight Rear Lounge
     entity_id: switch.floodlight_rear_lounge
+
+binary_sensor:
+  - platform: template
+    sensors:
+      motion_rear_lounge:
+        friendly_name: "Motion Rear Lounge"
+        device_class: motion
+        value_template: >-
+          {{ states.sensor.pir_rear_lounge_motion|float == 8 }}
+      motion_rear_kitchen:
+        friendly_name: "Motion Rear Kitchen"
+        device_class: motion
+        value_template: >-
+          {{ states.sensor.pir_rear_kitchen_motion|float == 8 }}
+      motion_driveway:
+        friendly_name: "Motion Driveway"
+        device_class: motion
+        value_template: >-
+          {{ states.sensor.pir_driveway_motion|float == 8 }}
