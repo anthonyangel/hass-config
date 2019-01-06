@@ -42,20 +42,20 @@ automation:
     - service: camera.snapshot
       data:
         entity_id: camera.front_left
-        filename: '/share/tmp/snapshot_{{ entity_id.entity_id }}.jpg'
+        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
     - service: camera.snapshot
       data:
         entity_id: camera.front_right
-        filename: '/share/tmp/snapshot_{{ entity_id.entity_id }}.jpg'
+        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
     - service: notify.pushbullet
       data:
         title: "Ding Dong!"
         message: "Front Right"
         data:
-          file: /share/tmp/snapshot_camera.front_right.jpg
+          file: /config/www/snapshot_camera.front_right.jpg
     - service: notify.pushbullet
       data:
         title: "Ding Dong!"
         message: "Front Left"
         data:
-          file: /share/tmp/snapshot_camera.front_left.jpg
+          file: /config/www/snapshot_camera.front_left.jpg
