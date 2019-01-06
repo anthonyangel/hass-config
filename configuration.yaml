@@ -18,6 +18,7 @@ logbook:
 map:
 sun:
 wake_on_lan:
+history:
 
 # history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
