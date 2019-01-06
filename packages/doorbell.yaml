@@ -15,8 +15,8 @@ binary_sensor:
   - platform: template
     sensors:
       doorbell:
-        friendly_name: moving
-        device_class: sound
+        friendly_name: Doorbell
+        device_class: moving
         value_template: >-
           {{ is_state('binary_sensor.unmuted_doorbell', 'on')
              or is_state('binary_sensor.muted_doorbell', 'on') }}
