@@ -7,7 +7,7 @@ homeassistant:
 
 light:
   - platform: switch
-    name: Driveway
+    name: Floodlight Driveway
     entity_id: switch.floodlight_driveway
   - platform: switch
     name: Floodlight Rear Kitchen
