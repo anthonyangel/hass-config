@@ -19,7 +19,7 @@ map:
 sun:
 wake_on_lan:
 
-history: !include includes/history.yaml
+# history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
 influxdb: !include includes/influxdb.yaml
