@@ -1,11 +1,12 @@
 - platform: mqtt
-  name: Kitchen Worktop
-  state_topic: kitchen-worktop-lights/relay/0
-  command_topic: kitchen-worktop-lights/relay/0/set
+  name: Kitchen Island
+  state_topic: kitchen-island-lights/relay/0
+  command_topic: kitchen-island-lights/relay/0/set
   payload_on: 1
   payload_off: 0
-  availability_topic: kitchen-worktop-lights/status
+  availability_topic: kitchen-island-lights/status
   payload_available: 1
   payload_not_available: 0
-  brightness_state_topic: kitchen-worktop-lights/channel/4
-  brightness_command_topic: kitchen-worktop-lights/channel/4/set
+  brightness_state_topic: kitchen-island-lights/brightness
+  brightness_command_topic: kitchen-island-lights/brightness/set
+  color_temp_command_topic: kitchen-island-lights/mired/set
