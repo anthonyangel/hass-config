@@ -1,5 +1,5 @@
-- name: Kitchen Island
-  platform: mqtt
+- platform: mqtt
+  name: Kitchen Island
   state_topic: kitchen-island-lights/relay/0
   command_topic: kitchen-island-lights/relay/0/set
   payload_on: 1
