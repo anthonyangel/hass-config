@@ -1,36 +1,16 @@
 homeassistant:
-#  customize:
-#    binary_sensor.unmuted_doorbell:
-#      hidden: true
-#    binary_sensor.muted_doorbell:
-#      hidden: true
 
 binary_sensor:
   - platform: mqtt
-    name: Unmuted Doorbell
+    name: Doorbell
     state_topic: "stat/sonoff_doorbell/POWER"
-  - platform: mqtt
-    name: Muted Doorbell
-    state_topic: "stat/sonoff_doorbell/POWER3"
-  - platform: template
-    sensors:
-      doorbell:
-        friendly_name: Doorbell
-        device_class: moving
-        value_template: >-
-          {{ is_state('binary_sensor.unmuted_doorbell', 'on')
-             or is_state('binary_sensor.muted_doorbell', 'on') }}
 
-#switch:
-#  - platform: mqtt
-#    name: "Doorbell Mute"
-#    icon: mdi:volume-off
-#    state_topic: "stat/sonoff_doorbell/SwitchTopic"
-#    state_on: "sonoff_doorbell_muted"
-#    state_off: "sonoff_doorbell"
-#    command_topic: "cmnd/sonoff_doorbell/SwitchTopic"
-#    payload_on: "1"
-#    payload_off: "0"
+switch:
+  - platform: command_line
+    switches:
+      doorbell_mute:
+        command_on: curl http://192.168.1.216/cm?cmnd=event%20doorbell=0
+        command_off: curl http://192.168.1.216/cm?cmnd=event%20doorbell=1
 
 automation:
 - alias: Doorbell notify phone
@@ -39,6 +19,10 @@ automation:
     entity_id: binary_sensor.doorbell
     to: 'on'
   action:
+    - service: notify.notify
+      data:
+        title: "Doorbell!"
+        message: "Ding Dong"
     - service: camera.snapshot
       data:
         entity_id: camera.front_left
