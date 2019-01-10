@@ -46,10 +46,6 @@ binary_sensor:
       friendly_name: Sonoff 4ch Loft
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.sonoff4chloft', 'home') }}"
-    sonoff_basic_toilet_extractor:
-      friendly_name: Sonoff Toilet Extractor
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoffbasictoiletextractor', 'home') }}"
     sonoff_doorbell:
       friendly_name: Sonoff Doorbell
       device_class: connectivity
@@ -168,7 +164,6 @@ group:
      - binary_sensor.pdu
      - binary_sensor.sonoff_4ch_utility
      - binary_sensor.sonoff_4ch_loft
-     - binary_sensor.sonoff_basic_toilet_extractor
      - binary_sensor.sonoff_doorbell
      - binary_sensor.kitchen_island_lights
      - binary_sensor.kitchen_worktop_lights

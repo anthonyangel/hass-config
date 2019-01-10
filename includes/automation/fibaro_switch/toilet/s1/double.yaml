@@ -7,4 +7,4 @@ trigger:
     scene_id: 14
 action:
   - service: fan.toggle
-    entity_id: fan.toilet
+    entity_id: fan.sonoff_toilet_extractor
