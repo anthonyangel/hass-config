@@ -19,12 +19,6 @@ fan:
     command_topic: "cmnd/sonoff_4ch_utility/POWER3"
     payload_on: "ON"
     payload_off: "OFF"
-  - platform: mqtt
-    name: Toilet
-    state_topic: "stat/sonoff_basic_toilet/POWER"
-    command_topic: "cmnd/sonoff_basic_toilet/POWER"
-    payload_on: "ON"
-    payload_off: "OFF"
 
 automation:
   - alias: Utility Extractor Humidity On
@@ -51,7 +45,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.toilet
+      entity_id: fan.sonoff_toilet_extractor
   - alias: Toilet Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -59,7 +53,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.toilet
+      entity_id: fan.sonoff_toilet_extractor
 
   - alias: Ensuite Extractor Humidity On
     trigger:
