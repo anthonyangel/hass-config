@@ -2,7 +2,7 @@ homeassistant:
 
 fan:
   - platform: mqtt
-    name: En-Suite
+    name: Ensuite
     state_topic: "stat/sonoff_4ch_loft/POWER1"
     command_topic: "cmnd/sonoff_4ch_loft/POWER1"
     payload_on: "ON"
