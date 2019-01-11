@@ -1,0 +1,40 @@
+substitutions:
+  devicename: sonoff_toilet_extractor
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: ${devicename}_button
+    on_press:
+      - fan.toggle: fan
+  - platform: status
+    name: ${devicename}_status
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: relay
+
+fan:
+  - platform: binary
+    output: relay
+    name: $devicename
+    id: fan
