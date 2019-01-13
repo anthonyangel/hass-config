@@ -68,16 +68,3 @@ automation:
     action:
       service: fan.turn_off
       entity_id: fan.sonoff_bathroom_extractor
-
-group:
-  extractor_humidity_automations:
-    name: Extractor Humidity Automations
-    entities:
-      - automation.utility_extractor_humidity_on
-      - automation.utility_extractor_humidity_off
-      - automation.toilet_extractor_humidity_on
-      - automation.toilet_extractor_humidity_off
-      - automation.ensuite_extractor_humidity_on
-      - automation.ensuite_extractor_humidity_off
-      - automation.bathroom_extractor_humidity_on
-      - automation.bathroom_extractor_humidity_off
