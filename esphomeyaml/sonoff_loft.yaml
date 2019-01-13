@@ -1,0 +1,38 @@
+substitutions:
+  devicename: sonoff_loft
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+  board_flash_mode: dout
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: status
+    name: ${devicename}_status
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: fan_ensuite
+  - platform: gpio
+    pin: GPIO5
+
+fan:
+  - platform: binary
+    output: fan_ensuite
+    name: sonoff_ensuite_extractor
+    id: fan_ensuite
+  - platform: binary
+    output: fan_bathroom
+    name: sonoff_bathroom_extractor
