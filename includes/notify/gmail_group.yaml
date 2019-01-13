@@ -1,0 +1,5 @@
+name: gmail_group
+platform: group
+services:
+  - service: gmail_anthony
+  - service: gmail_danni
