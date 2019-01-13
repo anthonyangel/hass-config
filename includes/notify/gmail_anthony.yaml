@@ -3,10 +3,10 @@ platform: smtp
 server: smtp.gmail.com
 port: 587
 timeout: 15
-sender: !secrets gmail_username
+sender: !secret gmail_username
 encryption: starttls
-username: !secrets gmail_username
-password: !secrets gmail_otp
+username: !secret gmail_username
+password: !secret gmail_otp
 recipient:
-  - !secrets gmail_anthony
+  - !secret gmail_anthony
 sender_name: Home Assistant
