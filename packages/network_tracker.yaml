@@ -38,14 +38,6 @@ binary_sensor:
       friendly_name: PDU
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
-    sonoff_4ch_utility:
-      friendly_name: Sonoff 4ch Utility
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoff4chutility', 'home') }}"
-    sonoff_4ch_loft:
-      friendly_name: Sonoff 4ch Loft
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoff4chloft', 'home') }}"
     sonoff_doorbell:
       friendly_name: Sonoff Doorbell
       device_class: connectivity
@@ -162,8 +154,6 @@ group:
      - binary_sensor.nest_loft
      - binary_sensor.nest_upstairs
      - binary_sensor.pdu
-     - binary_sensor.sonoff_4ch_utility
-     - binary_sensor.sonoff_4ch_loft
      - binary_sensor.sonoff_doorbell
      - binary_sensor.kitchen_island_lights
      - binary_sensor.kitchen_worktop_lights
