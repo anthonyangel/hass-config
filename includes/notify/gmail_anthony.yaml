@@ -9,4 +9,4 @@ username: !secret gmail_username
 password: !secret gmail_otp
 recipient:
   - !secret gmail_anthony
-sender_name: Home Assistant
+sender_name: !secret gmail_sender_name

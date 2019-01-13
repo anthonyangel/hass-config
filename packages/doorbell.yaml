@@ -31,15 +31,11 @@ automation:
       data:
         entity_id: camera.front_right
         filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
-    - service: notify.pushbullet
+    - service: notify.gmail_group
       data:
-        title: "Ding Dong!"
-        message: "Front Right"
-        data:
-          file: /config/www/snapshot_camera.front_right.jpg
-    - service: notify.pushbullet
-      data:
-        title: "Ding Dong!"
-        message: "Front Left"
-        data:
-          file: /config/www/snapshot_camera.front_left.jpg
+          title: 'Doorbell'
+          message: "Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}"
+          data:
+              images:
+                  - /config/www/snapshot_camera.front_right.jpg
+                  - /config/www/snapshot_camera.front_left.jpg
