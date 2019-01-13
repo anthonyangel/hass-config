@@ -34,7 +34,7 @@ automation:
     - service: notify.gmail_group
       data:
           title: 'Doorbell'
-          message: 'Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}'
+          message: "Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}"
           data:
               images:
                   - /config/www/snapshot_camera.front_right.jpg
