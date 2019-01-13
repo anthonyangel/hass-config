@@ -24,15 +24,21 @@ binary_sensor:
 output:
   - platform: gpio
     pin: GPIO12
-    id: fan_ensuite
+    id: relay_1
   - platform: gpio
     pin: GPIO5
+    id: relay_2
+  # - platform: gpio
+  #   pin: GPIO4
+  #   id: relay_3
+  # - platform: gpio
+  #   pin: GPIO15
+  #   id: relay_4
 
 fan:
   - platform: binary
-    output: fan_ensuite
+    output: relay_1
     name: sonoff_ensuite_extractor
-    id: fan_ensuite
   - platform: binary
-    output: fan_bathroom
+    output: relay_2
     name: sonoff_bathroom_extractor
