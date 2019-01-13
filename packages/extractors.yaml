@@ -1,25 +1,5 @@
 homeassistant:
 
-fan:
-  - platform: mqtt
-    name: Ensuite
-    state_topic: "stat/sonoff_4ch_loft/POWER1"
-    command_topic: "cmnd/sonoff_4ch_loft/POWER1"
-    payload_on: "ON"
-    payload_off: "OFF"
-  - platform: mqtt
-    name: Bathroom
-    state_topic: "stat/sonoff_4ch_loft/POWER2"
-    command_topic: "cmnd/sonoff_4ch_loft/POWER2"
-    payload_on: "ON"
-    payload_off: "OFF"
-  - platform: mqtt
-    name: Utility
-    state_topic: "stat/sonoff_4ch_utility/POWER3"
-    command_topic: "cmnd/sonoff_4ch_utility/POWER3"
-    payload_on: "ON"
-    payload_off: "OFF"
-
 automation:
   - alias: Utility Extractor Humidity On
     trigger:
@@ -28,7 +8,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.utility
+      entity_id: fan.sonoff_utility_extractor
   - alias: Utility Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -36,7 +16,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.utility
+      entity_id: fan.sonoff_utility_extractor
 
   - alias: Toilet Extractor Humidity On
     trigger:
@@ -62,7 +42,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.ensuite
+      entity_id: fan.sonoff_ensuite_extractor
   - alias: Ensuite Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -70,7 +50,7 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.ensuite
+      entity_id: fan.sonoff_ensuite_extractor
 
   - alias: Bathroom Extractor Humidity On
     trigger:
@@ -79,7 +59,7 @@ automation:
       above: 75
     action:
       service: fan.turn_on
-      entity_id: fan.bathroom
+      entity_id: fan.sonoff_bathroom_extractor
   - alias: Bathroom Extractor Humidity Off
     trigger:
       platform: numeric_state
@@ -87,17 +67,4 @@ automation:
       below: 75
     action:
       service: fan.turn_off
-      entity_id: fan.bathroom
-
-group:
-  extractor_humidity_automations:
-    name: Extractor Humidity Automations
-    entities:
-      - automation.utility_extractor_humidity_on
-      - automation.utility_extractor_humidity_off
-      - automation.toilet_extractor_humidity_on
-      - automation.toilet_extractor_humidity_off
-      - automation.ensuite_extractor_humidity_on
-      - automation.ensuite_extractor_humidity_off
-      - automation.bathroom_extractor_humidity_on
-      - automation.bathroom_extractor_humidity_off
+      entity_id: fan.sonoff_bathroom_extractor

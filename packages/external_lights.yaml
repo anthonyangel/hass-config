@@ -5,20 +5,6 @@ homeassistant:
     light.front_door:
       icon: mdi:door
 
-light:
-  - platform: mqtt
-    name: External Rear
-    state_topic: "stat/sonoff_4ch_utility/POWER1"
-    command_topic: "cmnd/sonoff_4ch_utility/POWER1"
-    payload_on: "ON"
-    payload_off: "OFF"
-  - platform: mqtt
-    name: Front Door
-    state_topic: "stat/sonoff_4ch_utility/POWER2"
-    command_topic: "cmnd/sonoff_4ch_utility/POWER2"
-    payload_on: "ON"
-    payload_off: "OFF"
-
 automation:
   - alias: Outside front lights on at sunset
     trigger:

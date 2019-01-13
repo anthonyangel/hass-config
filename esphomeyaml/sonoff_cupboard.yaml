@@ -1,0 +1,52 @@
+substitutions:
+  devicename: sonoff_cupboard
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+  board_flash_mode: dout
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: status
+    name: ${devicename}_status
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: relay_1
+  - platform: gpio
+    pin: GPIO5
+    id: relay_2
+  - platform: gpio
+    pin: GPIO4
+    id: relay_3
+  - platform: gpio
+    pin: GPIO15
+    id: relay_4
+
+fan:
+  - platform: binary
+    output: relay_3
+    name: sonoff_utility_extractor
+
+light:
+  - platform: binary
+    name: "External Rear"
+    output: relay_1
+  - platform: binary
+    name: "Front Door"
+    output: relay_2
+  - platform: binary
+    name: "Stairs"
+    output: relay_4
