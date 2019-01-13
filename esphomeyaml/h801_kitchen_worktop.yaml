@@ -1,0 +1,70 @@
+substitutions:
+  devicename: h801_kitchen_worktop
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+  board_flash_mode: dout
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: status
+    name: ${devicename}_status
+
+output:
+  - platform: esp8266_pwm
+    pin: GPIO15
+    id: worktop
+  # - platform: esp8266_pwm
+  #   pin: GPIO13
+  #   id: green
+  # - platform: esp8266_pwm
+  #   pin: GPIO12
+  #   id: blue
+  # - platform: esp8266_pwm
+  #   pin: GPIO14
+  #   id: warm_white
+  # - platform: esp8266_pwm
+  #   pin: GPIO04
+  #   id: cool_white
+  # - platform: esp8266_pwm
+  #   pin: GPIO01
+  #   id: led_green
+  #   inverted: True
+  # - platform: esp8266_pwm
+  #   pin: GPIO05
+  #   id: led_red
+  #   inverted: True
+
+light:
+  - platform: monochromatic
+    name: "Kitchen Worktop"
+    output: worktop
+  # - platform: monochromatic
+  #   name: "Green LED"
+  #   output: led_green
+  # - platform: monochromatic
+  #   name: "Red"
+  #   output: red
+  # - platform: monochromatic
+  #   name: "Green"
+  #   output: green
+  # - platform: monochromatic
+  #   name: "Blue"
+  #   output: blue
+  # - platform: monochromatic
+  #   name: "Warm White"
+  #   output: warm_white
+  # - platform: monochromatic
+  #   name: "Cool White"
+  #   output: cool_white

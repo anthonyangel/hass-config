@@ -1,0 +1,7 @@
+/.esphomeyaml/
+**/.pioenvs/
+**/.piolibdeps/
+**/lib/
+**/src/
+**/platformio.ini
+/secrets.yaml
