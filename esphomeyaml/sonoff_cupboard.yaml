@@ -23,21 +23,30 @@ binary_sensor:
 
 output:
   - platform: gpio
+    pin: GPIO12
+    id: relay_1
+  - platform: gpio
+    pin: GPIO5
+    id: relay_2
+  - platform: gpio
     pin: GPIO4
-    id: fan_utility
+    id: relay_3
+  - platform: gpio
+    pin: GPIO15
+    id: relay_4
 
 fan:
   - platform: binary
-    output: fan_utility
+    output: relay_3
     name: sonoff_utility_extractor
 
-switch:
-  - platform: gpio
-    name: "Outside Lights"
-    pin: GPIO12
-  - platform: gpio
+light:
+  - platform: binary
+    name: "External Rear"
+    output: relay_1
+  - platform: binary
     name: "Front Door"
-    pin: GPIO5
-  - platform: gpio
+    output: relay_2
+  - platform: binary
     name: "Stairs"
-    pin: GPIO15
+    output: relay_4
