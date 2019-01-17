@@ -28,12 +28,12 @@ output:
   - platform: gpio
     pin: GPIO5
     id: relay_2
-  # - platform: gpio
-  #   pin: GPIO4
-  #   id: relay_3
-  # - platform: gpio
-  #   pin: GPIO15
-  #   id: relay_4
+  - platform: gpio
+    pin: GPIO4
+    id: relay_3
+  - platform: gpio
+    pin: GPIO15
+    id: relay_4
 
 fan:
   - platform: binary
@@ -42,3 +42,11 @@ fan:
   - platform: binary
     output: relay_2
     name: sonoff_bathroom_extractor
+    
+light:
+  - platform: binary
+    name: "Ensuite Mirror"
+    output: relay_3
+  - platform: binary
+    name: "Bathroom Mirror"
+    output: relay_4
