@@ -1,0 +1,38 @@
+substitutions:
+  devicename: kitchen_island
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+  board_flash_mode: dout
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: status
+    name: ${devicename}_status
+    
+output:
+  - platform: esp8266_pwm
+    pin: GPIO15
+    id: cool_white
+  - platform: esp8266_pwm
+    pin: GPIO5
+    id: warm_white
+
+light:
+  - platform: cwww
+    name: "Kitchen Island"
+    cold_white: cool_white
+    warm_white: warm_white
+    cold_white_color_temperature: 154 mireds
+    warm_white_color_temperature: 370 mireds
