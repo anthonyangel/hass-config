@@ -1,0 +1,44 @@
+substitutions:
+  devicename: toy_kitchen_worktop
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+  board_flash_mode: dout
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: status
+    name: ${devicename}_status
+    
+output:
+  - platform: esp8266_pwm
+    pin: GPIO5
+    id: green
+  - platform: esp8266_pwm
+    pin: GPIO12
+    id: blue
+  - platform: esp8266_pwm
+    pin: GPIO13
+    id: white
+  - platform: esp8266_pwm
+    pin: GPIO14
+    id: red
+
+light:
+  - platform: rgbw
+    name: ${devicename}
+    red: red
+    green: green
+    blue: blue
+    white: white
