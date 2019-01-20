@@ -38,3 +38,4 @@ automation: !include_dir_list includes/automation/
 media_player: !include_dir_list includes/media_player/
 panel_custom: !include_dir_list includes/panel_custom/
 camera: !include_dir_list includes/camera/
+script: !include_dir_named includes/script/

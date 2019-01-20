@@ -1,0 +1,7 @@
+alias: All Lights Off
+sequence:
+  - service: script.turn_on
+    data:
+      entity_id:
+        - downstairs_lights_off
+        - upstairs_lights_off
