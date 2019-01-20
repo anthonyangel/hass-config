@@ -8,20 +8,11 @@ automation:
   action:  
   - service: hassio.snapshot_full  
     data_template:  
-      name: Automated Backup {{ now().strftime('%Y-%m-%d') }} 
-- alias: Daily upload to dropbox at 5 AM 
-  trigger: 
-    platform: time  
-    at: '5:00:00'
-  action:  
-  - service: hassio.addon_stdin 
-    data:  
-      addon: "7be23ff5_dropbox_sync"  
-      input: {"command":"upload"}
+      name: Automated Backup {{ now().strftime('%Y-%m-%d') }}
+      password: !secret snapshot_password
 
 group:
   backups:
     name: Backups
     entities:
       - automation.daily_snapshot_at_3_am
-      - automation.daily_upload_to_dropbox_at_5_am
