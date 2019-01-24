@@ -14,6 +14,7 @@ device_tracker:
 binary_sensor:
 - platform: template
   sensors:
+  # CCTV
     cctv_front_left:
       friendly_name: CCTV Front Left
       device_class: connectivity
@@ -34,30 +35,29 @@ binary_sensor:
       friendly_name: CCTV Rear 2
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvrear2', 'home') }}"
+    # Cupboard Devices  
     pdu:
       friendly_name: PDU
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
-    sonoff_doorbell:
-      friendly_name: Sonoff Doorbell
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoffdoorbell', 'home') }}"
-    kitchen_island_lights:
-      friendly_name: Kitchen Island Lights
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.kitchenislandlights', 'home') }}"
-    kitchen_worktop_lights:
-      friendly_name: Kitchen Worktop Lights
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.kitchenworktoplights', 'home') }}"
-    tado_bridge:
-      friendly_name: Tado Bridge
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.tado', 'home') }}"
     texe_hub:
       friendly_name: Texecom Hub
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.texe_hub', 'home') }}"
+    nas:
+      friendly_name: NAS
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
+    gigabyte:
+      friendly_name: Gigabyte
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
+    # Remote Sonoff (migrating away from this to ESP Home status)
+    sonoff_doorbell:
+      friendly_name: Sonoff Doorbell
+      device_class: connectivity
+      value_template: "{{ is_state('device_tracker.sonoffdoorbell', 'home') }}"
+    # Kitchen Appliances  
     dishwasher_left:
       friendly_name: Dishwasher Left
       device_class: connectivity
@@ -82,18 +82,11 @@ binary_sensor:
       friendly_name: Extractor
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
+    # Media Players
     google_home_mini:
       friendly_name: Google Home Mini
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.googlehomemini', 'home') }}"
-    playroom_lamp:
-      friendly_name: Playroom Lamp
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.lifx_color_1000', 'home') }}"      
-    nas:
-      friendly_name: NAS
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
     lounge_chromecast:
       friendly_name: Lounge Chromecast
       device_class: connectivity
@@ -102,10 +95,6 @@ binary_sensor:
       friendly_name: Kitchen Chromecast
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.kitchen_chromecast', 'home') }}"
-    gigabyte:
-      friendly_name: Gigabyte
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
     sonos_kitchen:
       friendly_name: Sonos Kitchen
       device_class: connectivity
@@ -126,49 +115,3 @@ binary_sensor:
       friendly_name: Sonos Playroom
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.sonos_playroom', 'home') }}"
-    toy_kitchen_worktop_lights:
-      friendly_name: Toy Kitchen Worktop
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.toykitchenworktop', 'home') }}"
-
-group:
- network_devices:
-   name: Network Devices
-   entities:
-     - binary_sensor.cctv_front_left
-     - binary_sensor.cctv_front_right
-     - binary_sensor.cctv_front_door
-     - binary_sensor.cctv_rear_1
-     - binary_sensor.cctv_rear_2
-     - binary_sensor.hassio
-     - binary_sensor.nest_hallway
-     - binary_sensor.nest_kitchen
-     - binary_sensor.nest_loft
-     - binary_sensor.nest_upstairs
-     - binary_sensor.pdu
-     - binary_sensor.sonoff_doorbell
-     - binary_sensor.kitchen_island_lights
-     - binary_sensor.kitchen_worktop_lights
-     - binary_sensor.tado_bridge
-     - binary_sensor.texe_hub
-     - binary_sensor.dishwasher_left
-     - binary_sensor.dishwasher_right
-     - binary_sensor.oven_left
-     - binary_sensor.oven_right
-     - binary_sensor.hob
-     - binary_sensor.extractor
-     - binary_sensor.google_home_mini
-     - binary_sensor.lounge_tv
-     - binary_sensor.kitchen_tv
-     - binary_sensor.playroom_lamp
-     - binary_sensor.nas
-     - binary_sensor.lounge_chromecast
-     - binary_sensor.kitchen_chromecast
-     - binary_sensor.gigabyte
-     - binary_sensor.sonos_kitchen
-     - binary_sensor.sonos_bedroom
-     - binary_sensor.sonos_lounge
-     - binary_sensor.sonos_matan
-     - binary_sensor.sonos_playroom
-     - binary_sensor.toy_kitchen_worktop_lights
-
