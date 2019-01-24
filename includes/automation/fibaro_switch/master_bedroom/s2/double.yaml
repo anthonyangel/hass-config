@@ -7,5 +7,5 @@ trigger:
     scene_id: 24
 action:
   - service: fan.toggle
-    entity_id: fan.ensuite
+    entity_id: fan.sonoff_ensuite_extractor
 
