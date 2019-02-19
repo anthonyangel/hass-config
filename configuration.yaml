@@ -19,6 +19,7 @@ map:
 sun:
 wake_on_lan:
 history:
+system_health:
 
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
