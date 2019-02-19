@@ -1,0 +1,10 @@
+- platform: template
+  lights:
+    hood_ambient_blue:
+      friendly_name: "Hood Ambient Blue"
+      turn_on:
+        service: ifttt.trigger
+        data: {"event": "hood_ambient_blue"}
+      turn_off:
+        service: ifttt.trigger
+        data: {"event": "hood_ambient_off"}
