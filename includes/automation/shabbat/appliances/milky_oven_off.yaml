@@ -1,0 +1,13 @@
+alias: Milky Oven Off at 15:00
+trigger:
+  platform: time
+  at: "15:00:00"
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: 'binary_sensor.shabbat'
+      state: 'on'
+action:
+  service: ifttt.trigger
+  data: {"event": "milky_oven_off"}

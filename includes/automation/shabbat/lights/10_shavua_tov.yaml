@@ -7,9 +7,12 @@ trigger:
 action:
   - service: light.turn_on
     data:
-      entity_id: light.lamp
-      brightness: 150
-      color_name: purple
+      entity_id:
+        - light.lamp
+        - light.toy_kitchen_worktop
+      brightness_pct: 100
+      color_name: blue
   - service: light.turn_on
     entity_id:
       - light.stairs
+      - light.hood_ambient_blue
