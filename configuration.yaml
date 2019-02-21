@@ -20,6 +20,7 @@ sun:
 wake_on_lan:
 history:
 system_health:
+person:
 
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
