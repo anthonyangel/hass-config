@@ -1,4 +1,4 @@
-alias: master_bedroom Button 2 Single
+alias: Master Bedroom Button 2 Single
 trigger:
   platform: event
   event_type: zwave.scene_activated
