@@ -1,4 +1,5 @@
 /.esphomeyaml/
+/.esphome/
 **/.pioenvs/
 **/.piolibdeps/
 **/lib/
