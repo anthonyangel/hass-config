@@ -1,0 +1,55 @@
+substitutions:
+  devicename: sonoff_doorbell
+
+esphomeyaml:
+  name: $devicename
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${devicename}_tmp
+
+logger:
+api:
+ota:
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: ${devicename}_button
+    on_press:
+      - switch.toggle: relay
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+      inverted: True
+    name: Doorbell
+    on_press:
+      then:
+        - if:
+            condition:
+              switch.is_off: doorbell_mute
+            then:
+              - switch.turn_on: relay
+              - delay: 300ms
+              - switch.turn_off: relay
+  - platform: status
+    name: ${devicename}_status
+
+switch:
+  - platform: gpio
+    name: ${devicename}_switch
+    pin: GPIO12
+    id: relay
+  - platform: template
+    name: "Doorbell Mute"
+    icon: "mdi:alarm-bell"
+    id: doorbell_mute
+    optimistic: true

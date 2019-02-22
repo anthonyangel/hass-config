@@ -1,17 +1,5 @@
 homeassistant:
 
-binary_sensor:
-  - platform: mqtt
-    name: Doorbell
-    state_topic: "stat/sonoff_doorbell/POWER"
-
-switch:
-  - platform: command_line
-    switches:
-      doorbell_mute:
-        command_on: curl http://192.168.1.216/cm?cmnd=event%20doorbell=0
-        command_off: curl http://192.168.1.216/cm?cmnd=event%20doorbell=1
-
 automation:
 - alias: Doorbell notify phone
   trigger:
