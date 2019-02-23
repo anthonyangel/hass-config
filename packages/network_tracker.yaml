@@ -27,14 +27,10 @@ binary_sensor:
       friendly_name: CCTV Front Door
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.cctvfrontdoor', 'home') }}"
-    cctv_rear_1:
-      friendly_name: CCTV Rear 1
+    cctv_rear_left:
+      friendly_name: CCTV Rear Left
       device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctvrear1', 'home') }}"
-    cctv_rear_2:
-      friendly_name: CCTV Rear 2
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctvrear2', 'home') }}"
+      value_template: "{{ is_state('device_tracker.cctvrearleft', 'home') }}"
     # Cupboard Devices  
     pdu:
       friendly_name: PDU
@@ -52,11 +48,6 @@ binary_sensor:
       friendly_name: Gigabyte
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
-    # Remote Sonoff (migrating away from this to ESP Home status)
-    sonoff_doorbell:
-      friendly_name: Sonoff Doorbell
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoffdoorbell', 'home') }}"
     # Kitchen Appliances  
     dishwasher_left:
       friendly_name: Dishwasher Left

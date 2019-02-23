@@ -27,7 +27,6 @@ logger: !include includes/loggers.yaml
 influxdb: !include includes/influxdb.yaml
 
 cloud: !include_dir_merge_named includes/cloud/
-# mqtt: !include includes/mqtt.yaml
 
 google: !include includes/google.yaml
 duckdns: !include includes/duckdns.yaml
