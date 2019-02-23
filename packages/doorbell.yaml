@@ -13,6 +13,10 @@ automation:
         message: "Ding Dong"
     - service: camera.snapshot
       data:
+        entity_id: camera.front_door
+        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
+    - service: camera.snapshot
+      data:
         entity_id: camera.front_left
         filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
     - service: camera.snapshot
@@ -24,6 +28,7 @@ automation:
           title: 'Doorbell'
           message: "Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}"
           data:
-              images:
+              images:              
+                  - /config/www/snapshot_camera.front_door.jpg
                   - /config/www/snapshot_camera.front_right.jpg
                   - /config/www/snapshot_camera.front_left.jpg
