@@ -52,11 +52,6 @@ binary_sensor:
       friendly_name: Gigabyte
       device_class: connectivity
       value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
-    # Remote Sonoff (migrating away from this to ESP Home status)
-    sonoff_doorbell:
-      friendly_name: Sonoff Doorbell
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonoffdoorbell', 'home') }}"
     # Kitchen Appliances  
     dishwasher_left:
       friendly_name: Dishwasher Left
