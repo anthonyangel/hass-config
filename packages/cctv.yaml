@@ -1,0 +1,49 @@
+homeassistant:
+
+camera:
+  - platform: mjpeg
+    name: Front Door
+    mjpeg_url: http://192.168.1.206/Streaming/channels/101/httppreview
+    still_image_url: http://192.168.1.206/Streaming/channels/101/picture
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: mjpeg
+    name: Front Left
+    mjpeg_url: http://192.168.1.204/Streaming/channels/101/httppreview
+    still_image_url: http://192.168.1.204/Streaming/channels/101/picture
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: mjpeg
+    name: Front Right
+    mjpeg_url: http://192.168.1.205/Streaming/channels/101/httppreview
+    still_image_url: http://192.168.1.205/Streaming/channels/101/picture
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: mjpeg
+    name: Rear Left
+    mjpeg_url: http://192.168.1.207/Streaming/channels/101/httppreview
+    still_image_url: http://192.168.1.207/Streaming/channels/101/picture
+    username: !secret cctv_username
+    password: !secret cctv_password
+
+binary_sensor:
+  - platform: hikvision
+    name: Front Door
+    host: 192.168.1.206
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: hikvision
+    name: Front Left
+    host: 192.168.1.204
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: hikvision
+    name: Front Right
+    host: 192.168.1.205
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: hikvision
+    name: Rear Left
+    host: 192.168.1.207
+    username: !secret cctv_username
+    password: !secret cctv_password
