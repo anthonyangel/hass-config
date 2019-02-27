@@ -25,18 +25,18 @@ sensor.fibaro_system_fgd212_dimmer_2_system*:
 sensor.fibaro_system_fgd212_dimmer_2_power*:
   ignored: true
   polling_intensity: 0
-sensor.steinel_is1402_sourcenodeid*:
+sensor.steinel_is140_2_sourcenodeid*:
   ignored: true
   polling_intensity: 0
-sensor.steinel_is1402_alarm_level*:
+sensor.steinel_is140_2_alarm_level*:
   ignored: true
   polling_intensity: 0
-sensor.steinel_is1402_alarm_type*:
+sensor.steinel_is140_2_alarm_type*:
   ignored: true
   polling_intensity: 0
-sensor.steinel_is1402_system*:
+sensor.steinel_is140_2_system*:
   ignored: true
   polling_intensity: 0
-switch.steinel_is1402_switch*:
+switch.steinel_is140_2_switch*:
   ignored: true
   polling_intensity: 0
