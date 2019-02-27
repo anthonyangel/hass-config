@@ -18,7 +18,7 @@ home-assistant.log
 OZW_Log.txt
 options.xml
 pyozw.sqlite
-zwcfg_*.xml
+zwcfg_*.xml*
 zwscene.xml
 ui-lovelace.yaml
 html5_push_registrations.conf
