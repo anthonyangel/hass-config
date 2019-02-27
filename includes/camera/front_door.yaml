@@ -1,6 +1,0 @@
-platform: mjpeg
-mjpeg_url: http://192.168.1.206/Streaming/channels/101/httppreview
-still_image_url: http://192.168.1.206/Streaming/channels/101/picture
-name: Front Door
-username: !secret cctv_username
-password: !secret cctv_password
