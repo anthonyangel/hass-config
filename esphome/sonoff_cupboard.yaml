@@ -20,6 +20,42 @@ ota:
 binary_sensor:
   - platform: status
     name: ${devicename}_status
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_1"
+    internal: true
+    on_press:
+      - light.toggle: external_rear
+  - platform: gpio
+    pin:
+      number: GPIO9
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_2"
+    internal: true
+    on_press:
+      - light.toggle: front_door
+  - platform: gpio
+    pin:
+      number: GPIO10
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_3"
+    internal: true
+    on_press:
+      - fan.toggle: sonoff_utility_extractor
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_4"
+    internal: true
+    on_press:
+      - light.toggle: stairs
 
 output:
   - platform: gpio
@@ -38,15 +74,19 @@ output:
 fan:
   - platform: binary
     output: relay_3
-    name: sonoff_utility_extractor
+    name: Utility Extractor
+    id: "sonoff_utility_extractor"
 
 light:
   - platform: binary
     name: "External Rear"
     output: relay_1
+    id: "external_rear"
   - platform: binary
     name: "Front Door"
     output: relay_2
+    id: "front_door"
   - platform: binary
     name: "Stairs"
     output: relay_4
+    id: "stairs"

@@ -23,6 +23,7 @@ binary_sensor:
       mode: INPUT_PULLUP
       inverted: True
     name: ${devicename}_button
+    internal: true
     on_press:
       - switch.toggle: relay
   - platform: gpio
