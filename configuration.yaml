@@ -18,10 +18,10 @@ logbook:
 map:
 sun:
 wake_on_lan:
-history:
 system_health:
 person:
 
+history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
 influxdb: !include includes/influxdb.yaml
