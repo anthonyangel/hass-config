@@ -20,6 +20,42 @@ ota:
 binary_sensor:
   - platform: status
     name: ${devicename}_status
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_1"
+    internal: true
+    on_press:
+      - fan.toggle: sonoff_ensuite_extractor
+  - platform: gpio
+    pin:
+      number: GPIO9
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_2"
+    internal: true
+    on_press:
+      - fan.toggle: sonoff_bathroom_extractor
+  - platform: gpio
+    pin:
+      number: GPIO10
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_3"
+    internal: true
+    on_press:
+      - light.toggle: ensuite_mirror
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${devicename}_button_4"
+    internal: true
+    on_press:
+      - light.toggle: bathroom_mirror
 
 output:
   - platform: gpio
@@ -38,15 +74,19 @@ output:
 fan:
   - platform: binary
     output: relay_1
-    name: sonoff_ensuite_extractor
+    name: Ensuite Extractor
+    id: sonoff_ensuite_extractor
   - platform: binary
     output: relay_2
-    name: sonoff_bathroom_extractor
+    name: Bathroom Extractor
+    id: sonoff_bathroom_extractor
     
 light:
   - platform: binary
     name: "Ensuite Mirror"
     output: relay_3
+    id: "ensuite_mirror"
   - platform: binary
     name: "Bathroom Mirror"
     output: relay_4
+    id: "bathroom_mirror"
