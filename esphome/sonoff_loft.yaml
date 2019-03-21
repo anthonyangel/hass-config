@@ -28,7 +28,7 @@ binary_sensor:
     name: "${devicename}_button_1"
     internal: true
     on_press:
-      - fan.toggle: sonoff_ensuite_extractor
+      - fan.toggle: ensuite_extractor
   - platform: gpio
     pin:
       number: GPIO9
@@ -37,7 +37,7 @@ binary_sensor:
     name: "${devicename}_button_2"
     internal: true
     on_press:
-      - fan.toggle: sonoff_bathroom_extractor
+      - fan.toggle: bathroom_extractor
   - platform: gpio
     pin:
       number: GPIO10
@@ -75,11 +75,11 @@ fan:
   - platform: binary
     output: relay_1
     name: Ensuite Extractor
-    id: sonoff_ensuite_extractor
+    id: ensuite_extractor
   - platform: binary
     output: relay_2
     name: Bathroom Extractor
-    id: sonoff_bathroom_extractor
+    id: bathroom_extractor
     
 light:
   - platform: binary

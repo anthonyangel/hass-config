@@ -32,9 +32,9 @@ exclude:
 include:
   entities:
     - binary_sensor.doorbell
-    - binary_sensor.motion_rear_kitchen
-    - binary_sensor.motion_rear_lounge
-    - binary_sensor.motion_driveway
+    - binary_sensor.motion_pir_rear_kitchen
+    - binary_sensor.motion_pir_rear_lounge
+    - binary_sensor.motion_pir_driveway
     - binary_sensor.motion_cctv_front_door
     - binary_sensor.motion_cctv_front_left
     - binary_sensor.motion_cctv_front_right
