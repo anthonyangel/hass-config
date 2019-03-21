@@ -28,22 +28,22 @@ camera:
 
 binary_sensor:
   - platform: hikvision
-    name: Motion CCTV Front Door
+    name: Front Door
     host: 192.168.1.206
     username: !secret cctv_username
     password: !secret cctv_password
   - platform: hikvision
-    name: Motion CCTV Front Left
+    name: Front Left
     host: 192.168.1.204
     username: !secret cctv_username
     password: !secret cctv_password
   - platform: hikvision
-    name: Motion CCTV Front Right
+    name: Front Right
     host: 192.168.1.205
     username: !secret cctv_username
     password: !secret cctv_password
   - platform: hikvision
-    name: Motion CCTV Rear Left
+    name: Rear Left
     host: 192.168.1.207
     username: !secret cctv_username
     password: !secret cctv_password
