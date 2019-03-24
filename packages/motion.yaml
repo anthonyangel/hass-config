@@ -4,7 +4,7 @@ automation:
 - alias: Front Door Motion
   trigger:
     platform: state
-    entity_id: binary_sensor.cctv_front_door_motion
+    entity_id: binary_sensor.motion_cctv_front_door
     to: 'on'
   action:
     - service: notify.html5_anthony_phone
