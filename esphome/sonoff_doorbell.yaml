@@ -23,6 +23,9 @@ binary_sensor:
       mode: INPUT_PULLUP
       inverted: True
     name: ${devicename}_button
+    filters:
+      - delayed_on: 100ms   # debounce
+      - delayed_off: 5000ms # prevent multiple rings 
     internal: true
     on_press:
       - switch.toggle: relay
