@@ -23,7 +23,9 @@ automation:
       data:
         title: "Doorbell!"
         message: "Ding Dong"
-        image: /config/www/snapshot_camera.front_door.jpg
+        data:
+          image: /local/snapshot_camera.front_door.jpg
+          url: /lovelace/outside
     - service: notify.gmail_group
       data:
           title: 'Doorbell'
