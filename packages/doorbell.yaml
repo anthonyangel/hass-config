@@ -7,10 +7,6 @@ automation:
     entity_id: binary_sensor.doorbell
     to: 'on'
   action:
-    - service: notify.notify
-      data:
-        title: "Doorbell!"
-        message: "Ding Dong"
     - service: camera.snapshot
       data:
         entity_id: camera.front_door
@@ -23,6 +19,11 @@ automation:
       data:
         entity_id: camera.front_right
         filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
+    - service: notify.notify
+      data:
+        title: "Doorbell!"
+        message: "Ding Dong"
+        image: /config/www/snapshot_camera.front_door.jpg
     - service: notify.gmail_group
       data:
           title: 'Doorbell'
