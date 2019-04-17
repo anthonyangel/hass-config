@@ -14,5 +14,5 @@ action:
       color_name: blue
   - service: light.turn_on
     entity_id:
-      - light.stairs
+#      - light.stairs
       - light.hood_ambient_blue

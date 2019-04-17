@@ -18,8 +18,8 @@ action:
       - light.playroom
       - light.toilet
       - light.ensuite
-  - service: light.turn_on  
-    data:
-      entity_id: light.lamp
-      brightness: 150
-      color_name: white
+#  - service: light.turn_on
+#    data:
+#      entity_id: light.lamp
+#      brightness: 150
+#      color_name: white
