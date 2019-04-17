@@ -10,14 +10,14 @@ action:
       entity_id:
         - light.kitchen_ceiling
         - light.lounge
-        - light.playroom
+#        - light.playroom
         - light.ensuite
         - light.bathroom
         - light.toilet
         - light.hall
       brightness: 255
-  - service: light.turn_on
-    entity_id: light.stairs
+#  - service: light.turn_on
+#    entity_id: light.stairs
   - service: light.turn_off
     data:
       entity_id:
@@ -29,4 +29,4 @@ action:
         - light.bedroom_4
         - light.landing
         - light.lamp
-
+        
