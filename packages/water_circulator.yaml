@@ -1,0 +1,55 @@
+homeassistant:
+  customize:
+    switch.water_circulator:
+      icon: mdi:kettle
+
+tplink:
+
+automation:
+  - alias: Water Circulator Morning On
+    trigger:
+      platform: time
+      at: '07:30:00'
+    action:
+      service: switch.turn_on
+      entity_id: switch.water_circulator
+
+  - alias: Water Circulator Morning Off
+    trigger:
+      platform: time
+      at: '08:30:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.water_circulator
+
+  - alias: Water Circulator Afternoon On
+    trigger:
+      platform: time
+      at: '17:30:00'
+    action:
+      service: switch.turn_on
+      entity_id: switch.water_circulator
+
+  - alias: Water Circulator Afternoon Off
+    trigger:
+      platform: time
+      at: '18:30:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.water_circulator
+
+  - alias: Water Circulator Evening On
+    trigger:
+      platform: time
+      at: '21:00:00'
+    action:
+      service: switch.turn_on
+      entity_id: switch.water_circulator
+
+  - alias: Water Circulator Evening Off
+    trigger:
+      platform: time
+      at: '21:30:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.water_circulator
