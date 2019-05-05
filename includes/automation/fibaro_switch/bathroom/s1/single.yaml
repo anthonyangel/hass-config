@@ -19,7 +19,7 @@ trigger:
 action:
   service: zwave.set_config_parameter
   data_template:
-    node_id: {{ state_attr('zwave.bathroom', 'node_id') }}
+    node_id: "{{ state_attr('zwave.bathroom', 'node_id') }}"
     parameter: 19
     value: 5
 
@@ -30,6 +30,6 @@ trigger:
 action:
   service: zwave.set_config_parameter
   data_template:
-    node_id: {{ state_attr('zwave.bathroom', 'node_id') }}
+    node_id: "{{ state_attr('zwave.bathroom', 'node_id') }}"
     parameter: 19
     value: 99
