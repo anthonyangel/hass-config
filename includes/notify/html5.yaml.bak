@@ -1,0 +1,4 @@
+platform: html5
+vapid_pub_key: !secret vapid_public_key
+vapid_prv_key: !secret vapid_private_key
+vapid_email: !secret gmail_anthony
