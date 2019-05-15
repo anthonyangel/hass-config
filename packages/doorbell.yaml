@@ -1,37 +1,37 @@
 homeassistant:
 
 automation:
-- alias: Doorbell notify phone
-  trigger:
-    platform: state
-    entity_id: binary_sensor.doorbell
-    to: 'on'
-  action:
-    - service: camera.snapshot
-      data:
-        entity_id: camera.front_door
-        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
-    - service: camera.snapshot
-      data:
-        entity_id: camera.front_left
-        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
-    - service: camera.snapshot
-      data:
-        entity_id: camera.front_right
-        filename: '/config/www/snapshot_{{ entity_id.entity_id }}.jpg'
-    - service: notify.notify
-      data:
-        title: "Doorbell!"
-        message: "Ding Dong"
+  - alias: Doorbell notify phone
+    trigger:
+      platform: state
+      entity_id: binary_sensor.doorbell
+      to: "on"
+    action:
+      - service: camera.snapshot
         data:
-          image: /local/snapshot_camera.front_door.jpg
-          url: /lovelace/outside
-    - service: notify.gmail_group
-      data:
-          title: 'Doorbell'
+          entity_id: camera.front_door
+          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+      - service: camera.snapshot
+        data:
+          entity_id: camera.front_left
+          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+      - service: camera.snapshot
+        data:
+          entity_id: camera.front_right
+          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+      # - service: notify.notify
+      #   data:
+      #     title: "Doorbell!"
+      #     message: "Ding Dong"
+      #     data:
+      #       image: /local/snapshot_camera.front_door.jpg
+      #       url: /lovelace/outside
+      - service: notify.gmail_group
+        data:
+          title: "Doorbell"
           message: "Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}"
           data:
-              images:              
-                  - /config/www/snapshot_camera.front_door.jpg
-                  - /config/www/snapshot_camera.front_right.jpg
-                  - /config/www/snapshot_camera.front_left.jpg
+            images:
+              - /config/www/snapshot_camera.front_door.jpg
+              - /config/www/snapshot_camera.front_right.jpg
+              - /config/www/snapshot_camera.front_left.jpg
