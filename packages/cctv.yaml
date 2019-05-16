@@ -1,30 +1,30 @@
 homeassistant:
 
 camera:
-  - platform: mjpeg
-    name: Front Door
-    mjpeg_url: http://192.168.1.206/Streaming/channels/101/httppreview
-    still_image_url: http://192.168.1.206/Streaming/channels/101/picture
-    username: !secret cctv_username
-    password: !secret cctv_password
-  - platform: mjpeg
+  - platform: onvif
+    host: 192.168.1.204
     name: Front Left
-    mjpeg_url: http://192.168.1.204/Streaming/channels/101/httppreview
-    still_image_url: http://192.168.1.204/Streaming/channels/101/picture
     username: !secret cctv_username
     password: !secret cctv_password
-  - platform: mjpeg
+    port: 80
+  - platform: onvif
+    host: 192.168.1.205
     name: Front Right
-    mjpeg_url: http://192.168.1.205/Streaming/channels/101/httppreview
-    still_image_url: http://192.168.1.205/Streaming/channels/101/picture
     username: !secret cctv_username
     password: !secret cctv_password
-  - platform: mjpeg
+    port: 80
+  - platform: onvif
+    host: 192.168.1.206
+    name: Front Door
+    username: !secret cctv_username
+    password: !secret cctv_password
+    port: 80
+  - platform: onvif
+    host: 192.168.1.207
     name: Rear Left
-    mjpeg_url: http://192.168.1.207/Streaming/channels/101/httppreview
-    still_image_url: http://192.168.1.207/Streaming/channels/101/picture
     username: !secret cctv_username
     password: !secret cctv_password
+    port: 80
 
 binary_sensor:
   - platform: hikvision
