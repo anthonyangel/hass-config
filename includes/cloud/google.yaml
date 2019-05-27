@@ -7,9 +7,14 @@ google_actions:
     exclude_entities:
       - light.kitchen_front
       - light.kitchen_rear
-      - light.kitchen_island_lights
       - switch.floodlight_rear_kitchen
       - switch.floodlight_rear_lounge
+      - switch.floodlight_driveway
+    include_domains:
+      - switch
+      - light
+      - fan
+      - camera
     include_entities:
       - media_player.lounge_tv
       - media_player.kitchen_tv
