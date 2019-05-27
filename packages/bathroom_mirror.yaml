@@ -1,0 +1,19 @@
+homeassistant:
+
+automation:
+  - alias: Bathroom mirror follow lights on
+    trigger:
+      platform: state
+      entity_id: light.bathroom
+      to: "on"
+    action:
+      - service: light.turn_on
+        entity_id: light.bathroom_mirror
+  - alias: Ensuite mirror follow lights on
+    trigger:
+      platform: state
+      entity_id: light.ensuite
+      to: "on"
+    action:
+      - service: light.turn_on
+        entity_id: light.ensuite_mirror
