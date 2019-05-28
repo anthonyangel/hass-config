@@ -1,0 +1,19 @@
+homeassistant:
+
+automation:
+  - alias: Front Door Opened
+    trigger:
+      platform: state
+      entity_id: binary_sensor.front_door
+      to: "on"
+    action:
+      - service: camera.record
+        data:
+          entity_id: camera.front_door
+          filename: "/config/www/{{ entity_id.entity_id }}.mp4"
+          duration: 20
+          lookback: 20
+      - service: telegram_bot.send_video
+        data:
+          file: "/config/www/{{ entity_id.entity_id }}.mp4"
+          title: "Front Door Opened {{now().strftime('%H:%M') }}"
