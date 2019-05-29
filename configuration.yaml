@@ -14,7 +14,6 @@ updater:
   include_used_components: true
 discovery:
 conversation:
-logbook:
 map:
 sun:
 wake_on_lan:
@@ -22,6 +21,7 @@ system_health:
 person:
 stream:
 
+logbook: !include includes/logbook.yaml
 history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
