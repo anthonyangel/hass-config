@@ -14,21 +14,21 @@ automation:
       - service: camera.snapshot
         data:
           entity_id: camera.front_door
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+          filename: "/config/www/front_door.jpg"
       - service: camera.snapshot
         data:
           entity_id: camera.front_left
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+          filename: "/config/www/front_left.jpg"
       - service: camera.snapshot
         data:
           entity_id: camera.front_right
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
+          filename: "/config/www/front_right.jpg"
       - service: notify.gmail_anthony
         data:
           title: "Motion"
           message: "There was Front Door Motion at {{now().strftime('%H:%M') }}"
           data:
             images:
-              - /config/www/snapshot_camera.front_door.jpg
-              - /config/www/snapshot_camera.front_right.jpg
-              - /config/www/snapshot_camera.front_left.jpg
+              - /config/www/front_door.jpg
+              - /config/www/front_right.jpg
+              - /config/www/front_left.jpg
