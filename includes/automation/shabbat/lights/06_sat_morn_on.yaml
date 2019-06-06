@@ -1,17 +1,15 @@
 alias: Shabbat Morning Lights on
 trigger:
   - platform: time
-    at: "06:00:00"
+    at: "07:00:00"
 condition:
   condition: and
   conditions:
-    - condition: time
-      weekday:
-        - sat
+    - condition: state
+      entity_id: "binary_sensor.shabbat"
+      state: "on"
 action:
   - service: light.turn_on
     entity_id:
-      - light.playroom
-      - light.kitchen_ceiling
       - light.utility
-      - light.toilet
+      - light.ensuite

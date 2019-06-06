@@ -5,9 +5,9 @@ trigger:
 condition:
   condition: and
   conditions:
-    - condition: time
-      weekday:
-        - fri
+    - condition: state
+      entity_id: "binary_sensor.shabbat"
+      state: "on"
 action:
   - service: light.turn_off
     entity_id:
