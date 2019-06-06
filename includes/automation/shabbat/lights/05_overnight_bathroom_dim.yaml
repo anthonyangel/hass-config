@@ -5,13 +5,13 @@ trigger:
 condition:
   condition: and
   conditions:
-    - condition: time
-      weekday:
-        - sat
+    - condition: state
+      entity_id: 'binary_sensor.shabbat'
+      state: 'on'
 action:
   - service: light.turn_on
     entity_id:
       - light.bathroom
       - light.ensuite
     data:
-      brightness: 32
+      brightness: 20
