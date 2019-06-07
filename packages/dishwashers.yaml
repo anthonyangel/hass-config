@@ -1,0 +1,53 @@
+homeassistant:
+
+automation:
+  - alias: Meaty Dishwasher on at 22:00 Friday
+    trigger:
+      platform: time
+      at: "22:00:00"
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: "binary_sensor.shabbat"
+          state: "on"
+        - condition: time
+          weekday:
+            - fri
+    action:
+      service: ifttt.trigger
+      data: { "event": "meaty_dishwasher_on" }
+
+  - alias: Milky Dishwasher on at 22:00 Sunday
+    trigger:
+      platform: time
+      at: "22:00:00"
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: "binary_sensor.shabbat"
+          state: "on"
+        - condition: time
+          weekday:
+            - sun
+    action:
+      service: ifttt.trigger
+      data: { "event": "milky_dishwasher_on" }
+
+  - alias: Meaty Dishwasher on at 18:00 Monday
+    trigger:
+      platform: time
+      at: "18:00:00"
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: "binary_sensor.shabbat"
+          state: "on"
+        - condition: time
+          weekday:
+            - mon
+    action:
+      service: ifttt.trigger
+      data: { "event": "meaty_dishwasher_on" }
