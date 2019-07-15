@@ -1,12 +1,12 @@
-alias: bedroom_4 Button 1 Double
+alias: Ari's bedroom Button 1 Hold
 trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.bedroom_4
-    scene_id: 14
+    entity_id: zwave.aris_bedroom
+    scene_id: 12
 action:
   service: notify.notify
   data:
-    message: "bedroom_4 Button 1 Double"
+    message: "Ari's bedroom Button 1 Hold"
     title: "Button!"

@@ -26,7 +26,7 @@ action:
         - light.matans_bedroom
         - light.master_bedroom
         - light.bedroom_3
-        - light.bedroom_4
+        - light.aris_bedroom
         - light.landing
         - light.lamp
         
