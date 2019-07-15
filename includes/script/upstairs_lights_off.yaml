@@ -6,11 +6,10 @@ sequence:
         - light.bathroom
         - light.bathroom_mirror
         - light.bedroom_3
-        - light.bedroom_4
+        - light.aris_bedroom
         - light.ensuite
         - light.ensuite_mirror
         - light.landing
         - light.master_bedroom
         - light.matans_bedroom
-        - light.stairs 
-
+        - light.stairs

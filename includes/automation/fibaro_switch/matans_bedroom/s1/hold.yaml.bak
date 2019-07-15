@@ -1,4 +1,4 @@
-alias: matans_bedroom Button 1 Hold
+alias: Matan's bedroom Button 1 Hold
 trigger:
   platform: event
   event_type: zwave.scene_activated
@@ -8,5 +8,5 @@ trigger:
 action:
   service: notify.notify
   data:
-    message: "matans_bedroom Button 1 Hold"
+    message: "Matan's bedroom Button 1 Hold"
     title: "Button!"

@@ -1,5 +1,5 @@
 # # Implicitly attached to toggle Matan's bedroom ceiling
-# alias: matans_bedroom Button 1 Single
+# alias: Matan's bedroom Button 1 Single
 # trigger:
 #   platform: event
 #   event_type: zwave.scene_activated
@@ -9,5 +9,5 @@
 # action:
 #   service: notify.notify
 #   data:
-#     message: "matans_bedroom Button 1 Single"
+#     message: "Matan's bedroom Button 1 Single"
 #     title: "Button!"
