@@ -3,8 +3,6 @@ homeassistant:
     switch.water_circulator:
       icon: mdi:kettle
 
-tplink:
-
 automation:
   - alias: Water Circulator Morning On
     trigger:
