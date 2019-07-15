@@ -13,5 +13,6 @@ action:
     entity_id:
       - light.bathroom
       - light.ensuite
+      - light.bedroom_3
     data:
-      brightness: 20
+      brightness: 2
