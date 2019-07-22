@@ -18,7 +18,7 @@ action:
       - light.playroom
       - light.bedroom_matan
       - light.bedroom_master
-      - light.aris_bedroom
+      - light.bedroom_ari
       - light.ensuite
       - light.bathroom
       - light.toilet
