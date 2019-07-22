@@ -11,5 +11,5 @@ sequence:
         - light.ensuite_mirror
         - light.landing
         - light.bedroom_master
-        - light.matans_bedroom
+        - light.bedroom_matan
         - light.stairs

@@ -23,7 +23,7 @@ action:
       entity_id:
         - light.kitchen_worktop
         - light.kitchen_island
-        - light.matans_bedroom
+        - light.bedroom_matan
         - light.bedroom_master
         - light.bedroom_3
         - light.aris_bedroom
