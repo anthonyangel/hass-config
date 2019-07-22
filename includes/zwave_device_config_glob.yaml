@@ -40,6 +40,6 @@ sensor.steinel_is140_2_system*:
 switch.steinel_is140_2_switch*:
   ignored: true
   polling_intensity: 0
-sensor.steinel_is1402_burglar*:
+sensor.steinel_is140_2_burglar*:
   ignored: true
   polling_intensity: 0
