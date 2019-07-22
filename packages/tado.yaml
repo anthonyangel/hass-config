@@ -16,19 +16,19 @@ tado:
   password: !secret tado_password
 
 binary_sensor:
-- platform: template
-  sensors:
-    tado_bridge_status:
-      friendly_name: Tado Bridge Status
-      device_class: connectivity
-      value_template: "{{ is_state('sensor.hillersdon_tado_bridge_status', 'True') }}"
+  - platform: template
+    sensors:
+      tado_bridge_status:
+        friendly_name: Tado Bridge Status
+        device_class: connectivity
+        value_template: "{{ is_state('sensor.hillersdon_tado_bridge_status', 'True') }}"
 
 group:
   humidity:
     name: Humidity
     icon: mdi:water-percent
     entities:
-      - sensor.master_bedroom_humidity
+      - sensor.bedroom_master_humidity
       - sensor.matans_bedroom_humidity
       - sensor.3rd_bedroom_humidity
       - sensor.4th_bedroom_humidity
@@ -47,7 +47,7 @@ group:
     name: Temperature
     icon: mdi:thermometer
     entities:
-      - sensor.master_bedroom_temperature
+      - sensor.bedroom_master_temperature
       - sensor.matans_bedroom_temperature
       - sensor.3rd_bedroom_temperature
       - sensor.4th_bedroom_temperature
@@ -66,7 +66,7 @@ group:
     name: Heating
     icon: mdi:radiator
     entities:
-      - sensor.master_bedroom_heating
+      - sensor.bedroom_master_heating
       - sensor.matans_bedroom_heating
       - sensor.3rd_bedroom_heating
       - sensor.4th_bedroom_heating

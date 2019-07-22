@@ -2,7 +2,7 @@ alias: Friday Shabbat Prep Lights on
 trigger:
   platform: sun
   event: sunset
-  offset: '-00:45:00'
+  offset: "-00:45:00"
 condition:
   condition: and
   conditions:
@@ -19,7 +19,7 @@ action:
         - light.lounge
         - light.playroom
         - light.matans_bedroom
-        - light.master_bedroom
+        - light.bedroom_master
         - light.ensuite
         - light.bathroom
         - light.toilet
