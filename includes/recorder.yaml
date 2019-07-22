@@ -29,3 +29,6 @@ exclude:
     - sensor.upstairs_nest_protect_color_status
     - sensor.upstairs_nest_protect_smoke_status
     - media_player.galaxy_s8
+    - sensor.pir_driveway_motion
+    - sensor.pir_rear_kitchen_motion
+    - sensor.pir_rear_lounge_motion  
