@@ -5,11 +5,11 @@ sequence:
       entity_id:
         - light.bathroom
         - light.bathroom_mirror
-        - light.bedroom_3
-        - light.aris_bedroom
+        - light.bedroom_spare
+        - light.bedroom_ari
         - light.ensuite
         - light.ensuite_mirror
         - light.landing
-        - light.master_bedroom
-        - light.matans_bedroom
+        - light.bedroom_master
+        - light.bedroom_matan
         - light.stairs

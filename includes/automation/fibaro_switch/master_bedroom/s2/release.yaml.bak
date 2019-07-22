@@ -1,12 +1,12 @@
-alias: master_bedroom Button 2 Release
+alias: Master Bedroom Button 2 Release
 trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.master_bedroom
+    entity_id: zwave.bedroom_master
     scene_id: 23
 action:
   service: notify.notify
   data:
-    message: "master_bedroom Button 2 Release"
+    message: "Master Bedroom Button 2 Release"
     title: "Button!"

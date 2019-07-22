@@ -16,9 +16,9 @@ action:
       - light.kitchen_island
       - light.lounge
       - light.playroom
-      - light.matans_bedroom
-      - light.master_bedroom
-      - light.aris_bedroom
+      - light.bedroom_matan
+      - light.bedroom_master
+      - light.bedroom_ari
       - light.ensuite
       - light.bathroom
       - light.toilet

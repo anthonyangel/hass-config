@@ -9,9 +9,9 @@ nest:
 
   sensors:
     monitored_conditions:
-      - 'co_status'
-      - 'smoke_status'
-      - 'color_status'
+      - "co_status"
+      - "smoke_status"
+      - "color_status"
 
 binary_sensor:
   - platform: template
@@ -30,34 +30,34 @@ automation:
     trigger:
       platform: state
       entity_id: binary_sensor.nest_emergency
-      from: 'safe'
-      to: 'Unsafe'
+      from: "safe"
+      to: "Unsafe"
     action:
       - service: media_player.volume_mute
         data:
           entity_id:
             - media_player.kitchen_2
             - media_player.lounge_2
-            - media_player.master_bedroom
+            - media_player.bedroom_master
             - media_player.matan
             - media_player.playroom
           is_volume_muted: true
       - service: light.turn_on
         entity_id: light.hood_ambient_red
-        
+
   - alias: Nest Protect Safe
     trigger:
       platform: state
       entity_id: binary_sensor.nest_emergency
-      from: 'Unsafe'
-      to: 'safe'
+      from: "Unsafe"
+      to: "safe"
     action:
       - service: media_player.volume_mute
         data:
           entity_id:
             - media_player.kitchen_2
             - media_player.lounge_2
-            - media_player.master_bedroom
+            - media_player.bedroom_master
             - media_player.matan
             - media_player.playroom
           is_volume_muted: false
