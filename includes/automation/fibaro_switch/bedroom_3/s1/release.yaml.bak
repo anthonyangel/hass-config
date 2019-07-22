@@ -1,12 +1,12 @@
-alias: bedroom_3 Button 1 Release
+alias: Spare Bedroom Button 1 Release
 trigger:
   platform: event
   event_type: zwave.scene_activated
   event_data:
-    entity_id: zwave.bedroom_3
+    entity_id: zwave.bedroom_spare
     scene_id: 13
 action:
   service: notify.notify
   data:
-    message: "bedroom_3 Button 1 Release"
+    message: "Spare Bedroom Button 1 Release"
     title: "Button!"

@@ -25,7 +25,7 @@ action:
         - light.kitchen_island
         - light.bedroom_matan
         - light.bedroom_master
-        - light.bedroom_3
+        - light.bedroom_spare
         - light.bedroom_ari
         - light.landing
         - light.lamp
