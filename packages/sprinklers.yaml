@@ -1,0 +1,35 @@
+homeassistant:
+  customize:
+    switch.sprinkler_borders:
+      icon: mdi:flower
+  customize_glob:
+    switch.sprinkler_lawn_*:
+      icon: mdi:water
+
+switch:
+  - platform: command_line
+    switches:
+      sprinkler_borders:
+        friendly_name: Borders
+        command_on: "curl 'http://192.168.1.222/bin/manual?zone=zb&state=on' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_off: "curl 'http://192.168.1.222/bin/manual?zone=zb&state=off' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_state: '/usr/bin/curl -s --connect-timeout 5 "http://192.168.1.222/json/zones" | python3 -c "import sys, json; print(json.load(sys.stdin)[''zones''][0][''state''])"'
+        value_template: '{{ value == "on" }}'
+      sprinkler_lawn_front_right:
+        friendly_name: Lawn Front Right
+        command_on: "curl 'http://192.168.1.222/bin/manual?zone=zc&state=on' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_off: "curl 'http://192.168.1.222/bin/manual?zone=zc&state=off' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_state: '/usr/bin/curl -s --connect-timeout 5 "http://192.168.1.222/json/zones" | python3 -c "import sys, json; print(json.load(sys.stdin)[''zones''][1][''state''])"'
+        value_template: '{{ value == "on" }}'
+      sprinkler_lawn_rear_left:
+        friendly_name: Lawn Rear Left
+        command_on: "curl 'http://192.168.1.222/bin/manual?zone=zd&state=on' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_off: "curl 'http://192.168.1.222/bin/manual?zone=zd&state=off' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_state: '/usr/bin/curl -s --connect-timeout 5 "http://192.168.1.222/json/zones" | python3 -c "import sys, json; print(json.load(sys.stdin)[''zones''][2][''state''])"'
+        value_template: '{{ value == "on" }}'
+      sprinkler_lawn_centre:
+        friendly_name: Lawn Centre
+        command_on: "curl 'http://192.168.1.222/bin/manual?zone=ze&state=on' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_off: "curl 'http://192.168.1.222/bin/manual?zone=ze&state=off' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
+        command_state: '/usr/bin/curl -s --connect-timeout 5 "http://192.168.1.222/json/zones" | python3 -c "import sys, json; print(json.load(sys.stdin)[''zones''][3][''state''])"'
+        value_template: '{{ value == "on" }}'
