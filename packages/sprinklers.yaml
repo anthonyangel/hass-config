@@ -33,3 +33,76 @@ switch:
         command_off: "curl 'http://192.168.1.222/bin/manual?zone=ze&state=off' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed --insecure"
         command_state: '/usr/bin/curl -s --connect-timeout 5 "http://192.168.1.222/json/zones" | python3 -c "import sys, json; print(json.load(sys.stdin)[''zones''][3][''state''])"'
         value_template: '{{ value == "on" }}'
+
+automation:
+  - alias: Sprinkler Front Right Morning
+    trigger:
+      platform: time
+      at: "7:00:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_front_right
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_front_right
+
+  - alias: Sprinkler Rear Left Morning
+    trigger:
+      platform: time
+      at: "7:15:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_rear_left
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_rear_left
+
+  - alias: Sprinkler Centre Morning
+    trigger:
+      platform: time
+      at: "7:30:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_centre
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_centre
+
+  - alias: Sprinkler Front Right Evening
+    trigger:
+      platform: time
+      at: "19:00:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_front_right
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_front_right
+
+  - alias: Sprinkler Rear Left Evening
+    trigger:
+      platform: time
+      at: "19:15:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_rear_left
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_rear_left
+
+  - alias: Sprinkler Centre Evening
+    trigger:
+      platform: time
+      at: "19:30:00"
+    action:
+      - service: switch.turn_on
+        entity_id: switch.sprinkler_lawn_centre
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.sprinkler_lawn_centre
