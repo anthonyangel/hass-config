@@ -42,8 +42,7 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_front_right
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_front_right
 
@@ -54,8 +53,7 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_rear_left
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_rear_left
 
@@ -66,8 +64,7 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_centre
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_centre
 
@@ -78,8 +75,7 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_front_right
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_front_right
 
@@ -90,8 +86,7 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_rear_left
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_rear_left
 
@@ -102,7 +97,6 @@ automation:
     action:
       - service: switch.turn_on
         entity_id: switch.sprinkler_lawn_centre
-      - delay:
-          minutes: 15
+      - delay: '00:14:59'
       - service: switch.turn_off
         entity_id: switch.sprinkler_lawn_centre
