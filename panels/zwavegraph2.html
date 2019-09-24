@@ -14,9 +14,12 @@
     - fixed the broken new line in the node tooltips
     - you can now click on the node to see the entity dialog
 
+  Version 2.1: (20 September 2019)
+    - added Tools to graph legends so you can easily navigate to Z-Wave Network Management
+    - fixed (hopefully) the problem with the graph requiring page reload then navigating to it
  -->
 
-<dom-module id='ha-panel-zwavegraph2'>
+ <dom-module id='ha-panel-zwavegraph2'>
   <template>
     <style include="ha-style">
       .thumb {
@@ -248,119 +251,141 @@
         // panel.config contains config passed to register_panel serverside
         panel: Object,
 
-        controls: { type: Object },
-        controlsLoaded: { type: Boolean, value: false },
+        controls: {
+          type: Object
+        },
+        controlsLoaded: {
+          type: Boolean,
+          value: false
+        },
 
-        settings: { type: Boolean, value: false },
+        settings: {
+          type: Boolean,
+          value: false
+        },
 
       };
     }
 
     ready() {
       super.ready();
-      this.paintGraph("network-simplex", "relevant");
+      this.$.svg.innerHTML = ""
+      var that = this;
+      setTimeout(function() {
+        that.paintGraph("network-simplex", "relevant");
+      }, 100);
     }
 
     paintGraph(ranker, edgeVisibility) {
       var legends = [{
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "Hub"
-      },
-      {
-        shape: "rect",
-        color: "#1BBC9B",
-        stroke: "#1D8548",
-        textcolor: "#11512C",
-        text: "1 hop"
-      },
-      {
-        shape: "rect",
-        color: "#2DCC70",
-        stroke: "#1D8548",
-        textcolor: "#1D8548",
-        text: "2 hops"
-      },
-      {
-        shape: "rect",
-        color: "#F1C40F",
-        stroke: "#D25400",
-        textcolor: "#D25400",
-        text: "3 hops"
-      },
-      {
-        shape: "rect",
-        color: "E77E23",
-        stroke: "#D25400",
-        textcolor: "#D25400",
-        text: "4 hops"
-      },
-      {
-        shape: "rect",
-        color: "crimson",
-        stroke: "darkred",
-        textcolor: "darkred",
-        text: "Failed Node"
-      },
-      {
-        shape: "rect",
-        color: "lightgray",
-        stroke: "#666666",
-        textcolor: "#666666",
-        text: "Unconnected"
-      }
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "Hub"
+        },
+        {
+          shape: "rect",
+          color: "#1BBC9B",
+          stroke: "#1D8548",
+          textcolor: "#11512C",
+          text: "1 hop"
+        },
+        {
+          shape: "rect",
+          color: "#2DCC70",
+          stroke: "#1D8548",
+          textcolor: "#1D8548",
+          text: "2 hops"
+        },
+        {
+          shape: "rect",
+          color: "#F1C40F",
+          stroke: "#D25400",
+          textcolor: "#D25400",
+          text: "3 hops"
+        },
+        {
+          shape: "rect",
+          color: "E77E23",
+          stroke: "#D25400",
+          textcolor: "#D25400",
+          text: "4 hops"
+        },
+        {
+          shape: "rect",
+          color: "crimson",
+          stroke: "darkred",
+          textcolor: "darkred",
+          text: "Failed Node"
+        },
+        {
+          shape: "rect",
+          color: "lightgray",
+          stroke: "#666666",
+          textcolor: "#666666",
+          text: "Unconnected"
+        }
       ];
 
       var layout = [{
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "Network Simplex",
-        ranker: "network-simplex",
-        cursor: "pointer"
-      },
-      {
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "Tight Tree",
-        ranker: "tight-tree",
-        cursor: "pointer"
-      },
-      {
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "Longest Path",
-        ranker: "longest-path",
-        cursor: "pointer"
-      }
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "Network Simplex",
+          ranker: "network-simplex",
+          cursor: "pointer"
+        },
+        {
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "Tight Tree",
+          ranker: "tight-tree",
+          cursor: "pointer"
+        },
+        {
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "Longest Path",
+          ranker: "longest-path",
+          cursor: "pointer"
+        }
       ];
 
       var edgesLegend = [{
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "Relevant Neighbors",
-        edges: "relevant",
-        cursor: "pointer"
-      },
-      {
-        shape: "rect",
-        color: "#3598DB",
-        stroke: "#2470A2",
-        textcolor: "#2470A2",
-        text: "All Neighbors",
-        edges: "all",
-        cursor: "pointer"
-      }
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "Relevant Neighbors",
+          edges: "relevant",
+          cursor: "pointer"
+        },
+        {
+          shape: "rect",
+          color: "#3598DB",
+          stroke: "#2470A2",
+          textcolor: "#2470A2",
+          text: "All Neighbors",
+          edges: "all",
+          cursor: "pointer"
+        }
       ];
+
+      var links = [{
+        shape: "rect",
+        color: "#3598DB",
+        stroke: "#2470A2",
+        textcolor: "#2470A2",
+        text: "Network Management",
+        cursor: "hand",
+        url: "/config/zwave",
+      }, ];
 
       this.ranker = ranker;
       this.edgeVisibility = edgeVisibility;
@@ -461,14 +486,12 @@
           return g.edges(d).layer;
         });
 
-      // this.$.miniSvg.setAttribute("height", g.graph().height / 4);
-      // this.$.miniSvg.setAttribute("width", g.graph().width / 4);
-      // this.$.scopeContainer.setAttribute("height", g.graph().height / 4);
-      // this.$.scopeContainer.setAttribute("width", g.graph().width / 4);
       var that = this;
       var handleClick = function (d, i, nodeList) { // Add interactivity
         var node = nodes[i];
-        that.fire('hass-more-info', { entityId: node.entity_id });
+        that.fire('hass-more-info', {
+          entityId: node.entity_id
+        });
       };
 
       // append handlers
@@ -481,6 +504,7 @@
       this.addLegend(this.$, svg, legends, 5, 20, "Node Colors", ranker, this.edgeVisibility);
       this.addLegend(this.$, svg, layout, 150, 20, "Tree Layout", ranker, this.edgeVisibility);
       this.addLegend(this.$, svg, edgesLegend, 300, 20, "Neighbors", ranker, this.edgeVisibility);
+      this.addLegend(this.$, svg, links, 500, 20, "Tools", ranker, this.edgeVisibility);
 
       this.$.miniSvg.innerHTML = this.$.svg.innerHTML;
 
@@ -513,9 +537,9 @@
         let id = zwaves[b].entity.attributes["node_id"];
         let node = zwaves[b].entity;
         if (node.attributes["capabilities"].filter(
-          (s) => {
-            return s == "primaryController"
-          }).length > 0) {
+            (s) => {
+              return s == "primaryController"
+            }).length > 0) {
           hubNode = id;
         }
         neighbors[id] = node.attributes['neighbors'];
@@ -590,8 +614,8 @@
 
             // assign node to layer
             result.nodes.filter((n) => {
-              return ((n.id == previousRow[target]) && (n.group = "unset"))
-            })
+                return ((n.id == previousRow[target]) && (n.group = "unset"))
+              })
               .every((d) => {
                 d.class = "layer-" + layer;
                 d.layer = layer;
@@ -607,8 +631,8 @@
               })
 
             if (result.nodes.filter((n) => {
-              return ((n.id == previousRow[target]) && (n.forwards))
-            }).length > 0) {
+                return ((n.id == previousRow[target]) && (n.forwards))
+              }).length > 0) {
               let row = neighbors[previousRow[target]];
               for (let node in row) {
                 if (neighbors[row[node]] !== undefined) {
@@ -652,31 +676,31 @@
       var w = bbox.width,
         h = bbox.height,
         points = [{
-          x: 0,
-          y: 0
-        },
-        {
-          x: w,
-          y: 0
-        },
-        {
-          x: w,
-          y: -h
-        },
-        {
-          x: w / 2,
-          y: -h * 3 / 2
-        },
-        {
-          x: 0,
-          y: -h
-        }
+            x: 0,
+            y: 0
+          },
+          {
+            x: w,
+            y: 0
+          },
+          {
+            x: w,
+            y: -h
+          },
+          {
+            x: w / 2,
+            y: -h * 3 / 2
+          },
+          {
+            x: 0,
+            y: -h
+          }
         ],
         shapeSvg = parent.insert("polygon", ":first-child")
-          .attr("points", points.map(function (d) {
-            return d.x + "," + d.y;
-          }).join(" "))
-          .attr("transform", "translate(" + (-w / 2) + "," + (h * 3 / 4) + ")");
+        .attr("points", points.map(function (d) {
+          return d.x + "," + d.y;
+        }).join(" "))
+        .attr("transform", "translate(" + (-w / 2) + "," + (h * 3 / 4) + ")");
 
       node.intersect = function (point) {
         return dagreD3.intersect.polygon(node, points, point);
@@ -689,48 +713,48 @@
       var w = bbox.width,
         h = bbox.height,
         points = [{
-          x: 0,
-          y: 0
-        }, // bottom left
-        {
-          x: w,
-          y: 0
-        }, // bottom line
-        {
-          x: w,
-          y: -h
-        }, // right line
-        {
-          x: w * 7 / 10,
-          y: -h
-        }, // top right
-        {
-          x: w * 7 / 10,
-          y: -h * 20 / 17
-        }, // battery tip - right
-        {
-          x: w * 3 / 10,
-          y: -h * 20 / 17
-        }, // battery tip
-        {
-          x: w * 3 / 10,
-          y: -h
-        }, // battery tip - left
-        {
-          x: 0,
-          y: -h
-        }, // top left
-        {
-          x: 0,
-          y: -h
-        } // left line
+            x: 0,
+            y: 0
+          }, // bottom left
+          {
+            x: w,
+            y: 0
+          }, // bottom line
+          {
+            x: w,
+            y: -h
+          }, // right line
+          {
+            x: w * 7 / 10,
+            y: -h
+          }, // top right
+          {
+            x: w * 7 / 10,
+            y: -h * 20 / 17
+          }, // battery tip - right
+          {
+            x: w * 3 / 10,
+            y: -h * 20 / 17
+          }, // battery tip
+          {
+            x: w * 3 / 10,
+            y: -h
+          }, // battery tip - left
+          {
+            x: 0,
+            y: -h
+          }, // top left
+          {
+            x: 0,
+            y: -h
+          } // left line
         ],
 
         shapeSvg = parent.insert("polygon", ":first-child")
-          .attr("points", points.map(function (d) {
-            return d.x + "," + d.y;
-          }).join(" "))
-          .attr("transform", "translate(" + (-w / 2) + "," + (h * 2 / 4) + ")");
+        .attr("points", points.map(function (d) {
+          return d.x + "," + d.y;
+        }).join(" "))
+        .attr("transform", "translate(" + (-w / 2) + "," + (h * 2 / 4) + ")");
 
       node.intersect = function (point) {
         return dagreD3.intersect.polygon(node, points, point);
@@ -794,8 +818,14 @@
       var that = this;
 
       var handleClick = function (d, i, nodeList) {
+
+        if (nodeList[0].dataset.url !== undefined) {
+          window.location = nodeList[0].dataset.url;
+        }
+
         var ranker = nodeList[0].dataset.ranker || that.ranker;
         var edges = nodeList[0].dataset.edges || that.edgeVisibility;
+
         svg.selectAll("*").remove();
 
         // Destroy svgpanzoom
@@ -815,41 +845,60 @@
 
       for (var counter = 0; counter < legends.length; counter++) {
 
-        var shape = svg.append(legends[counter].shape)
-          .attr('x', startX)
-          .attr('y', startY + 20 * (counter + 1))
-          .attr('width', 10)
-          .attr('height', 10)
-          .style("stroke", legends[counter].stroke)
-          .style("fill", legends[counter].color)
-          .style("cursor", legends[counter].cursor);
+        var isLink = legends[counter].url !== undefined;
 
-        var text = svg.append('text')
-          .attr("x", startX + 20)
-          .attr("y", startY + 10 + 20 * (counter + 1))
-          .attr("class", "textselected")
-          .text(legends[counter].text)
-          .style("text-anchor", "start")
-          .style("fill", legends[counter].textcolor)
-          .style("font-size", 15)
-          .style("cursor", legends[counter].cursor);
+        if (isLink) {
+          var text = svg.append('text')
+            .attr("x", startX)
+            .attr("y", startY + 10 + 20 * (counter + 1))
+            .attr("class", "textselected")
+            .attr('data-url', legends[counter].url)
+            .text(legends[counter].text)
+            .style("text-anchor", "start")
+            .style("fill", legends[counter].textcolor)
+            .style("font-size", 15)
+            .style("text-decoration", "underline")
+            .style("cursor", legends[counter].cursor)
+            .on("click", handleClick);
+        } else {
 
-        if (legends[counter].ranker) {
-          shape.attr('data-ranker', legends[counter].ranker)
-            .on("click", handleClick);
-          text.attr('data-ranker', legends[counter].ranker)
-            .on("click", handleClick);
-          if (legends[counter].ranker !== ranker) {
-            shape.style("fill", "transparent");
+          var shape = svg.append(legends[counter].shape)
+            .attr('x', startX)
+            .attr('y', startY + 20 * (counter + 1))
+            .attr('width', 10)
+            .attr('height', 10)
+            .style("stroke", legends[counter].stroke)
+            .style("fill", legends[counter].color)
+            .style("cursor", legends[counter].cursor);
+
+          var text = svg.append('text')
+            .attr("x", startX + 20)
+            .attr("y", startY + 10 + 20 * (counter + 1))
+            .attr("class", "textselected")
+            .text(legends[counter].text)
+            .style("text-anchor", "start")
+            .style("fill", legends[counter].textcolor)
+            .style("font-size", 15)
+            .style("cursor", legends[counter].cursor);
+
+          if (legends[counter].ranker) {
+            shape.attr('data-ranker', legends[counter].ranker)
+              .on("click", handleClick);
+            text.attr('data-ranker', legends[counter].ranker)
+              .on("click", handleClick);
+            if (legends[counter].ranker !== ranker) {
+              shape.style("fill", "transparent");
+            }
           }
-        }
-        if (legends[counter].edges) {
-          shape.attr('data-edges', legends[counter].edges)
-            .on("click", handleClick);
-          text.attr('data-edges', legends[counter].edges)
-            .on("click", handleClick);
-          if (legends[counter].edges !== edges) {
-            shape.style("fill", "transparent");
+
+          if (legends[counter].edges) {
+            shape.attr('data-edges', legends[counter].edges)
+              .on("click", handleClick);
+            text.attr('data-edges', legends[counter].edges)
+              .on("click", handleClick);
+            if (legends[counter].edges !== edges) {
+              shape.style("fill", "transparent");
+            }
           }
         }
       }
