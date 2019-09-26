@@ -1,0 +1,74 @@
+homeassistant:
+
+automation:
+  - alias: Hall lights on 5m after sunset
+    trigger:
+      platform: sun
+      event: sunset
+      offset: "+00:05:00"
+    action:
+      service: light.turn_on
+      entity_id: light.hall
+
+  - alias: Hall lights off between 21 - 22
+    trigger:
+      platform: time
+      at: "21:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_off
+        entity_id: light.hall
+
+  - alias: Playroom lights on between 19 - 20
+    trigger:
+      platform: time
+      at: "19:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_on
+        entity_id: light.playroom
+
+  - alias: Playroom lights off between 21 - 22
+    trigger:
+      platform: time
+      at: "21:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_off
+        entity_id: light.playroom
+
+  - alias: Matan lights on between 18 - 19
+    trigger:
+      platform: time
+      at: "18:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_on
+        entity_id: light.bedroom_matan
+
+  - alias: Matan lights off between 19 - 20
+    trigger:
+      platform: time
+      at: "19:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_off
+        entity_id: light.bedroom_matan
+
+  - alias: Master Bedroom lights on between 21 - 22
+    trigger:
+      platform: time
+      at: "21:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_on
+        entity_id: light.bedroom_master
+
+  - alias: Master Bedroom lights off between 22 - 23
+    trigger:
+      platform: time
+      at: "22:00:00"
+    action:
+      - delay: "00:{{ (range(0, 59)|random|int) }}:00"
+      - service: light.turn_off
+        entity_id: light.bedroom_master
