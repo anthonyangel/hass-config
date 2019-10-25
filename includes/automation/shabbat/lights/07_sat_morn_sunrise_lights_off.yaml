@@ -15,5 +15,4 @@ action:
       - group.all_lights
   - service: light.turn_on
     entity_id:
-      - light.ensuite
       - light.utility
