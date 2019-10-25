@@ -1,7 +1,7 @@
 alias: Shabbat Morning Lights on
 trigger:
   - platform: time
-    at: "07:00:00"
+    at: "06:00:00"
 condition:
   condition: and
   conditions:
@@ -13,3 +13,6 @@ action:
     entity_id:
       - light.utility
       - light.ensuite
+      - light.playroom
+      - light.lounge
+      - light.kitchen_ceiling
