@@ -3,106 +3,98 @@ homeassistant:
     device_tracker.*:
       hidden: true
 
-device_tracker:
-  - platform: unifi
-    host: !secret unifi_host
-    username: !secret unifi_username
-    password: !secret unifi_password
-    verify_ssl: false
-    site_id: !secret unifi_site_id
-
 binary_sensor:
-- platform: template
-  sensors:
-  # CCTV
-    cctv_front_left:
-      friendly_name: CCTV Front Left
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctv_front_left', 'home') }}"
-    cctv_front_right:
-      friendly_name: CCTV Front Right
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctv_front_right', 'home') }}"
-    cctv_front_door:
-      friendly_name: CCTV Front Door
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctv_front_door', 'home') }}"
-    cctv_rear_left:
-      friendly_name: CCTV Rear Left
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.cctv_rear_left', 'home') }}"
-    # Cupboard Devices  
-    pdu:
-      friendly_name: PDU
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
-    texe_hub:
-      friendly_name: Texecom Hub
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.texe_hub', 'home') }}"
-    nas:
-      friendly_name: NAS
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
-    gigabyte:
-      friendly_name: Gigabyte
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
-    # Kitchen Appliances  
-    dishwasher_left:
-      friendly_name: Dishwasher Left
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.dishwasher_left', 'home') }}"
-    dishwasher_right:
-      friendly_name: Dishwasher Right
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.dishwasher_right', 'home') }}"
-    oven_left:
-      friendly_name: Oven Left
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.oven_left', 'home') }}"
-    oven_right:
-      friendly_name: Oven Right
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.oven_right', 'home') }}"
-    hob:
-      friendly_name: Hob
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.hob', 'home') }}"
-    extractor:
-      friendly_name: Extractor
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
-    # Media Players
-    google_home_mini:
-      friendly_name: Google Home Mini
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.googlehomemini', 'home') }}"
-    lounge_chromecast:
-      friendly_name: Lounge Chromecast
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.lounge_chromecast', 'home') }}"
-    kitchen_chromecast:
-      friendly_name: Kitchen Chromecast
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.kitchen_chromecast', 'home') }}"
-    sonos_kitchen:
-      friendly_name: Sonos Kitchen
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonos_kitchen', 'home') }}"
-    sonos_bedroom:
-      friendly_name: Sonos Bedroom
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonos_bedroom', 'home') }}"
-    sonos_lounge:
-      friendly_name: Sonos Lounge
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonos_lounge', 'home') }}"
-    sonos_matan:
-      friendly_name: Sonos Matan
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonos_matan', 'home') }}"
-    sonos_playroom:
-      friendly_name: Sonos Playroom
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.sonos_playroom', 'home') }}"
+  - platform: template
+    sensors:
+      # CCTV
+      cctv_front_left:
+        friendly_name: CCTV Front Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_left', 'home') }}"
+      cctv_front_right:
+        friendly_name: CCTV Front Right
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_right', 'home') }}"
+      cctv_front_door:
+        friendly_name: CCTV Front Door
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_door', 'home') }}"
+      cctv_rear_left:
+        friendly_name: CCTV Rear Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_rear_left', 'home') }}"
+      # Cupboard Devices
+      pdu:
+        friendly_name: PDU
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.pdu', 'home') }}"
+      texe_hub:
+        friendly_name: Texecom Hub
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.texe_hub', 'home') }}"
+      nas:
+        friendly_name: NAS
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.dlink2a558c', 'home') }}"
+      gigabyte:
+        friendly_name: Gigabyte
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.gigabyte', 'home') }}"
+      # Kitchen Appliances
+      dishwasher_left:
+        friendly_name: Dishwasher Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.dishwasher_left', 'home') }}"
+      dishwasher_right:
+        friendly_name: Dishwasher Right
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.dishwasher_right', 'home') }}"
+      oven_left:
+        friendly_name: Oven Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.oven_left', 'home') }}"
+      oven_right:
+        friendly_name: Oven Right
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.oven_right', 'home') }}"
+      hob:
+        friendly_name: Hob
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.hob', 'home') }}"
+      extractor:
+        friendly_name: Extractor
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.extractor', 'home') }}"
+      # Media Players
+      google_home_mini:
+        friendly_name: Google Home Mini
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.googlehomemini', 'home') }}"
+      lounge_chromecast:
+        friendly_name: Lounge Chromecast
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.lounge_chromecast', 'home') }}"
+      kitchen_chromecast:
+        friendly_name: Kitchen Chromecast
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.kitchen_chromecast', 'home') }}"
+      sonos_kitchen:
+        friendly_name: Sonos Kitchen
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.sonos_kitchen', 'home') }}"
+      sonos_bedroom:
+        friendly_name: Sonos Bedroom
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.sonos_bedroom', 'home') }}"
+      sonos_lounge:
+        friendly_name: Sonos Lounge
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.sonos_lounge', 'home') }}"
+      sonos_matan:
+        friendly_name: Sonos Matan
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.sonos_matan', 'home') }}"
+      sonos_playroom:
+        friendly_name: Sonos Playroom
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.sonos_playroom', 'home') }}"
