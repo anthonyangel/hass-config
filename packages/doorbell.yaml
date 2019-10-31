@@ -24,3 +24,18 @@ automation:
         data:
           url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_right.attributes.entity_picture }}"
           disable_notification: yes
+
+  - alias: Doorbell show on Lounge Display
+    trigger:
+      platform: state
+      entity_id: binary_sensor.doorbell
+      to: "on"
+    action:
+      - service: camera.play_stream
+        data:
+          entity_id: camera.front_door
+          media_player: media_player.lounge_display
+      - delay:
+          seconds: 60
+      - service: media_player.turn_off
+        entity_id: media_player.lounge_display
