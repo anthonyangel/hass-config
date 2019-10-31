@@ -7,31 +7,20 @@ automation:
       entity_id: binary_sensor.doorbell
       to: "on"
     action:
-      - service: camera.snapshot
+      - service: telegram_bot.send_message
         data:
-          entity_id: camera.front_door
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
-      - service: camera.snapshot
+          title: Doorbell
+          message: "https://hillersdon.anthonyangel.co.uk/lovelace/cctv_front"
+          parse_mode: html
+      - service: telegram_bot.send_photo
         data:
-          entity_id: camera.front_left
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
-      - service: camera.snapshot
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_door.attributes.entity_picture }}"
+          disable_notification: yes
+      - service: telegram_bot.send_photo
         data:
-          entity_id: camera.front_right
-          filename: "/config/www/snapshot_{{ entity_id.entity_id }}.jpg"
-      # - service: notify.notify
-      #   data:
-      #     title: "Doorbell!"
-      #     message: "Ding Dong"
-      #     data:
-      #       image: /local/snapshot_camera.front_door.jpg
-      #       url: /lovelace/outside
-      - service: notify.gmail_group
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_left.attributes.entity_picture }}"
+          disable_notification: yes
+      - service: telegram_bot.send_photo
         data:
-          title: "Doorbell"
-          message: "Ding Dong, the doorbell was pushed at {{now().strftime('%H:%M') }}"
-          data:
-            images:
-              - /config/www/snapshot_camera.front_door.jpg
-              - /config/www/snapshot_camera.front_right.jpg
-              - /config/www/snapshot_camera.front_left.jpg
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_right.attributes.entity_picture }}"
+          disable_notification: yes
