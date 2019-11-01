@@ -1,13 +1,13 @@
 alias: Shabbat Afternoon Lights On
 trigger:
   platform: time
-  at: "11:00:00"
+  at: "10:00:00"
 condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: 'binary_sensor.shabbat'
-      state: 'on'
+      entity_id: "binary_sensor.shabbat"
+      state: "on"
 action:
   - service: light.turn_on
     entity_id:
