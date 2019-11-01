@@ -2,8 +2,8 @@ alias: Shavua Tov
 trigger:
   - platform: state
     entity_id: binary_sensor.shabbat
-    from: 'on'
-    to: 'off'
+    from: "on"
+    to: "off"
 action:
   - service: light.turn_on
     data:
@@ -14,5 +14,5 @@ action:
       color_name: blue
   - service: light.turn_on
     entity_id:
-#      - light.stairs
+      - light.stairs
       - light.hood_ambient_blue
