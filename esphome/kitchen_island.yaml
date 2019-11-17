@@ -18,14 +18,19 @@ wifi:
     subnet: 255.255.255.0
   domain: .local
 
+captive_portal:
 logger:
 api:
 ota:
 
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
 binary_sensor:
   - platform: status
     name: ${devicename}_status
-    
+
 output:
   - platform: esp8266_pwm
     pin: GPIO15

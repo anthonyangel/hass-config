@@ -15,8 +15,13 @@ wifi:
     subnet: 255.255.255.0
   domain: .lan
 
+captive_portal:
 api:
 ota:
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
 
 binary_sensor:
   - platform: gpio
