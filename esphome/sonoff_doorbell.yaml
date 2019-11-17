@@ -45,6 +45,9 @@ binary_sensor:
       mode: INPUT_PULLUP
       inverted: True
     name: Doorbell
+    filters:
+      - delayed_on: 100ms # debounce
+      - delayed_off: 5000ms # prevent multiple rings
     on_press:
       then:
         - if:
@@ -60,6 +63,7 @@ binary_sensor:
 switch:
   - platform: gpio
     name: ${devicename}_switch
+    internal: true
     pin: GPIO12
     id: relay
   - platform: template
