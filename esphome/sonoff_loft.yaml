@@ -18,6 +18,7 @@ wifi:
     subnet: 255.255.255.0
   domain: .local
 
+captive_portal:
 logger:
 api:
 ota:
@@ -85,7 +86,7 @@ fan:
     output: relay_2
     name: Bathroom Extractor
     id: bathroom_extractor
-    
+
 light:
   - platform: binary
     name: "Ensuite Mirror"

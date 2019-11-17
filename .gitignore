@@ -25,4 +25,9 @@ html5_push_registrations.conf
 .spotify-token-cache
 webostv.conf
 webostv_*.conf
-esphomeyaml/secrets.yaml
+esphome/.esphome/
+esphome/.pioenvs/
+esphome/.piolibdeps/
+esphome/lib/
+esphome/src/
+esphome/platformio.ini
