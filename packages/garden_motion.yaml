@@ -1,0 +1,21 @@
+homeassistant:
+
+automation:
+  - alias: Garden Motion notify phone
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.motion_pir_rear_lounge
+        to: "on"
+      - platform: state
+        entity_id: binary_sensor.motion_pir_rear_kitchen
+        to: "on"
+    action:
+      - service: telegram_bot.send_message
+        data:
+          title: Motion in the garden
+          message: "https://hillersdon.anthonyangel.co.uk/lovelace/cctv_garden"
+          parse_mode: html
+      - service: telegram_bot.send_photo
+        data:
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.rear_left.attributes.entity_picture }}"
+          disable_notification: yes
