@@ -1,6 +1,7 @@
 homeassistant:
   packages: !include_dir_named packages
 
+default_config:
 frontend:
 config:
 http: !include includes/http.yaml
