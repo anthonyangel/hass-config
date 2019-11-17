@@ -19,6 +19,10 @@ captive_portal:
 api:
 ota:
 
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
 binary_sensor:
   - platform: gpio
     pin:
