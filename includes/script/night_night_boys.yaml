@@ -1,16 +1,21 @@
-alias: Night Night Matan
+alias: Night Night Boys
 sequence:
   - service: light.turn_on
     data:
       entity_id:
         - light.bedroom_matan
-      brightness_pct: 25
+        - light.bedroom_ari
+      brightness_pct: 15
   - service: light.turn_off
     data:
       entity_id:
         - light.landing
         - light.stairs
+        - light.bedroom_master
+        - light.ensuite
   - service: media_player.select_source
     data:
-      entity_id: media_player.matan
+      entity_id:
+        - media_player.matan
+        - media_player.ari
       source: "Baby Lullabies"
