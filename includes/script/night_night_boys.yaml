@@ -13,9 +13,19 @@ sequence:
         - light.stairs
         - light.bedroom_master
         - light.ensuite
+  - service: sonos.join
+    data:
+      master: media_player.matan
+      entity_id: media_player.ari
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.ari
+      volume_level: 0.12
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.matan
+      volume_level: 0.15
   - service: media_player.select_source
     data:
-      entity_id:
-        - media_player.matan
-        - media_player.ari
+      entity_id: media_player.matan
       source: "Baby Lullabies"
