@@ -31,3 +31,6 @@ esphome/.piolibdeps/
 esphome/lib/
 esphome/src/
 esphome/platformio.ini
+www/snapshot_camera.*
+www/community/**
+custom_components/**
