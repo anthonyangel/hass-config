@@ -1,0 +1,26 @@
+homeassistant:
+
+automation:
+  - alias: Front Door Motion
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_cctv_front_door
+      to: "on"
+    action:
+      - service: telegram_bot.send_message
+        data:
+          title: Motion at the front
+          message: "https://hillersdon.anthonyangel.co.uk/lovelace/cctv_front"
+          parse_mode: html
+      - service: telegram_bot.send_photo
+        data:
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_door.attributes.entity_picture }}"
+          disable_notification: yes
+      - service: telegram_bot.send_photo
+        data:
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_left.attributes.entity_picture }}"
+          disable_notification: yes
+      - service: telegram_bot.send_photo
+        data:
+          url: "https://hillersdon.anthonyangel.co.uk{{ states.camera.front_right.attributes.entity_picture }}"
+          disable_notification: yes
