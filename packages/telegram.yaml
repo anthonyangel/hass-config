@@ -5,7 +5,17 @@ telegram_bot:
     api_key: !secret telegram_api_key
     allowed_chat_ids:
       - !secret anthony_telegram_id
+      - !secret danni_telegram_id
 
 notify:
-  - platform: telegram
+  - name: telegram_anthony
+    platform: telegram
     chat_id: !secret anthony_telegram_id
+  - name: telegram_danni
+    platform: telegram
+    chat_id: !secret danni_telegram_id
+  - name: telegram_group
+    platform: group
+    services:
+      - service: telegram_anthony
+      - service: telegram_danni
