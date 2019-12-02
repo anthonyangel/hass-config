@@ -22,6 +22,6 @@ binary_sensor:
       front_door:
         friendly_name: "Front Door"
         entity_id: sensor.alarm_email
-        device_class: opening
+        device_class: door
         value_template: >-
           {{ is_state('sensor.alarm_email', 'alarm_door_front_open') }}
