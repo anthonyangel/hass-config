@@ -1,3 +1,3 @@
-  exclude:
-    domains:
-      - binary_sensor
+exclude:
+  domains:
+    - binary_sensor
