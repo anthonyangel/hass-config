@@ -5,23 +5,80 @@ sensor:
   - platform: imap_email_content
     server: imap.gmail.com
     port: 993
+    name: alarm_email
     username: !secret gmail_username
     password: !secret gmail_otp
+    folder: "Hillersdon/Texecom"
     senders:
       - noreply@texe.com
     value_template: >-
-      {% if 'Your House Alarm Front Door Open' in body %}
-        alarm_door_front_open
-      {% elif 'Your House Alarm Front Door Closed' in body %}
-        alarm_door_front_closed
+      {% if 'Your House Alarm was changed to the Part Armed Mode' in body %}
+        alarm_armed_part
+      {% elif 'Your House Alarm was changed to the Full Armed Mode' in body %}
+        alarm_armed_full
+      {% elif 'Your House Alarm was changed to the Disarmed Mode' in body %}
+        alarm_armed_disarmed
       {% endif %}
 
-binary_sensor:
   - platform: template
     sensors:
-      front_door:
-        friendly_name: "Front Door"
-        entity_id: sensor.alarm_email
-        device_class: door
+      alarm_status:
+        friendly_name: "Alarm Status"
         value_template: >-
-          {{ is_state('sensor.alarm_email', 'alarm_door_front_open') }}
+          {% if is_state('sensor.alarm_email', 'alarm_armed_part') %}
+            Part Armed
+          {% elif is_state('sensor.alarm_email', 'alarm_armed_full') %}
+            Full Armed
+          {% elif is_state('sensor.alarm_email', 'alarm_armed_disarmed') %}
+            Disarmed
+          {% else %}
+            unknown
+          {% endif %}
+
+automation:
+  - alias: Alarm notify phone
+    trigger:
+      - platform: state
+        entity_id: sensor.alarm_status
+    action:
+      - service: telegram_bot.send_message
+        data:
+          message: "Alarm {{ states('sensor.alarm_state') }}"
+
+  - alias: Alarm part armed downstairs lights off
+    trigger:
+      - platform: state
+        entity_id: sensor.alarm_status
+        to: "Part Armed"
+    action:
+      - service: light.turn_off
+        data:
+          entity_id:
+            - light.kitchen_ceiling
+            - light.kitchen_island
+            - light.kitchen_worktop
+            - light.toy_kitchen_worktop
+            - light.extractor
+            - light.utility
+            - light.hall
+            - light.playroom
+            - light.lounge
+            - light.toilet
+            - light.office
+            - light.lamp
+      - delay: "00:00:03"
+      - service: light.turn_off
+        data:
+          entity_id:
+            - light.kitchen_ceiling
+            - light.kitchen_island
+            - light.kitchen_worktop
+            - light.toy_kitchen_worktop
+            - light.extractor
+            - light.utility
+            - light.hall
+            - light.playroom
+            - light.lounge
+            - light.toilet
+            - light.office
+            - light.lamp
