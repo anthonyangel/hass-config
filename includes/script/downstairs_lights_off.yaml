@@ -3,17 +3,15 @@ sequence:
   - service: light.turn_off
     data:
       entity_id:
-        - light.extractor
-        - light.hall
-        - light.hood_ambient_red
         - light.kitchen_ceiling
         - light.kitchen_island
         - light.kitchen_worktop
-        - light.lamp
-        - light.lounge
-        - light.office
-        - light.playroom
-        - light.toilet
         - light.toy_kitchen_worktop
+        - light.extractor
         - light.utility
-
+        - light.hall
+        - light.playroom
+        - light.lounge
+        - light.toilet
+        - light.office
+        - light.lamp
