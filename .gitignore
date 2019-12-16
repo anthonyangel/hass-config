@@ -34,3 +34,5 @@ esphome/platformio.ini
 www/snapshot_camera.*
 www/community/**
 custom_components/**
+scripts.yaml
+automations.yaml

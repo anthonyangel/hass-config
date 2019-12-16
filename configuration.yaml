@@ -31,3 +31,6 @@ light: !include_dir_merge_list includes/light/
 automation: !include_dir_list includes/automation/
 panel_custom: !include_dir_list includes/panel_custom/
 script: !include_dir_named includes/script/
+
+script ui: !include scripts.yaml
+automation ui: !include automations.yaml
