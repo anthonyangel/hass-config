@@ -51,6 +51,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Move dummy secrets into place
         run: mv dummy_secrets.yaml secrets.yaml
+      - name: Fake some more files to allow validation
+        run: touch scripts.yaml automations.yaml
       - name: Remove custom component from config check
         run: sed 's/homeconnect/# homeconnect/' -i configuration.yaml
       - name: Home Assistant Version
