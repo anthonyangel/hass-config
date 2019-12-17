@@ -6,23 +6,6 @@ homeassistant:
 binary_sensor:
   - platform: template
     sensors:
-      # CCTV
-      cctv_front_left:
-        friendly_name: CCTV Front Left
-        device_class: connectivity
-        value_template: "{{ is_state('device_tracker.cctv_front_left', 'home') }}"
-      cctv_front_right:
-        friendly_name: CCTV Front Right
-        device_class: connectivity
-        value_template: "{{ is_state('device_tracker.cctv_front_right', 'home') }}"
-      cctv_front_door:
-        friendly_name: CCTV Front Door
-        device_class: connectivity
-        value_template: "{{ is_state('device_tracker.cctv_front_door', 'home') }}"
-      cctv_rear_left:
-        friendly_name: CCTV Rear Left
-        device_class: connectivity
-        value_template: "{{ is_state('device_tracker.cctv_rear_left', 'home') }}"
       # Cupboard Devices
       pdu:
         friendly_name: PDU
