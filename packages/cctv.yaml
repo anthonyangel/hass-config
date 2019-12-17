@@ -58,3 +58,27 @@ binary_sensor:
     host: 192.168.1.208
     username: !secret cctv_username
     password: !secret cctv_password
+
+binary_sensor:
+  - platform: template
+    sensors:
+      cctv_front_left:
+        friendly_name: CCTV Front Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_left', 'home') }}"
+      cctv_front_right:
+        friendly_name: CCTV Front Right
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_right', 'home') }}"
+      cctv_front_door:
+        friendly_name: CCTV Front Door
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_front_door', 'home') }}"
+      cctv_rear_left:
+        friendly_name: CCTV Rear Left
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_rear_left', 'home') }}"
+      cctv_rear_kitchen:
+        friendly_name: CCTV Rear Kitchen
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.cctv_rear_kitchen', 'home') }}"
