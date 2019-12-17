@@ -25,6 +25,12 @@ camera:
     username: !secret cctv_username
     password: !secret cctv_password
     port: 80
+  - platform: onvif
+    host: 192.168.1.208
+    name: Rear Kitchen
+    username: !secret cctv_username
+    password: !secret cctv_password
+    port: 80
 
 binary_sensor:
   - platform: hikvision
@@ -45,5 +51,10 @@ binary_sensor:
   - platform: hikvision
     name: Rear Left
     host: 192.168.1.207
+    username: !secret cctv_username
+    password: !secret cctv_password
+  - platform: hikvision
+    name: Rear Kitchen
+    host: 192.168.1.208
     username: !secret cctv_username
     password: !secret cctv_password
