@@ -1,0 +1,10 @@
+alias: Button 2 Long
+trigger:
+  platform: state
+  entity_id: sensor.button2_click
+  to: long
+action:
+  service: telegram_bot.send_message
+  data:
+    message: "Button 2 long"
+    title: "Button 2 long"

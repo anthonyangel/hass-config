@@ -1,0 +1,10 @@
+alias: Button 1 Double
+trigger:
+  platform: state
+  entity_id: sensor.button1_click
+  to: double
+action:
+  service: telegram_bot.send_message
+  data:
+    message: "Button 1 Double"
+    title: "Button 1 Double"

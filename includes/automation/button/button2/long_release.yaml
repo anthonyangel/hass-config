@@ -1,0 +1,10 @@
+alias: Button 2 Long Release
+trigger:
+  platform: state
+  entity_id: sensor.button2_click
+  to: long_release
+action:
+  service: telegram_bot.send_message
+  data:
+    message: "Button 2 long release"
+    title: "Button 2 long release"
