@@ -34,7 +34,7 @@ binary_sensor:
       inverted: True
     name: ${devicename}_button
     filters:
-      - delayed_on: 100ms # debounce
+      - delayed_on: 20ms # debounce
       - delayed_off: 5000ms # prevent multiple rings
     internal: true
     on_press:
@@ -46,7 +46,7 @@ binary_sensor:
       inverted: True
     name: Doorbell
     filters:
-      - delayed_on: 100ms # debounce
+      - delayed_on: 20ms # debounce
       - delayed_off: 5000ms # prevent multiple rings
     on_press:
       then:
