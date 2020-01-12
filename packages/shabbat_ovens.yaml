@@ -2,12 +2,12 @@ homeassistant:
 
 input_datetime:
   meaty_oven_off_time:
-    name: Meaty Oven Off Hour
+    name: Meaty Oven Off Time
     has_time: true
     has_date: false
     icon: mdi:timer
   milky_oven_off_time:
-    name: Milky Oven Off Hour
+    name: Milky Oven Off Time
     has_time: true
     has_date: false
     icon: mdi:timer
