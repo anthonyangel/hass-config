@@ -3,7 +3,12 @@ name: Home Assistant CI
 
 on:
   push:
+    paths-ignore:
+      - ".esphome/**"
   pull_request:
+    paths-ignore:
+      - ".esphome/**"
+
   schedule:
     - cron: 0 12 * * *
 
