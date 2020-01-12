@@ -1,0 +1,53 @@
+homeassistant:
+  customize:
+    light.lamp_matan:
+      icon: mdi:lamp
+
+automation:
+  - alias: Matan Button Lamp On Green Toggle
+    trigger:
+      - platform: state
+        entity_id: sensor.button1_click
+        to: single
+    condition:
+      - condition: state
+        entity_id: light.lamp_matan
+        state: "off"
+    action:
+      - service: light.turn_on
+        entity_id: light.lamp_matan
+        data:
+          brightness_pct: 100
+          color_name: green
+
+  - alias: Matan Button Lamp Off Toggle
+    trigger:
+      - platform: state
+        entity_id: sensor.button1_click
+        to: single
+    condition:
+      - condition: state
+        entity_id: light.lamp_matan
+        state: "on"
+    action:
+      - service: light.turn_off
+        entity_id: light.lamp_matan
+
+  - alias: Lamp on purple at 06:45
+    trigger:
+      - platform: time
+        at: "06:45:00"
+    action:
+      - service: light.turn_on
+        entity_id: light.lamp_matan
+        data:
+          brightness_pct: 100
+          color_name: purple
+
+  - alias: Lamp off at 07:30
+    trigger:
+      - platform: time
+        at: "07:30:00"
+    action:
+      - service: light.turn_off
+        entity_id: light.lamp_matan
