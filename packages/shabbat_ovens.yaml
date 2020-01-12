@@ -1,0 +1,42 @@
+homeassistant:
+
+input_number:
+  meaty_oven_hour:
+    name: Meaty Oven Off Hour
+    min: 0
+    max: 23
+    icon: mdi:timer
+  milky_oven_hour:
+    name: Milky Oven Off Hour
+    min: 0
+    max: 23
+    icon: mdi:timer
+
+automation:
+  - alias: Meaty Oven Off
+    trigger:
+      platform: time
+      at: '{{ states('input_number.meaty_oven_hour') | int }}:00:00'
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: "binary_sensor.shabbat"
+          state: "on"
+    action:
+      service: ifttt.trigger
+      data: { "event": "meaty_oven_off" }
+
+  - alias: Milky Oven Off
+    trigger:
+      platform: time
+      at: '{{ states('input_number.milky_oven_hour') | int }}:00:00'
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: "binary_sensor.shabbat"
+          state: "on"
+    action:
+      service: ifttt.trigger
+      data: { "event": "milky_oven_off" }
