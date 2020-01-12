@@ -16,7 +16,7 @@ automation:
   - alias: Meaty Oven Off
     trigger:
       platform: time
-      at: '{{ states('input_number.meaty_oven_hour') | int }}:00:00'
+      at: "{{ states('input_number.meaty_oven_hour') | int }}:00:00"
     condition:
       condition: and
       conditions:
@@ -30,7 +30,7 @@ automation:
   - alias: Milky Oven Off
     trigger:
       platform: time
-      at: '{{ states('input_number.milky_oven_hour') | int }}:00:00'
+      at: "{{ states('input_number.milky_oven_hour') | int }}:00:00"
     condition:
       condition: and
       conditions:
