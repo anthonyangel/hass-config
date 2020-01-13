@@ -1,0 +1,10 @@
+alias: Button 3 brightness stop # release a long push
+trigger:
+  platform: state
+  entity_id: sensor.button3_click
+  to: brightness_stop
+action:
+  service: telegram_bot.send_message
+  data:
+    message: "Button 3 brightness stop"
+    title: "Button 3 brightness stop"
