@@ -3,6 +3,18 @@ homeassistant:
     light.lamp_matan:
       icon: mdi:lamp
 
+input_datetime:
+  matan_lamp_on:
+    name: Matan Lamp On Time
+    has_time: true
+    has_date: false
+    icon: mdi:timer
+  matan_lamp_off:
+    name: Matan Lamp Off Time
+    has_time: true
+    has_date: false
+    icon: mdi:timer
+
 automation:
   - alias: Matan Button Lamp On Green Toggle
     trigger:
@@ -33,10 +45,10 @@ automation:
       - service: light.turn_off
         entity_id: light.lamp_matan
 
-  - alias: Lamp on purple at 06:45
+  - alias: Matan Lamp On Timer
     trigger:
-      - platform: time
-        at: "06:45:00"
+      platform: template
+      value_template: "{{ states('sensor.time') == (state_attr('input_datetime.matan_lamp_on:', 'timestamp') | int | timestamp_custom('%H:%M', True)) }}"
     action:
       - service: light.turn_on
         entity_id: light.lamp_matan
@@ -44,10 +56,10 @@ automation:
           brightness_pct: 100
           color_name: purple
 
-  - alias: Lamp off at 07:30
+  - alias: Matan Lamp Off Timer
     trigger:
-      - platform: time
-        at: "07:30:00"
+      platform: template
+      value_template: "{{ states('sensor.time') == (state_attr('input_datetime.matan_lamp_off:', 'timestamp') | int | timestamp_custom('%H:%M', True)) }}"
     action:
       - service: light.turn_off
         entity_id: light.lamp_matan
