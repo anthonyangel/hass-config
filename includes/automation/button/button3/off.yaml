@@ -1,0 +1,10 @@
+alias: Button 3 off
+trigger:
+  platform: state
+  entity_id: sensor.button3_click
+  to: "off"
+action:
+  service: telegram_bot.send_message
+  data:
+    message: "Button 3 off"
+    title: "Button 3 off"
