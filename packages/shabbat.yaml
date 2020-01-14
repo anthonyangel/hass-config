@@ -1,6 +1,6 @@
 homeassistant:
   customize:
-     calendar.shabbat_times:
+    calendar.shabbat_times:
       hidden: true
 
 binary_sensor:
@@ -17,13 +17,13 @@ sensor:
   - platform: template
     sensors:
       upcoming_parsha:
-        value_template: '{{ states.calendar.shabbat_times.attributes.message }}'
+        value_template: "{{ states.calendar.shabbat_times.attributes.message }}"
         friendly_name: Parsha
       start_time:
-        value_template: '{{ states.calendar.shabbat_times.attributes.start_time }}'
+        value_template: "{{ states.calendar.shabbat_times.attributes.start_time }}"
         friendly_name: Start Time
       end_time:
-        value_template: '{{ states.calendar.shabbat_times.attributes.end_time }}'
+        value_template: "{{ states.calendar.shabbat_times.attributes.end_time }}"
         friendly_name: End Time
 
 group:
