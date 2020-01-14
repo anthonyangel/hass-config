@@ -5,12 +5,6 @@ on:
   push:
     paths-ignore:
       - ".esphome/**"
-  pull_request:
-    paths-ignore:
-      - ".esphome/**"
-
-  schedule:
-    - cron: 0 12 * * *
 
 jobs:
   home_assistant_stable:
@@ -47,23 +41,5 @@ jobs:
             python -m homeassistant --version
       - name: Home Assistant Check
         uses: "docker://homeassistant/home-assistant:beta"
-        with:
-          args: python -m homeassistant --config . --script check_config --info all
-  home_assistant_dev:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Getting your configuration from GitHub
-        uses: actions/checkout@v1
-      - name: Move dummy secrets into place
-        run: mv dummy_secrets.yaml secrets.yaml
-      - name: Remove custom component from config check
-        run: sed 's/homeconnect/# homeconnect/' -i configuration.yaml
-      - name: Home Assistant Version
-        uses: "docker://homeassistant/home-assistant:dev"
-        with:
-          args: |
-            python -m homeassistant --version
-      - name: Home Assistant Check
-        uses: "docker://homeassistant/home-assistant:dev"
         with:
           args: python -m homeassistant --config . --script check_config --info all
