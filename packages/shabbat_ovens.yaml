@@ -16,7 +16,7 @@ automation:
   - alias: Meaty Oven Off
     trigger:
       platform: template
-      value_template: "{{ states('sensor.time') == (state_attr('input_datetime.meaty_oven_off_time:', 'timestamp') | int | timestamp_custom('%H:%M', True)) }}"
+      value_template: "{{ states('sensor.time') == ((state_attr('input_datetime.meaty_oven_off_time', 'timestamp') | int ) | timestamp_custom('%H:%M', False)) }}"
     condition:
       condition: and
       conditions:
@@ -30,7 +30,7 @@ automation:
   - alias: Milky Oven Off
     trigger:
       platform: template
-      value_template: "{{ states('sensor.time') == (state_attr('input_datetime.milky_oven_off_time:', 'timestamp') | int | timestamp_custom('%H:%M', True)) }}"
+      value_template: "{{ states('sensor.time') == ((state_attr('input_datetime.milky_oven_off_time', 'timestamp') | int ) | timestamp_custom('%H:%M', False)) }}"
     condition:
       condition: and
       conditions:
