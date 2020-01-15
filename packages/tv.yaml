@@ -1,57 +1,52 @@
 homeassistant:
 
 media_player:
-  - platform: webostv
+
+webostv:
+  - name: Kitchen TV
     host: 192.168.1.231
-    name: Kitchen TV
-    filename: webostv_kitchen.conf
+    standby_connection: true
     turn_on_action:
       service: wake_on_lan.send_magic_packet
       data:
         mac: 78:5D:C8:98:58:E7
     customize:
       sources:
-        - livetv
-        - youtube
+        - LiveTV
+        - YouTube
+        - Chromecast
         - Plex
         - Netflix
-        - iplayer
-  - platform: webostv
+        - BBC iPlayer
+        - Amazon Prime Video
+
+  - name: Lounge TV
     host: 192.168.1.230
-    name: Lounge TV
-    filename: webostv_lounge.conf
+    standby_connection: true
     turn_on_action:
       service: wake_on_lan.send_magic_packet
       data:
         mac: 14:C9:13:32:3F:B9
     customize:
       sources:
-        - livetv
-        - youtube
+        - LiveTV
+        - YouTube
         - Chromecast
-        - HDMI3
         - Plex
         - Netflix
-        - iplayer
+        - BBC iPlayer
+        - Amazon Prime Video
 
 notify:
-  - platform: webostv
-    host: 192.168.1.231
-    name: Kitchen TV
-    filename: webostv_kitchen.conf
-  - platform: webostv
-    host: 192.168.1.230
-    name: Lounge TV
-    filename: webostv_lounge.conf
 
 binary_sensor:
-- platform: template
-  sensors:
-    lounge_tv:
-      friendly_name: Lounge TV
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.lounge_tv', 'home') }}"
-    kitchen_tv:
-      friendly_name: Kitchen TV
-      device_class: connectivity
-      value_template: "{{ is_state('device_tracker.kitchen_tv', 'home') }}"
+  - platform: template
+    sensors:
+      lounge_tv:
+        friendly_name: Lounge TV
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.lounge_tv', 'home') }}"
+      kitchen_tv:
+        friendly_name: Kitchen TV
+        device_class: connectivity
+        value_template: "{{ is_state('device_tracker.kitchen_tv', 'home') }}"
