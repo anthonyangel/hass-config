@@ -31,4 +31,15 @@ exclude:
     - media_player.galaxy_s8
     - sensor.pir_driveway_motion
     - sensor.pir_rear_kitchen_motion
-    - sensor.pir_rear_lounge_motion  
+    - sensor.pir_rear_lounge_motion
+    - sensor.time
+    - sensor.time_date
+    - sensor.time_utc
+    - sensor.date
+    - sensor.date_time
+    - sensor.date_time_iso
+    - binary_sensor.shabbat
+    - binary_sensor.chol
+    - sensor.alarm_email
+    - timer.zigbee_permit_join
+    - sensor.hacs
