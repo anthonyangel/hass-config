@@ -1,141 +1,41 @@
 homeassistant:
 
-# Example configuration.yaml entry
-sensor:
-  - platform: imap_email_content
-    server: imap.gmail.com
-    port: 993
-    name: alarm_email
-    username: !secret gmail_username
-    password: !secret gmail_otp
-    folder: "Hillersdon/Texecom"
-    senders:
-      - noreply@texe.com
-    value_template: >-
-      {% if 'Your House Alarm was changed to the Part Armed Mode' in body %}
-        alarm_armed_part
-      {% elif 'Your House Alarm was changed to the Full Armed Mode' in body %}
-        alarm_armed_full
-      {% elif 'Your House Alarm was changed to the Disarmed Mode' in body %}
-        alarm_armed_disarmed
-      {% elif 'went into Alarm' in body %}
-        alarming
-      {% elif 'Your House Alarm Front Door Open Recipe turned On' in body %}
-        front_door_open
-      {% elif 'Your House Alarm Front Door Closed Recipe turned On' in body %}
-        front_door_closed
-      {% endif %}
-
-  - platform: template
-    sensors:
-      alarm_state:
-        friendly_name: "Alarm State"
-        value_template: "{{ states('input_select.alarm_state') }}"
-
-binary_sensor:
-  - platform: template
-    sensors:
-      front_door:
-        friendly_name: "Front Door"
-        entity_id: input_select.front_door
-        value_template: "{{ is_state('input_select.front_door', 'Open') }}"
-        device_class: door
-
-input_select:
-  alarm_state:
-    name: Alarm State
-    icon: mdi:shield-home
-    options:
-      - Full Armed
-      - Part Armed
-      - Disarmed
-      - Alarming
-  front_door:
-    name: Front Door
-    icon: mdi:door
-    options:
-      - Open
-      - Closed
-
 automation:
-  - alias: Full Armed
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_email
-        to: alarm_armed_full
-    action:
-      - service: input_select.select_option
-        data:
-          entity_id: input_select.alarm_state
-          option: Full Armed
-  - alias: Part Armed
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_email
-        to: alarm_armed_part
-    action:
-      - service: input_select.select_option
-        data:
-          entity_id: input_select.alarm_state
-          option: Part Armed
-  - alias: Disarmed
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_email
-        to: alarm_armed_disarmed
-    action:
-      - service: input_select.select_option
-        data:
-          entity_id: input_select.alarm_state
-          option: Disarmed
-  - alias: Alarming
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_email
-        to: alarming
-    action:
-      - service: input_select.select_option
-        data:
-          entity_id: input_select.alarm_state
-          option: Alarming
-
   - alias: Alarm notify phone
     trigger:
       - platform: state
-        entity_id: sensor.alarm_state
+        entity_id: alarm_control_panel.house_alarm
     action:
       - service: telegram_bot.send_message
         data:
           message: "Alarm {{ states('input_select.alarm_state') }}"
-
-  - alias: Alarm part armed downstairs lights off
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_state
-        to: "Part Armed"
-    action:
-      - service: script.turn_on
-        data:
-          entity_id:
-            - script.downstairs_lights_off
-      - delay: "00:00:03" # delay and then repeat this as zwave is flakey
-      - service: script.turn_on
-        data:
-          entity_id:
-            - script.downstairs_lights_off
-
-  - alias: Alarm full armed all lights off
-    trigger:
-      - platform: state
-        entity_id: sensor.alarm_state
-        to: "Full Armed"
-    action:
-      - service: script.turn_on
-        data:
-          entity_id:
-            - script.all_lights_off
-      - delay: "00:00:03" # delay and then repeat this as zwave is flakey
-      - service: script.turn_on
-        data:
-          entity_id:
-            - script.all_lights_off
+  # - alias: Alarm part armed downstairs lights off
+  #   trigger:
+  #     - platform: state
+  #       entity_id: sensor.alarm_state
+  #       to: "Part Armed"
+  #   action:
+  #     - service: script.turn_on
+  #       data:
+  #         entity_id:
+  #           - script.downstairs_lights_off
+  #     - delay: "00:00:03" # delay and then repeat this as zwave is flakey
+  #     - service: script.turn_on
+  #       data:
+  #         entity_id:
+  #           - script.downstairs_lights_off
+  # - alias: Alarm full armed all lights off
+  #   trigger:
+  #     - platform: state
+  #       entity_id: sensor.alarm_state
+  #       to: "Full Armed"
+  #   action:
+  #     - service: script.turn_on
+  #       data:
+  #         entity_id:
+  #           - script.all_lights_off
+  #     - delay: "00:00:03" # delay and then repeat this as zwave is flakey
+  #     - service: script.turn_on
+  #       data:
+  #         entity_id:
+  #           - script.all_lights_off
