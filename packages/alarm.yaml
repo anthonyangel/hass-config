@@ -8,22 +8,22 @@ automation:
     action:
       - service: telegram_bot.send_message
         data:
-          message: "Alarm {{ states('input_select.alarm_state') }}"
-  # - alias: Alarm part armed downstairs lights off
-  #   trigger:
-  #     - platform: state
-  #       entity_id: sensor.alarm_state
-  #       to: "Part Armed"
-  #   action:
-  #     - service: script.turn_on
-  #       data:
-  #         entity_id:
-  #           - script.downstairs_lights_off
-  #     - delay: "00:00:03" # delay and then repeat this as zwave is flakey
-  #     - service: script.turn_on
-  #       data:
-  #         entity_id:
-  #           - script.downstairs_lights_off
+          message: "Alarm {{ states('alarm_control_panel.house_alarm') }}"
+  - alias: Alarm night armed downstairs lights off
+    trigger:
+      - platform: state
+        entity_id: alarm_control_panel.house_alarm
+        to: "armed_night"
+    action:
+      - service: script.turn_on
+        data:
+          entity_id:
+            - script.downstairs_lights_off
+      - delay: "00:01:00" # delay and then repeat this as zwave is flakey
+      - service: script.turn_on
+        data:
+          entity_id:
+            - script.downstairs_lights_off
   # - alias: Alarm full armed all lights off
   #   trigger:
   #     - platform: state
