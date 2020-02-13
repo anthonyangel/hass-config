@@ -2,7 +2,6 @@
 default: warn
 #logs:
 #  homeassistant.components.automation: debug
-#  homeassistant.components.group: debug
 #  homeassistant.components.thermostat: debug
 #  homeassistant.components.climate: debug
 #  homeassistant.components.switch: debug
