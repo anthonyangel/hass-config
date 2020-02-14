@@ -25,28 +25,3 @@ sensor:
       end_time:
         value_template: "{{ states.calendar.shabbat_times.attributes.end_time }}"
         friendly_name: End Time
-
-group:
-  shabbat_sensors:
-    name: Shabbat Sensors
-    view: no
-    control: hidden
-    entities:
-      - binary_sensor.chol
-      - binary_sensor.shabbat
-      - sensor.start_time
-      - sensor.end_time
-      - sensor.upcoming_parsha
-  shabbat_automations:
-    name: Shabbat Automations
-    entities:
-      - automation.friday_shabbat_prep_lights_on
-      - automation.friday_shabbat_in_lights_on
-      - automation.friday_night_lamp_off
-      - automation.friday_night_all_off
-      - automation.overnight_bathroom_dim
-      - automation.shabbat_sunrise_lights_off
-      - automation.shabbat_morning_lights_on
-      - automation.shabbat_afternoon_lights_on
-      - automation.shavua_tov
-      - automation.meaty_oven_off_at_10pm
