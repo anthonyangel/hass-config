@@ -1,9 +1,9 @@
 alias: Bathroom Button 1 dim at night
 trigger:
   platform: time
-  at: '21:00:00'
+  at: "21:00:00"
 action:
-  service: zwave.set_config_parameter
+  service: zwave_mqtt.set_config_parameter
   data_template:
     node_id: "{{ state_attr('zwave.bathroom', 'node_id') }}"
     parameter: 19
