@@ -5,6 +5,6 @@ trigger:
 action:
   service: zwave_mqtt.set_config_parameter
   data_template:
-    node_id: "{{ state_attr('zwave.bedroom_ari', 'node_id') }}"
+    node_id: "{{ state_attr('light.bedroom_ari', 'node_id') }}"
     parameter: 19
     value: 99

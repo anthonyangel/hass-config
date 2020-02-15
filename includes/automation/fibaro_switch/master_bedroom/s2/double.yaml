@@ -1,9 +1,9 @@
 alias: Master Bedroom Button 2 Double
 trigger:
   platform: event
-  event_type: zwave.scene_activated
+  event_type: zwave_mqtt.scene_activated
   event_data:
-    entity_id: zwave.bedroom_master
+    node_id: "{{ state_attr('light.bedroom_master', 'node_id') }}"
     scene_id: 24
 action:
   - service: fan.toggle
