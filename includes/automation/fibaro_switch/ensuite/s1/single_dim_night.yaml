@@ -5,6 +5,6 @@ trigger:
 action:
   service: zwave_mqtt.set_config_parameter
   data_template:
-    node_id: "{{ state_attr('light.ensuite', 'node_id') }}"
+    node_id: 14
     parameter: 19
     value: 3
