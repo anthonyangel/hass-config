@@ -3,7 +3,7 @@ trigger:
   platform: event
   event_type: zwave_mqtt.scene_activated
   event_data:
-    node_id: "{{ state_attr('light.toilet', 'node_id') }}"
+    node_id: 8
     scene_id: 14
 action:
   - service: fan.toggle
