@@ -39,3 +39,31 @@ automation:
           seconds: 60
       - service: media_player.turn_off
         entity_id: media_player.lounge_display
+
+  - alias: Doorbell notify Lounge TV
+    trigger:
+      platform: state
+      entity_id: binary_sensor.doorbell
+      to: "on"
+    condition:
+      - condition: state
+        entity_id: media_player.lounge_tv
+        state: "on"
+    action:
+      - service: notify.lounge_tv
+        data:
+          message: "Doorbell!"
+
+  - alias: Doorbell notify Kitchen TV
+    trigger:
+      platform: state
+      entity_id: binary_sensor.doorbell
+      to: "on"
+    condition:
+      - condition: state
+        entity_id: media_player.kitchen_tv
+        state: "on"
+    action:
+      - service: notify.kitchen_tv
+        data:
+          message: "Doorbell!"
