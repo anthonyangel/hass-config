@@ -1,9 +1,9 @@
 alias: bathroom Button 2 Double
 trigger:
   platform: event
-  event_type: zwave.scene_activated
+  event_type: zwave_mqtt.scene_activated
   event_data:
-    entity_id: zwave.bathroom
+    node_id: "{{ state_attr('light.bathroom', 'node_id') }}"
     scene_id: 24
 action:
   - service: light.toggle

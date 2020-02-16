@@ -1,10 +1,10 @@
 alias: Bathroom Button 1 full during day
 trigger:
   platform: time
-  at: '06:00:00'
+  at: "06:00:00"
 action:
-  service: zwave.set_config_parameter
+  service: zwave_mqtt.set_config_parameter
   data_template:
-    node_id: "{{ state_attr('zwave.bathroom', 'node_id') }}"
+    node_id: "{{ state_attr('light.bathroom', 'node_id') }}"
     parameter: 19
     value: 99

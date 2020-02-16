@@ -3,8 +3,8 @@ trigger:
   platform: time
   at: "22:00:00"
 action:
-  service: zwave.set_config_parameter
+  service: zwave_mqtt.set_config_parameter
   data_template:
-    node_id: "{{ state_attr('zwave.ensuite', 'node_id') }}"
+    node_id: "{{ state_attr('light.ensuite', 'node_id') }}"
     parameter: 19
     value: 3
