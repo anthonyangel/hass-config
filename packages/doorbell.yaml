@@ -46,9 +46,9 @@ automation:
       entity_id: binary_sensor.doorbell
       to: "on"
     condition:
-    - condition: state
-      entity_id: media_player.lounge_tv
-      state: on
+      - condition: state
+        entity_id: media_player.lounge_tv
+        state: "on"
     action:
       - service: notify.lounge_tv
         data:
@@ -60,9 +60,9 @@ automation:
       entity_id: binary_sensor.doorbell
       to: "on"
     condition:
-    - condition: state
-      entity_id: media_player.kitchen_tv
-      state: on
+      - condition: state
+        entity_id: media_player.kitchen_tv
+        state: "on"
     action:
       - service: notify.kitchen_tv
         data:
