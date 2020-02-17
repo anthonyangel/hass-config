@@ -5,9 +5,9 @@ automation:
     trigger:
       - platform: state
         entity_id: alarm_control_panel.house_alarm
-        to: armed_full
+        to: armed_away
     action:
-      - service: notify.mobile_app_anthony_phone
+      - service: notify.phones
         data:
           title: Alarm
           message: Full Armed
