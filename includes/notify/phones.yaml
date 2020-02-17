@@ -1,0 +1,5 @@
+name: phones
+platform: group
+services:
+  - service: mobile_app_anthony_pixel_3a
+  - service: mobile_app_danni_pixel_3a
