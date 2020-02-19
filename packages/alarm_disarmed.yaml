@@ -1,0 +1,13 @@
+homeassistant:
+
+automation:
+  - alias: Alarm disarmed
+    trigger:
+      - platform: state
+        entity_id: alarm_control_panel.house_alarm
+        to: disarmed
+    action:
+      - service: notify.phones
+        data:
+          title: Alarm
+          message: Disarmed
