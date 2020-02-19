@@ -1,0 +1,28 @@
+homeassistant:
+
+sensor:
+  - platform: mqtt
+    state_topic: "bbq/iGrill/probe1"
+    name: "Probe 1"
+    qos: 0
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    state_topic: "bbq/iGrill/probe2"
+    name: "Probe 2"
+    qos: 0
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    state_topic: "bbq/iGrill/probe3"
+    name: "Probe 3"
+    qos: 0
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    state_topic: "bbq/iGrill/probe4"
+    name: "Probe 4"
+    qos: 0
+    unit_of_measurement: "ºC"
+  - platform: mqtt
+    state_topic: "bbq/iGrill/battery"
+    name: "iGrill Battery"
+    qos: 0
+    unit_of_measurement: "%"
