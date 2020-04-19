@@ -1,0 +1,32 @@
+homeassistant:
+
+input_boolean:
+  camgrab_front_door:
+    name: camgrab_front_door
+    initial: off
+    icon: mdi:camera
+
+automation:
+  - alias: Record Front Door
+    initial_state: false
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.front_door
+        from: 'off'
+        to: 'on'
+    action:
+      - service: input_boolean.turn_on
+        data:
+          entity_id: input_boolean.camgrab_front_door
+      - service: camera.record
+        data:
+          entity_id: camera.front_door
+          filename: "/config/www/front_door.mp4"
+          duration: 10
+          # lookback: 10
+      - service: shell_command.check_recording_finished
+      - wait_template: "{{ is_state('input_boolean.camgrab_front_door', 'off') }}"
+      - service: telegram_bot.send_video
+        data:
+          file: "/config/www/front_door.mp4"
+          title: "Front Door Opened {{now().strftime('%H:%M') }}"

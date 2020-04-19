@@ -26,6 +26,7 @@ homeconnect: !include includes/homeconnect.yaml
 
 google: !include includes/google.yaml
 ifttt: !include includes/ifttt.yaml
+shell_command: !include includes/shell_scripts.yaml
 notify: !include_dir_list includes/notify/
 light: !include_dir_merge_list includes/light/
 automation: !include_dir_list includes/automation/

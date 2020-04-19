@@ -1,0 +1,103 @@
+- id: '1582191028149'
+  alias: Matan lamp random double
+  description: ''
+  trigger:
+  - entity_id: sensor.button1_click
+    platform: state
+    to: double
+  condition: []
+  action:
+  - data:
+      effect: random
+    entity_id: light.lamp_matan
+    service: light.turn_on
+- id: '1583451670861'
+  alias: Toy Kitchen Light Toggle
+  description: ''
+  trigger:
+  - entity_id: sensor.button2_click
+    platform: state
+    to: single
+  condition: []
+  action:
+  - data: {}
+    entity_id: light.toy_kitchen_worktop
+    service: light.toggle
+- id: '1584023805381'
+  alias: Turn on Office lights when motion detected
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.office
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'off'
+  action:
+  - data: {}
+    entity_id: light.office
+    service: light.turn_on
+- id: '1584098676501'
+  alias: Office light off if no motion
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.office
+    for:
+      minutes: 10
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - data: {}
+    entity_id: light.office
+    service: light.turn_off
+- id: '1585439816212'
+  alias: Floodlight driveway off
+  description: ''
+  trigger:
+  - entity_id: light.floodlight_driveway
+    for: 0:02:00
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data: {}
+    entity_id: light.floodlight_driveway
+    service: light.turn_off
+- id: '1586699296444'
+  alias: Sprinkler Button On
+  description: ''
+  trigger:
+  - device_id: 79ee6dc6ce0c4deba28f6801d0d382c3
+    discovery_id: 0x000d6ffffe9cd62b click_open
+    domain: mqtt
+    platform: device
+    subtype: open
+    type: click
+  condition: []
+  action:
+  - data_template:
+      entity_id: switch.{{ states('input_select.sprinkler_zone') }}
+    service: switch.turn_on
+  - data: {}
+    entity_id: input_select.sprinkler_zone
+    service: input_select.select_next
+- id: '1586699432744'
+  alias: Sprinkler Button Off
+  description: ''
+  trigger:
+  - device_id: 79ee6dc6ce0c4deba28f6801d0d382c3
+    discovery_id: 0x000d6ffffe9cd62b click_close
+    domain: mqtt
+    platform: device
+    subtype: close
+    type: click
+  condition: []
+  action:
+  - entity_id:
+    - switch.sprinkler_borders
+    - switch.sprinkler_lawn_centre
+    - switch.sprinkler_lawn_front_right
+    - switch.sprinkler_lawn_rear_left
+    service: switch.turn_off
