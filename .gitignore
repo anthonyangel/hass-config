@@ -28,11 +28,13 @@ webostv_*.conf
 esphome/.esphome/
 esphome/.pioenvs/
 esphome/.piolibdeps/
+esphome/*/.piolibdeps/
 esphome/lib/
 esphome/src/
 esphome/platformio.ini
 www/snapshot_camera.*
 www/community/**
+www/*.mp4
 custom_components/hacs/
 custom_components/**
 scripts.yaml
