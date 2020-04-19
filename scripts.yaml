@@ -1,0 +1,27 @@
+'1587321453390':
+  alias: Night Night Boys
+  sequence:
+  - data:
+      color_name: darkblue
+    entity_id: light.lamp_matan
+    service: light.turn_on
+  - entity_id:
+    - light.landing
+    - light.stairs
+    - light.bedroom_master
+    - light.ensuite
+    service: light.turn_off
+  - data:
+      entity_id:
+      - media_player.matan
+      - media_player.ari
+      master: media_player.master_bedroom
+    service: sonos.join
+  - data:
+      volume_level: 0.12
+    entity_id: media_player.ari
+    service: media_player.volume_set
+  - data:
+      volume_level: 0.2
+    entity_id: media_player.matan
+    service: media_player.volume_set
