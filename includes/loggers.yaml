@@ -1,9 +1,4 @@
-#default: error
-default: warn
-logs:
-  homeassistant.components.stream: debug
-  homeassistant.components.camera: debug
-
+default: error
 #logs:
 #  homeassistant.components.automation: debug
 #  homeassistant.components.thermostat: debug
