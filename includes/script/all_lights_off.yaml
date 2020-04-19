@@ -1,4 +1,0 @@
-alias: All Lights Off
-sequence:
-  - service: script.downstairs_lights_off
-  - service: script.upstairs_lights_off

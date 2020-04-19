@@ -25,3 +25,43 @@
       volume_level: 0.2
     entity_id: media_player.matan
     service: media_player.volume_set
+'1587322427644':
+  alias: Downstairs Lights Off
+  sequence:
+  - entity_id:
+    - light.kitchen_ceiling
+    - light.kitchen_island
+    - light.kitchen_worktop
+    - light.toy_kitchen_worktop
+    - light.extractor
+    - light.utility
+    - light.hall
+    - light.playroom
+    - light.lounge
+    - light.toilet
+    - light.office
+    - light.lamp
+    service: light.turn_off
+'1587322628966':
+  alias: Upstairs Lights Off
+  sequence:
+  - entity_id:
+    - light.bathroom
+    - light.bathroom_mirror
+    - light.bedroom_spare
+    - light.bedroom_ari
+    - light.ensuite
+    - light.ensuite_mirror
+    - light.landing
+    - light.bedroom_master
+    - light.bedroom_matan
+    - light.stairs
+    service: light.turn_off
+'1587322844982':
+  alias: All Lights Off
+  sequence:
+  - data: {}
+    entity_id:
+    - script.1587322427644
+    - script.1587322628966
+    service: script.turn_on
