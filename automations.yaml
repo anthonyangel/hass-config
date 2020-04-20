@@ -101,3 +101,56 @@
     - switch.sprinkler_lawn_front_right
     - switch.sprinkler_lawn_rear_left
     service: switch.turn_off
+- id: '1587421393917'
+  alias: Alarm night armed notify phone
+  description: ''
+  trigger:
+  - entity_id: alarm_control_panel.house_alarm
+    platform: state
+    to: armed_night
+  condition: []
+  action:
+  - data:
+      data:
+        actions:
+        - action: downstairs_lights_off
+          title: Downstairs Lights Off
+        - action: all_lights_off
+          title: All Lights Off
+      message: Night Armed
+      title: Alarm
+    service: notify.phones
+- id: '1587421589723'
+  alias: Alarm night armed downstairs lights off
+  description: ''
+  trigger:
+  - event_data:
+      action: downstairs_lights_off
+    event_type: mobile_app_notification_action
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: script.1587322427644
+    service: script.turn_on
+  - delay: 00:01:00
+  - data: {}
+    entity_id: script.1587322427644
+    service: script.turn_on
+- id: '1587421689953'
+  alias: Alarm night armed all lights off
+  description: ''
+  trigger:
+  - event_data:
+      action: all_lights_off
+    event_type: mobile_app_notification_action
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: script.1587322844982
+    service: script.turn_on
+  - delay: 00:01:00
+  - data: {}
+    entity_id: script.1587322844982
+    service: script.turn_on
