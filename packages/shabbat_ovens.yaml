@@ -6,11 +6,6 @@ input_datetime:
     has_time: true
     has_date: false
     icon: mdi:timer
-  milky_oven_off_time:
-    name: Milky Oven Off Time
-    has_time: true
-    has_date: false
-    icon: mdi:timer
 
 automation:
   - alias: Meaty Oven Off
@@ -26,17 +21,3 @@ automation:
     action:
       service: ifttt.trigger
       data: { "event": "meaty_oven_off" }
-
-  - alias: Milky Oven Off
-    trigger:
-      platform: template
-      value_template: "{{ states('sensor.time') == ((state_attr('input_datetime.milky_oven_off_time', 'timestamp') | int ) | timestamp_custom('%H:%M', False)) }}"
-    condition:
-      condition: and
-      conditions:
-        - condition: state
-          entity_id: "binary_sensor.shabbat"
-          state: "on"
-    action:
-      service: ifttt.trigger
-      data: { "event": "milky_oven_off" }

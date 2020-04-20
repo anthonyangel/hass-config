@@ -154,3 +154,67 @@
   - data: {}
     entity_id: script.1587322844982
     service: script.turn_on
+- id: '1587421859717'
+  alias: Alarm Disarmed
+  description: ''
+  trigger:
+  - entity_id: alarm_control_panel.house_alarm
+    platform: state
+    to: disarmed
+  condition: []
+  action:
+  - data:
+      message: Disarmed
+      title: Alarm
+    service: notify.phones
+- id: '1587421976922'
+  alias: Alarm full armed notify phone
+  description: ''
+  trigger:
+  - entity_id: alarm_control_panel.house_alarm
+    platform: state
+    to: armed_away
+  condition: []
+  action:
+  - data:
+      data:
+        actions:
+        - action: all_lights_off
+          title: All Lights Off
+      message: Full Armed
+      title: Alarm
+    service: notify.phones
+- id: '1587422161060'
+  alias: Alarm full armed all lights off
+  description: ''
+  trigger:
+  - event_data:
+      action: all_lights_off
+    event_type: mobile_app_notification_action
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: script.1587322844982
+    service: script.turn_on
+  - delay: 00:01:00
+  - data: {}
+    entity_id: script.1587322844982
+    service: script.turn_on
+- id: '1587422459653'
+  alias: Milky Oven Off
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ states(''sensor.time'') == ((state_attr(''input_datetime.milky_oven_off_time'',
+      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}'
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: binary_sensor.shabbat
+      state: 'on'
+  action:
+  - data:
+      event: milky_oven_off
+    service: ifttt.trigger
