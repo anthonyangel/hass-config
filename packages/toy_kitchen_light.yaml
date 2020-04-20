@@ -2,15 +2,3 @@ homeassistant:
   customize:
     light.toy_kitchen_worktop:
       icon: mdi:silverware-fork-knife
-
-automation:
-- alias: Toy Kitchen Light 10 minute timeout 
-  trigger:
-    platform: state  
-    entity_id: light.toy_kitchen_worktop
-    to: 'on'
-    for:
-      minutes: 10
-  action:
-  - service: light.turn_off
-    entity_id: light.toy_kitchen_worktop

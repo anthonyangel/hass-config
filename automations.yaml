@@ -218,3 +218,86 @@
   - data:
       event: milky_oven_off
     service: ifttt.trigger
+- id: '1587423371245'
+  alias: Toy Kitchen Light 10 minute timeout
+  description: ''
+  trigger:
+  - device_id: 7cafdd9430024605bd77db43d3ed3417
+    domain: light
+    entity_id: light.toy_kitchen_worktop
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    platform: device
+    type: turned_on
+  condition: []
+  action:
+  - entity_id: light.toy_kitchen_worktop
+    service: light.turn_off
+- id: '1587423800099'
+  alias: Matan Button Lamp On Green Toggle
+  description: ''
+  trigger:
+  - device_id: d87aa95ac09e41d486e5d680bd86951d
+    discovery_id: 0x00158d0004255059 click_single
+    domain: mqtt
+    platform: device
+    subtype: single
+    type: click
+  condition:
+  - condition: state
+    entity_id: light.lamp_matan
+    state: 'off'
+  action:
+  - data:
+      brightness_pct: 100
+      color_name: green
+    entity_id: light.lamp_matan
+    service: light.turn_on
+- id: '1587424047005'
+  alias: Matan Button Lamp Off Toggle
+  description: ''
+  trigger:
+  - device_id: d87aa95ac09e41d486e5d680bd86951d
+    discovery_id: 0x00158d0004255059 click_single
+    domain: mqtt
+    platform: device
+    subtype: single
+    type: click
+  condition:
+  - condition: state
+    entity_id: light.lamp_matan
+    state: 'on'
+  action:
+  - device_id: 0ba4e800b0d04af48005696a2f1cfcac
+    domain: light
+    entity_id: light.lamp_matan
+    type: turn_off
+- id: '1587424164377'
+  alias: Matan Lamp On Timer
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '"{{ states(''sensor.time'') == ((state_attr(''input_datetime.matan_lamp_on'',
+      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}"'
+  condition: []
+  action:
+  - data:
+      brightness_pct: 100
+      color_name: purple
+    entity_id: light.lamp_matan
+    service: light.turn_on
+- id: '1587424220722'
+  alias: Matan Lamp Off Timer
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ states(''sensor.time'') == ((state_attr(''input_datetime.matan_lamp_off'',
+      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}'
+  condition: []
+  action:
+  - device_id: 0ba4e800b0d04af48005696a2f1cfcac
+    domain: light
+    entity_id: light.lamp_matan
+    type: turn_off
