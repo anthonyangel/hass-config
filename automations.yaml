@@ -278,9 +278,8 @@
   alias: Matan Lamp On Timer
   description: ''
   trigger:
-  - platform: template
-    value_template: '"{{ states(''sensor.time'') == ((state_attr(''input_datetime.matan_lamp_on'',
-      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}"'
+  - at: 06:30:00
+    platform: time
   condition: []
   action:
   - data:
@@ -292,9 +291,8 @@
   alias: Matan Lamp Off Timer
   description: ''
   trigger:
-  - platform: template
-    value_template: '{{ states(''sensor.time'') == ((state_attr(''input_datetime.matan_lamp_off'',
-      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}'
+  - at: 08:00:00
+    platform: time
   condition: []
   action:
   - device_id: 0ba4e800b0d04af48005696a2f1cfcac

@@ -1,4 +1,0 @@
-homeassistant:
-  customize:
-    light.stairs:
-      icon: mdi:stairs

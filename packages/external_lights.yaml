@@ -1,9 +1,4 @@
 homeassistant:
-  customize:
-    light.external_rear:
-      icon: mdi:spotlight
-    light.front_door:
-      icon: mdi:door
 
 automation:
   - alias: Outside front lights on at sunset

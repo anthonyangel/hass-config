@@ -1,4 +1,0 @@
-homeassistant:
-  customize:
-    light.toy_kitchen_worktop:
-      icon: mdi:silverware-fork-knife
