@@ -22,7 +22,7 @@ history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
 influxdb: !include includes/influxdb.yaml
-homeconnect: !include includes/homeconnect.yaml
+home_connect_beta: !include includes/homeconnect.yaml
 automation ui: !include automations.yaml
 script: !include scripts.yaml
 google: !include includes/google.yaml
