@@ -299,3 +299,90 @@
     domain: light
     entity_id: light.lamp_matan
     type: turn_off
+- id: '1589119734253'
+  alias: Matan Lamp Timeout
+  description: ''
+  trigger:
+  - device_id: 0ba4e800b0d04af48005696a2f1cfcac
+    domain: light
+    entity_id: light.lamp_matan
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+    platform: device
+    type: turned_on
+  condition: []
+  action:
+  - device_id: 0ba4e800b0d04af48005696a2f1cfcac
+    domain: light
+    entity_id: light.lamp_matan
+    type: turn_off
+- id: '1589212772263'
+  alias: Utility Button 2 Toggle Extractor
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 2
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 14
+      scene_value_label: Scene
+    event_type: zwave_mqtt.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.utility_extractor
+    service: fan.toggle
+- id: '1589218714940'
+  alias: Bathroom Extractor Toggle
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 13
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 14
+      scene_value_label: Scene
+    event_type: zwave_mqtt.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.bathroom_extractor
+    service: fan.toggle
+- id: '1589226395279'
+  alias: Ensuite extractor toggle
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 14
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 14
+      scene_value_label: Scene
+    event_type: zwave_mqtt.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.ensuite_extractor
+    service: fan.toggle
+- id: '1589226505434'
+  alias: Master Bedroom Extractor Toggle
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 21
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 24
+      scene_value_label: Scene
+    event_type: zwave_mqtt.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.ensuite_extractor
+    service: fan.toggle
