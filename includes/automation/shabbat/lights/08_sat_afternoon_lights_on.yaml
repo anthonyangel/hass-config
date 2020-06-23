@@ -14,7 +14,17 @@ action:
       - light.kitchen_ceiling
       - light.utility
       - light.lounge
-      - light.playroom
+      # - light.playroom
+      - light.toilet
+      - light.ensuite
+      - light.bathroom
+  - delay: '00:01:30'
+  - service: light.turn_on
+    entity_id:
+      - light.kitchen_ceiling
+      - light.utility
+      - light.lounge
+      # - light.playroom
       - light.toilet
       - light.ensuite
       - light.bathroom

@@ -278,7 +278,7 @@
   alias: Matan Lamp On Timer
   description: ''
   trigger:
-  - at: 06:30:00
+  - at: 06:50:00
     platform: time
   condition: []
   action:

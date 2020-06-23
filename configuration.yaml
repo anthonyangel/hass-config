@@ -4,7 +4,6 @@ homeassistant:
 default_config:
 frontend:
 config:
-http: !include includes/http.yaml
 updater:
   include_used_components: true
 discovery:
@@ -22,7 +21,7 @@ history: !include includes/history.yaml
 recorder: !include includes/recorder.yaml
 logger: !include includes/loggers.yaml
 influxdb: !include includes/influxdb.yaml
-home_connect_beta: !include includes/homeconnect.yaml
+home_connect: !include includes/home_connect.yaml
 automation ui: !include automations.yaml
 script: !include scripts.yaml
 google: !include includes/google.yaml

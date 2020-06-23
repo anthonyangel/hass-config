@@ -1,5 +1,6 @@
 default: error
-#logs:
+# logs:
+#   custom_components.home_connect_beta: debug
 #  homeassistant.components.automation: debug
 #  homeassistant.components.thermostat: debug
 #  homeassistant.components.climate: debug
