@@ -386,3 +386,38 @@
   - data: {}
     entity_id: fan.ensuite_extractor
     service: fan.toggle
+- id: '1592949227925'
+  alias: Notify on Rear Motion when alarm is set
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.motion_pir_rear_kitchen
+    platform: state
+    to: 'on'
+  - entity_id: binary_sensor.motion_pir_rear_lounge
+    platform: state
+    to: 'on'
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: alarm_control_panel.house_alarm
+      state: armed_night
+    - condition: state
+      entity_id: alarm_control_panel.house_alarm
+      state: armed_away
+  action:
+  - data:
+      message: https://hillersdon.anthonyangel.co.uk/lovelace/cctv_garden
+      parse_mode: html
+      title: Motion in the garden
+    service: telegram_bot.send_message
+  - data:
+      disable_notification: 'yes'
+      url: https://hillersdon.anthonyangel.co.uk{{ states.camera.rear_left.attributes.entity_picture
+        }}
+    service: telegram_bot.send_message
+  - data:
+      disable_notification: 'yes'
+      url: https://hillersdon.anthonyangel.co.uk{{ states.camera.rear_lounge.attributes.entity_picture
+        }}
+    service: telegram_bot.send_message
