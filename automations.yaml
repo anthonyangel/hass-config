@@ -829,3 +829,222 @@
     entity_id: light.kitchen_ceiling
     service: light.turn_on
   mode: single
+- id: '1605042672963'
+  alias: Kitchen Rear Button 2 Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 4
+      scene_id: 24
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.external_rear
+  mode: single
+- id: 83dcc2b5-1f64-4448-b25f-0c9600ec03f1
+  alias: Landing Button 1 Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 11
+      scene_id: 14
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.stairs
+  mode: single
+- id: 1294fc85-1681-4d02-bf81-bd95e9aa5958
+  alias: Bathroom Button 2 Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 13
+      scene_id: 24
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.hall
+  mode: single
+- id: 2a679a85-a756-47db-b938-13372af30939
+  alias: Bathroom Button 2 Triple
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 13
+      scene_id: 25
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.stairs
+  mode: single
+- id: 206d7271-de15-4f18-8765-ad6aa1115964
+  alias: Ensuite Button 2 Single
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 14
+      scene_id: 26
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.bedroom_master
+  mode: single
+- id: b02d1b99-a366-462e-b3eb-971df56c544c
+  alias: Hall Button 1 Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 7
+      scene_id: 14
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.front_door
+  mode: single
+- id: 6333800b-59ab-4f20-b298-11034459b587
+  alias: Hall Button 2 Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 7
+      scene_id: 24
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.stairs
+  mode: single
+- id: dcb45e9f-d0ca-4e71-97d6-b09fb130ebff
+  alias: Master Bedroom Button 2 Single
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 21
+      scene_id: 26
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.ensuite
+  mode: single
+- id: 86222b1c-d691-4793-9aac-be8a166dab5b
+  alias: Playroom Double
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ozw.scene_activated
+    event_data:
+      node_id: 6
+      scene_id: 14
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.lamp
+  mode: single
+- id: '1605043192418'
+  alias: Ari Night Dim
+  description: ''
+  trigger:
+  - platform: time
+    at: '18:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 17
+      parameter: 19
+      value: 3
+  mode: single
+- id: 'b2efc09c-cfb6-4046-bf55-aaa47d50bdbe'
+  alias: Ari Day Bright
+  description: ''
+  trigger:
+  - platform: time
+    at: '06:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 17
+      parameter: 19
+      value: 99
+  mode: single
+- id: 'd97c7426-82d8-49b7-b056-b13441aa34ea'
+  alias: Bathroom Night Dim
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 13
+      parameter: 19
+      value: 3
+  mode: single
+- id: '364af63a-fb31-4102-a4e1-372a807ddccf'
+  alias: Bathroom Day Bright
+  description: ''
+  trigger:
+  - platform: time
+    at: '06:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 13
+      parameter: 19
+      value: 99
+  mode: single
+- id: 'e6aea36c-9b89-49cc-a9c3-79e8154bb011'
+  alias: Ensuite Night Dim
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 14
+      parameter: 19
+      value: 3
+  mode: single
+- id: 'a81d17cc-32db-44d1-8931-c902c8d787e6'
+  alias: Ensuite Day Bright
+  description: ''
+  trigger:
+  - platform: time
+    at: '06:00'
+  condition: []
+  action:
+  - service: ozw.set_config_parameter
+    data:
+      node_id: 14
+      parameter: 19
+      value: 99
+  mode: single
