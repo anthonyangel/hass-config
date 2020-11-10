@@ -1068,7 +1068,7 @@
       entity_id: "{{ trigger.entity_id.replace('_humidity','_extractor').replace('sensor','fan') }}"
   mode: single
 - id: "298e9f49-f5e5-4425-99d7-8378c6db0da3"
-  alias: Extractor Humidity On
+  alias: Extractor Humidity Off
   description: ""
   trigger:
     - platform: numeric_state
