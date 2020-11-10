@@ -39,7 +39,6 @@ exclude:
     - binary_sensor.shabbat
     - binary_sensor.chol
     - sensor.alarm_email
-    - timer.zigbee_permit_join
     - sensor.hacs
   entity_globs:
     - binary_sensor.fibaro_dimmer_2_heat_overheat*
