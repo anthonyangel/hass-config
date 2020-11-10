@@ -1050,7 +1050,7 @@
         parameter: 19
         value: 99
   mode: single
-- id: "1605043987773"
+- id: "1605045750896"
   alias: Extractor Humidity On
   description: ""
   trigger:
@@ -1064,10 +1064,12 @@
   condition: []
   action:
     - service: fan.turn_on
-      data: {}
-      entity_id: "{{ trigger.entity_id.replace('_humidity','_extractor').replace('sensor','fan') }}"
+      data:
+        entity_id:
+          "{{ trigger.entity_id.replace('_humidity','_extractor').replace('sensor','fan')
+          }}"
   mode: single
-- id: "298e9f49-f5e5-4425-99d7-8378c6db0da3"
+- id: "0b74012e-6a8b-413d-98cd-7c97a5f01867"
   alias: Extractor Humidity Off
   description: ""
   trigger:
@@ -1077,10 +1079,12 @@
         - sensor.toilet_humidity
         - sensor.bathroom_humidity
         - sensor.ensuite_humidity
-      below: "60"
+      above: "65"
   condition: []
   action:
-    - service: fan.turn_off
-      data: {}
-      entity_id: "{{ trigger.entity_id.replace('_humidity','_extractor').replace('sensor','fan') }}"
+    - service: fan.turn_on
+      data:
+        entity_id:
+          "{{ trigger.entity_id.replace('_humidity','_extractor').replace('sensor','fan')
+          }}"
   mode: single
