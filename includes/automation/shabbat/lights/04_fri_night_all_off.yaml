@@ -19,8 +19,6 @@ action:
       - light.bedroom_matan
       - light.bedroom_master
       - light.bedroom_ari
-      - light.ensuite
-      - light.bathroom
       - light.toilet
       - light.landing
       - light.hall
@@ -36,8 +34,6 @@ action:
       - light.bedroom_matan
       - light.bedroom_master
       - light.bedroom_ari
-      - light.ensuite
-      - light.bathroom
       - light.toilet
       - light.landing
       - light.hall

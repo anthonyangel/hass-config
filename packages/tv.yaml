@@ -30,6 +30,7 @@ webostv:
         - LiveTV
         - YouTube
         - Chromecast
+        - Cable
         - Plex
         - Netflix
         - BBC iPlayer

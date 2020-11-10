@@ -11,18 +11,6 @@
       effect: random
     entity_id: light.lamp_matan
     service: light.turn_on
-- id: '1583451670861'
-  alias: Toy Kitchen Light Toggle
-  description: ''
-  trigger:
-  - entity_id: sensor.button2_click
-    platform: state
-    to: single
-  condition: []
-  action:
-  - data: {}
-    entity_id: light.toy_kitchen_worktop
-    service: light.toggle
 - id: '1584023805381'
   alias: Turn on Office lights when motion detected
   description: ''
@@ -43,8 +31,7 @@
   description: ''
   trigger:
   - entity_id: binary_sensor.office
-    for:
-      minutes: 10
+    for: 0:30:00
     platform: state
     to: 'off'
   condition: []
@@ -52,6 +39,7 @@
   - data: {}
     entity_id: light.office
     service: light.turn_off
+  mode: single
 - id: '1585439816212'
   alias: Floodlight driveway off
   description: ''
@@ -69,12 +57,12 @@
   alias: Sprinkler Button On
   description: ''
   trigger:
-  - device_id: 79ee6dc6ce0c4deba28f6801d0d382c3
-    discovery_id: 0x000d6ffffe9cd62b click_open
+  - device_id: f6c52dae507644e08a09b46072ea7a0b
+    discovery_id: 0x000d6ffffe9cd62b action_open
     domain: mqtt
     platform: device
     subtype: open
-    type: click
+    type: action
   condition: []
   action:
   - data_template:
@@ -83,24 +71,27 @@
   - data: {}
     entity_id: input_select.sprinkler_zone
     service: input_select.select_next
+  mode: single
 - id: '1586699432744'
   alias: Sprinkler Button Off
   description: ''
   trigger:
-  - device_id: 79ee6dc6ce0c4deba28f6801d0d382c3
-    discovery_id: 0x000d6ffffe9cd62b click_close
+  - device_id: f6c52dae507644e08a09b46072ea7a0b
+    discovery_id: 0x000d6ffffe9cd62b action_close
     domain: mqtt
     platform: device
     subtype: close
-    type: click
+    type: action
   condition: []
   action:
-  - entity_id:
+  - data: {}
+    entity_id:
     - switch.sprinkler_borders
     - switch.sprinkler_lawn_centre
     - switch.sprinkler_lawn_front_right
     - switch.sprinkler_lawn_rear_left
     service: switch.turn_off
+  mode: single
 - id: '1587421393917'
   alias: Alarm night armed notify phone
   description: ''
@@ -201,40 +192,27 @@
   - data: {}
     entity_id: script.1587322844982
     service: script.turn_on
-- id: '1587422459653'
-  alias: Milky Oven Off
-  description: ''
-  trigger:
-  - platform: template
-    value_template: '{{ states(''sensor.time'') == ((state_attr(''input_datetime.milky_oven_off_time'',
-      ''timestamp'') | int ) | timestamp_custom(''%H:%M'', False)) }}'
-  condition:
-  - condition: and
-    conditions:
-    - condition: state
-      entity_id: binary_sensor.shabbat
-      state: 'on'
-  action:
-  - data:
-      event: milky_oven_off
-    service: ifttt.trigger
 - id: '1587423371245'
-  alias: Toy Kitchen Light 10 minute timeout
+  alias: Toy Kitchen Light 5 minute timeout
   description: ''
   trigger:
-  - device_id: 7cafdd9430024605bd77db43d3ed3417
+  - device_id: f4bcf257b1e74a3bb25a6f9c2c74e952
     domain: light
     entity_id: light.toy_kitchen_worktop
     for:
       hours: 0
-      minutes: 10
+      minutes: 5
       seconds: 0
     platform: device
     type: turned_on
   condition: []
   action:
-  - entity_id: light.toy_kitchen_worktop
+  - data:
+      entity_id:
+      - light.toy_kitchen_worktop
+      - light.hood_ambientlight
     service: light.turn_off
+  mode: single
 - id: '1587423800099'
   alias: Matan Button Lamp On Green Toggle
   description: ''
@@ -328,7 +306,7 @@
       scene_label: Scene
       scene_value_id: 14
       scene_value_label: Scene
-    event_type: zwave_mqtt.scene_activated
+    event_type: ozw.scene_activated
     platform: event
   condition: []
   action:
@@ -345,7 +323,7 @@
       scene_label: Scene
       scene_value_id: 14
       scene_value_label: Scene
-    event_type: zwave_mqtt.scene_activated
+    event_type: ozw.scene_activated
     platform: event
   condition: []
   action:
@@ -362,7 +340,7 @@
       scene_label: Scene
       scene_value_id: 14
       scene_value_label: Scene
-    event_type: zwave_mqtt.scene_activated
+    event_type: ozw.scene_activated
     platform: event
   condition: []
   action:
@@ -379,7 +357,7 @@
       scene_label: Scene
       scene_value_id: 24
       scene_value_label: Scene
-    event_type: zwave_mqtt.scene_activated
+    event_type: ozw.scene_activated
     platform: event
   condition: []
   action:
@@ -421,3 +399,433 @@
       url: https://hillersdon.anthonyangel.co.uk{{ states.camera.rear_kitchen.attributes.entity_picture
         }}
     service: telegram_bot.send_photo
+- id: '1592988216886'
+  alias: Office Double Tap Blinds
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 9
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 14
+      scene_value_label: Scene
+    event_type: ozw.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: cover.office
+    service: cover.toggle
+- id: '1593118409869'
+  alias: Playroom Motion Notify
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.playroom
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      message: Playroom Motion
+    service: notify.mobile_app_anthony_pixel_3a
+- id: '1593426806636'
+  alias: Toy Kitchen Light On
+  description: ''
+  trigger:
+  - device_id: bb7707979f3c42f38d8278b0c51ffb62
+    discovery_id: 0x00158d0004255082 click_single
+    domain: mqtt
+    platform: device
+    subtype: single
+    type: click
+  condition: []
+  action:
+  - data: {}
+    entity_id: light.hood_ambientlight
+    service: light.turn_on
+  - data_template:
+      brightness_pct: 100
+      rgb_color:
+      - '{{ range(0,255)|random }}'
+      - '{{ range(0,255)|random }}'
+      - '{{ range(0,255)|random }}'
+    entity_id:
+    - light.toy_kitchen_worktop
+    - light.hood_ambientlight
+    service: light.turn_on
+  mode: single
+- id: '1593639766258'
+  alias: Matan button double
+  description: ''
+  trigger:
+  - device_id: 4a1e5883005740d49c76140202b21327
+    discovery_id: 0x00158d0004255059 click_double
+    domain: mqtt
+    platform: device
+    subtype: double
+    type: click
+  condition: []
+  action:
+  - data:
+      message: Go to sleep
+    entity_id: media_player.matan
+    service: tts.cloud_say
+- id: '1594041888175'
+  alias: Toilet Extractor Toggle
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 8
+      scene_id: 0
+      scene_label: Scene
+      scene_value_id: 14
+      scene_value_label: Scene
+    event_type: ozw.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data: {}
+    entity_id: fan.sonoff_toilet_extractor
+    service: fan.toggle
+- id: '1595852785685'
+  alias: Toy kitchen double off
+  description: ''
+  trigger:
+  - device_id: bb7707979f3c42f38d8278b0c51ffb62
+    discovery_id: 0x00158d0004255082 click_double
+    domain: mqtt
+    platform: device
+    subtype: double
+    type: click
+  condition: []
+  action:
+  - data:
+      entity_id:
+      - light.toy_kitchen_worktop
+      - light.hood_ambientlight
+    service: light.turn_off
+  mode: single
+- id: '1596476464521'
+  alias: Bathroom Lights Off
+  description: ''
+  trigger:
+  - event: sunrise
+    offset: 00:30
+    platform: sun
+  condition: []
+  action:
+  - data: {}
+    entity_id: light.bathroom
+    service: light.turn_off
+  mode: single
+- id: '1597176929272'
+  alias: Worktop follow hood on
+  description: ''
+  trigger:
+  - entity_id: light.hood_light
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - brightness_pct: 100
+    device_id: 0294148432eb40b9a0c8682174e17b4a
+    domain: light
+    entity_id: light.kitchen_worktop
+    type: turn_on
+  mode: single
+- id: '1597176967956'
+  alias: Worktop follow hood off
+  description: ''
+  trigger:
+  - entity_id: light.hood_light
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - device_id: 0294148432eb40b9a0c8682174e17b4a
+    domain: light
+    entity_id: light.kitchen_worktop
+    type: turn_off
+  mode: single
+- id: '1597324828289'
+  alias: Doorbell notify phone
+  description: ''
+  trigger:
+  - device_id: ca5046974c3e48f5a6419442f3798d02
+    domain: binary_sensor
+    entity_id: binary_sensor.doorbell
+    platform: device
+    type: turned_on
+  condition: []
+  action:
+  - data:
+      message: Doorbell
+    service: notify.mobile_app_anthony_pixel_3a
+  mode: single
+- id: '1601581903939'
+  alias: External Rear On At Sunset
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -00:45:00
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id: light.external_rear
+  mode: single
+- id: '1601581992936'
+  alias: External Rear Off At Midnight
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:59'
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    entity_id: light.external_rear
+  mode: single
+- id: '1603398090476'
+  alias: Shabbat Morning Lights On
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.shabbat_morning_lights_on
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id:
+    - light.utility
+    - light.ensuite
+    - light.playroom
+    - light.lounge
+    - light.kitchen_ceiling
+  mode: single
+- id: '1603398877945'
+  alias: Shavua Tov
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.shabbat
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+      color_name: blue
+    entity_id:
+    - light.lamp
+    - light.toy_kitchen_worktop
+  - type: turn_on
+    device_id: 7cdb4b6b5fa74cb7af81279d8f14b286
+    entity_id: light.hood_ambientlight
+    domain: light
+    brightness_pct: 100
+  - service: light.turn_on
+    data:
+      color_name: blue
+    entity_id: light.hood_ambientlight
+  mode: single
+- id: '1603399515345'
+  alias: Overnight Bathroom Dim
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:10
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - service: light.turn_on
+    data:
+      brightness: 2
+    entity_id:
+    - light.ensuite
+    - light.bathroom
+  mode: single
+- id: '1603399613967'
+  alias: Shabbat Morning Ensuite Off
+  description: ''
+  trigger:
+  - platform: time
+    at: '10:00'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: ''
+  action:
+  - service: light.turn_off
+    data: {}
+    entity_id: light.ensuite
+  mode: single
+- id: '1603399784583'
+  alias: Shabbat Morning Sunrise Lights Off
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: +01:15:00
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - service: light.turn_off
+    data: {}
+    entity_id:
+    - light.playroom
+    - light.lounge
+    - light.kitchen_ceiling
+  mode: single
+- id: '1603400107112'
+  alias: Shabbat Afternoon Lights On
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -01:30
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - repeat:
+      count: '2'
+      sequence:
+      - service: light.turn_on
+        data: {}
+        entity_id:
+        - light.kitchen_ceiling
+        - light.utility
+        - light.lounge
+        - light.toilet
+        - light.ensuite
+        - light.bathroom
+      - delay: '90'
+  mode: single
+- id: '1603400647935'
+  alias: Outside Front Lights On At Sunset
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -00:05:00
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id: light.front_door
+  mode: single
+- id: '1603400699858'
+  alias: Outside Front Lights Off Between 23 - 00
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:00'
+  condition: []
+  action:
+  - delay: 00:{{ (range(0, 59)|random|int) }}:00
+  - service: light.turn_off
+    data: {}
+    entity_id: light.front_door
+  mode: single
+- id: '1603401078763'
+  alias: Meaty Oven Off
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.meaty_oven_off_time
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.meatyoven_power
+  mode: single
+- id: '1603401108014'
+  alias: Milky Oven Off
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.milky_oven_off_time
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'on'
+  action:
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.milkyoven_power
+  mode: single
+- id: '1603841166184'
+  alias: Turn off towel radiator 9am
+  description: ''
+  trigger:
+  - platform: time
+    at: 09:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 041579afa9e94d9c806e65aa16b63913
+    entity_id: switch.sonoff_towel_switch
+    domain: switch
+  mode: single
+- id: '1604869823460'
+  alias: Appliance Reminder
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:30'
+  condition: []
+  action:
+  - service: notify.phones
+    data:
+      message: Remember to turn on the dishwasher & washing machine
+  mode: single
+- id: '1604938584250'
+  alias: Kitchen lights off if no motion
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.kitchen
+    for: 0:10:00
+    platform: state
+    to: 'off'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'off'
+  action:
+  - data: {}
+    entity_id: light.kitchen_ceiling
+    service: light.turn_off
+  mode: single
+- id: '1604944597792'
+  alias: Kitchen lights on if motion
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.kitchen
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.shabbat
+    state: 'off'
+  - condition: numeric_state
+    entity_id: sensor.rear_kitchen_illuminance
+    below: '1900'
+  action:
+  - data: {}
+    entity_id: light.kitchen_ceiling
+    service: light.turn_on
+  mode: single

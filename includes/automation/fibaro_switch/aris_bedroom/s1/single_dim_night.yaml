@@ -3,7 +3,7 @@ trigger:
   platform: time
   at: "18:00:00"
 action:
-  service: zwave_mqtt.set_config_parameter
+  service: ozw.set_config_parameter
   data_template:
     node_id: 17
     parameter: 19

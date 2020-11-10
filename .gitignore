@@ -39,3 +39,4 @@ custom_components/hacs/
 custom_components/**
 scripts.yaml
 automations.yaml
+tts/**

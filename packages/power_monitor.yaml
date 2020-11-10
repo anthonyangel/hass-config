@@ -1,0 +1,16 @@
+homeassistant:
+
+sensor:
+  - platform: template
+    sensors:
+      light_power:
+        friendly_name: Light Power Usage
+        unit_of_measurement: W
+        value_template: >
+          {% set ns = namespace(states=[]) %}
+          {% for s in states.sensor %}
+            {% if s.object_id.endswith('_lights_power') %}
+              {% set ns.states = ns.states + [ s.state | float ] %}
+            {% endif %}
+          {% endfor %}
+          {{ ns.states | sum | round(2) }}

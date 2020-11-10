@@ -1,7 +1,7 @@
 alias: Kitchen Rear Button 2 Double
 trigger:
   platform: event
-  event_type: zwave_mqtt.scene_activated
+  event_type: ozw.scene_activated
   event_data:
     node_id: 4
     scene_id: 24
